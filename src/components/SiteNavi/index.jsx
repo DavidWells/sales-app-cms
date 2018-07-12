@@ -25,12 +25,12 @@ class SiteNavi extends React.Component {
             <Logo />
           </CustomLink>
         </NavLink>
-        <NavLink ml="auto" is="div">
+        {/* <NavLink ml="auto" is="div">
           <CustomLink ml="auto" to={'/profile/'}>
             Profile
           </CustomLink>
-        </NavLink>
-        <NavLink>
+        </NavLink> */}
+        <NavLink ml="auto">
           <ProfileButton />
         </NavLink>
       </Header>

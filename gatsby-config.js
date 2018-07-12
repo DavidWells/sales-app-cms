@@ -50,7 +50,7 @@ module.exports = {
         start_url: '/',
         background_color: '#fff',
         theme_color: '#673ab7',
-        display: 'standalone',
+        display: 'fullscreen',
         icons: [
           {
             src: '/img/android-chrome-192x192.png',

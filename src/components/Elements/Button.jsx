@@ -7,10 +7,10 @@ const CustomButton = styled(Btn)`
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.125));
   box-shadow: 0 5px 10px rgba(99, 94, 190, 0.4);
   cursor: pointer;
-  background-color: #635ebe;
-  border: 1px solid #635ebe;
+  background-color: ${props => props.color};
+  border: none;
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 15px;
+
   padding: 8px 20px;
   transition: all 300ms ease-in-out;
   min-height: 36px;
@@ -20,8 +20,7 @@ const CustomButton = styled(Btn)`
   justify-content: center;
   box-sizing: border-box;
   &:hover {
-    background-color: #5853ba;
-    border: 1px solid #5853ba;
+    opacity: 0.85;
   }
   &:focus {
     box-shadow: none;
@@ -29,14 +28,14 @@ const CustomButton = styled(Btn)`
 `
 
 const Button = props => {
-  return (
-    <div>
-      <CustomButton {...props} />
-    </div>
-  )
+  return <CustomButton color="#635ebe" {...props} />
 }
 
-Button.defaultProps = {}
-Button.propTypes = {}
+Button.defaultProps = {
+  color: '#635ebe',
+}
+Button.propTypes = {
+  color: PropTypes.string,
+}
 
 export default Button
