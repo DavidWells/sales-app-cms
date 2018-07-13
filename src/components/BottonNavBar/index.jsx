@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import userIcon from '../../assets/user.png'
 import styled from 'styled-components'
-import { Flex, ButtonTransparent } from 'rebass'
+import { Flex, ButtonTransparent, Badge } from 'rebass'
 import NotificationIcon from '../../assets/shopping-list.svg'
 import AnalyticsIcon from '../../assets/bar-chart.svg'
 import Button from '../Elements/Button'
@@ -15,14 +15,26 @@ const Nav = styled.div`
   width: 100%;
   padding: 10px;
 `
+const Notification = styled(Badge)`
+  position: absolute;
+  padding: 1px 4px;
+  border-radius: 8px;
+  right: 7px;
+  top: 3px;
+`
+
+const NotificationButton = styled(ButtonTransparent)`
+  position: relative;
+`
 
 const BottomNavBar = props => {
   return (
     <Nav>
       <Flex justifyContent="space-between" alignItems="center">
-        <ButtonTransparent>
+        <NotificationButton>
+          <Notification bg="red"> 2 </Notification>
           <img width={25} src={NotificationIcon} alt="" />
-        </ButtonTransparent>
+        </NotificationButton>
 
         <Button color="green">I GOT IT</Button>
 

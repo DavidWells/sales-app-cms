@@ -11,12 +11,14 @@ import {
   Text,
   Flex,
   Close,
+  Badge,
 } from 'rebass'
 
 const CardWrapper = styled(CustomCard)`
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
     0 2px 9px 0 rgba(18, 106, 211, 0.06);
   cursor: pointer;
+  position: relative;
 `
 
 const CardModal = styled.div`
@@ -63,6 +65,16 @@ const CloseModal = styled(Close)`
   cursor: pointer;
 `
 
+const ItemBadge = styled(Badge)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  margin: 8px;
+  padding: 5px 10px;
+  background-color: rgba(0, 147, 255, 0.5);
+`
+
 class Card extends React.Component {
   constructor(props) {
     super(props)
@@ -81,6 +93,7 @@ class Card extends React.Component {
     return (
       <CardWrapper mb={3} p={0} onClick={this.handleModal}>
         <BackgroundImage ratio={1} src={this.props.imageSrc} />
+        <ItemBadge bg="red">Best Seller</ItemBadge>
         <Subhead p={2} fontSize={1} fontWeight={400}>
           {this.props.title}
         </Subhead>
