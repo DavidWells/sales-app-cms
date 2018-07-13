@@ -22,15 +22,23 @@ const NavList = styled.nav`
 `
 
 const NavItem = styled.a`
+  cursor: pointer;
   display: flex;
   flex: 0 0 auto;
   flex-direction: row;
   align-items: center;
-  transition: 'color 0.2s ease-out';
+  /* transition: all 0.2s ease-out; */
   padding-left: 15px;
   padding-right: 15px;
   font-weight: ${props => (props.isActive ? '600' : '300')};
   color: ${props => (props.isActive ? '#3c4350' : 'gray')};
+`
+
+const Span = styled.span`
+  padding-bottom: 10px;
+  transition: all 0.2s ease-out;
+  border-bottom: ${props =>
+    props.isActive ? '2px solid #5476d4' : '2px solid transparent'};
 `
 
 export default class Nav extends React.Component {
@@ -65,7 +73,7 @@ export default class Nav extends React.Component {
             isActive={index === currentIndex}
             onClick={() => this.setCurrentIndex(index)}
           >
-            {item}
+            <Span isActive={index === currentIndex}> {item} </Span>
           </NavItem>
         ))}
       </NavList>

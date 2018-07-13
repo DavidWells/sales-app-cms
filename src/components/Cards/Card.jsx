@@ -10,6 +10,7 @@ import {
   Box,
   Text,
   Flex,
+  Close,
 } from 'rebass'
 
 const CardWrapper = styled(CustomCard)`
@@ -25,9 +26,13 @@ const CardModal = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  transition: all 350ms ease-in-out;
-  transform: scale(${props => (props.show ? '1' : '0')});
+  transition: all 250ms ease-in-out;
+  visibility: ${props => (props.show ? 'visible' : 'hidden')};
   opacity: ${props => (props.show ? '1' : '0')};
+
+  @media (max-width: 700px) {
+    background: rgba(0, 0, 0, 0.7);
+  }
 `
 
 const CardModalInner = styled.div`
@@ -36,6 +41,26 @@ const CardModalInner = styled.div`
   position: relative;
   margin: 5rem auto;
   box-shadow: 0 25px 30px -18px rgba(0, 0, 0, 0.28);
+  transition: all 350ms ease-in-out;
+  transform: scale(${props => (props.show ? '1' : '0.2')});
+  opacity: ${props => (props.show ? '1' : '0')};
+  visibility: ${props => (props.show ? 'visible' : 'hidden')};
+  @media (max-width: 700px) {
+    margin: 1rem;
+  }
+`
+
+const CloseModal = styled(Close)`
+  position: absolute;
+  background: gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  padding: 5px 15px;
+  margin: 10px;
+  cursor: pointer;
 `
 
 class Card extends React.Component {
@@ -69,7 +94,8 @@ class Card extends React.Component {
           <Text children="12" fontSize={0} pl={1} />
         </Flex>
         <CardModal show={this.state.show}>
-          <CardModalInner>
+          <CardModalInner show={this.state.show}>
+            <CloseModal onClick={this.handleModal} />
             <BackgroundImage ratio={1} src={this.props.imageSrc} />
             <Subhead p={2} fontSize={1} fontWeight={400}>
               {this.props.title}
