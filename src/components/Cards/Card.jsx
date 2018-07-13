@@ -24,6 +24,7 @@ const CardWrapper = styled(CustomCard)`
 const CardModal = styled.div`
   /* background: rgba(0, 0, 0, 0.13); */
   position: fixed;
+  z-index: 12;
   top: 0;
   left: 0;
   width: 100%;
