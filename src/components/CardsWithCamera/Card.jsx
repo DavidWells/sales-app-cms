@@ -19,7 +19,7 @@ import checkIcon from '../../assets/check.svg'
 const CardWrapper = styled(CustomCard)`
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
     0 2px 9px 0 rgba(18, 106, 211, 0.06);
-  cursor: pointer;
+
   position: relative;
 `
 
@@ -54,6 +54,11 @@ const CameraIcon = styled.img`
 const InputCamera = styled.input`
   opacity: 0;
   position: absolute;
+  cursor: pointer;
+  left: 0;
+  width: 55px;
+  height: 35px;
+  display: flex;
 `
 
 class Card extends React.Component {
