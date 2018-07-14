@@ -7,6 +7,7 @@ import { Provider, Heading, Container } from 'rebass'
 import { connect } from 'unistore/react'
 import { injectGlobal } from 'styled-components'
 import 'normalize.css'
+import BottomNavBar from '../components/BottonNavBar'
 
 injectGlobal`
   * { box-sizing: border-box; }
@@ -44,6 +45,7 @@ class Template extends React.Component {
         <Container className="wrapper" mt={4} pb={5}>
           {children()}
         </Container>
+        <BottomNavBar />
       </Provider>
     )
   }

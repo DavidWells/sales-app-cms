@@ -7,7 +7,6 @@ import Helmet from 'react-helmet'
 import { Flex, Box, Text, Container, DarkMode } from 'rebass'
 import Cards from '../components/Cards'
 import TopNavBar from '../components/TopNavBar'
-import BottomNavBar from '../components/BottonNavBar'
 
 class BlogIndex extends React.Component {
   render() {
@@ -34,7 +33,6 @@ class BlogIndex extends React.Component {
         <div>
           <TopNavBar />
           <Cards />
-          <BottomNavBar />
         </div>
       </div>
     )
