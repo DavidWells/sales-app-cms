@@ -35,6 +35,7 @@
     "prismjs": "^1.14.0",
     "react-helmet": "^5.2.0",
     "react-lazyload": "^2.3.0",
+    "react-list-select": "^0.4.0",
     "rebass": "^2.0.0-10",
     "styled-components": "^3.3.3",
     "unistore": "^3.0.6"
