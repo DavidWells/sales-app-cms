@@ -39,6 +39,8 @@ const CheckBox = styled(Box)`
   padding: 3px 7px 3px 7px;
   width: 28px;
   height: 26px;
+  position: relative;
+  z-index: 4;
 `
 
 const CameraIcon = styled.img`
@@ -47,6 +49,11 @@ const CameraIcon = styled.img`
   &:hover {
     opacity: 0.8;
   }
+`
+
+const InputCamera = styled.input`
+  opacity: 0;
+  position: absolute;
 `
 
 class Card extends React.Component {
@@ -87,7 +94,11 @@ class Card extends React.Component {
         <BorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
         <Flex justifyContent="space-between" alignItems="center">
           <Box p={2}>
-            <input type="file" accept="image/*" onChange={this.getImage} />
+            <InputCamera
+              type="file"
+              accept="image/*"
+              onChange={this.getImage}
+            />
             <CameraIcon src={cameraIcon} width="30" height="30" />
           </Box>
           <CheckBox m={2} onClick={this.toggleSelection}>
