@@ -12,6 +12,7 @@ let initialState = {
   userAgent: userAgent(),
   os: osType(),
   count: 0,
+  modalOpen: false,
   colors: {
     black: '#3c3b3b',
     grey: 'grey',

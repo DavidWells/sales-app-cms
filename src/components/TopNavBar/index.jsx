@@ -8,8 +8,15 @@ const WrapNav = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   overflow: hidden;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 2;
+  background: white;
+  width: 100%;
 `
 
 const TopNavBar = props => {

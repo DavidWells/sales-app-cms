@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { connect } from 'unistore/react'
+import actions from '../../store/actions'
 import styled from 'styled-components'
 import {
   Card as CustomCard,
@@ -80,24 +82,34 @@ class Card extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: false,
+      show: this.props.modalOpen,
     }
   }
 
   handleModal = event => {
     // console.log(event.pageX, event.pageY)
     this.setState({
-      show: !this.state.show,
+      show: this.props.showModal,
     })
+    this.props.toggleModal()
   }
   render() {
     return (
-      <CardWrapper mb={3} p={0} onClick={this.handleModal}>
-        <BackgroundImage ratio={1} src={this.props.imageSrc} />
+      <CardWrapper mb={3} p={0}>
+        <BackgroundImage
+          ratio={1}
+          src={this.props.imageSrc}
+          onClick={this.props.toggleModal}
+        />
 
-        <ItemBadge badge={this.props.badge}>Best Seller</ItemBadge>
+        <ItemBadge badge={this.props.badge}>{this.props.badgeTitle}</ItemBadge>
 
-        <Subhead p={2} fontSize={1} fontWeight={400}>
+        <Subhead
+          p={2}
+          fontSize={1}
+          fontWeight={400}
+          onClick={this.props.toggleModal}
+        >
           {this.props.title}
         </Subhead>
         <Subhead p={2} fontSize={0} fontWeight={400} color="gray">
@@ -109,9 +121,9 @@ class Card extends React.Component {
           <Progress value={0.5} color="blue" bg={'red'} />
           <Text children="12" fontSize={0} pl={1} />
         </Flex>
-        <CardModal show={this.state.show}>
-          <CardModalInner show={this.state.show}>
-            <CloseModal onClick={this.handleModal} />
+        <CardModal show={this.props.modalOpen}>
+          <CardModalInner show={this.props.modalOpen}>
+            <CloseModal onClick={this.props.toggleModal} />
             <BackgroundImage ratio={1} src={this.props.imageSrc} />
             <Subhead p={2} fontSize={1} fontWeight={400}>
               {this.props.title}
@@ -129,6 +141,7 @@ class Card extends React.Component {
 Card.defaultProps = {
   title: 'default title',
   badge: 'bestSeller',
+  badgeTitle: 'dsa',
 }
 Card.propTypes = {
   title: PropTypes.string,
@@ -139,10 +152,17 @@ Card.propTypes = {
     'onSale',
     'missing',
   ]),
+  badgeTitle: PropTypes.string,
   id: PropTypes.any,
   imageSrc: PropTypes.string,
   progress: PropTypes.any,
   onClick: PropTypes.func,
 }
 
-export default Card
+const mapStateToProps = ({ modalOpen }) => ({
+  modalOpen,
+})
+export default connect(
+  mapStateToProps,
+  actions
+)(Card)

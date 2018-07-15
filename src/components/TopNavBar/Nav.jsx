@@ -35,7 +35,7 @@ const NavItem = styled.a`
 `
 
 const Span = styled.span`
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   transition: all 0.2s ease-out;
   border-bottom: ${props =>
     props.isActive ? '2px solid #5476d4' : '2px solid transparent'};
