@@ -37,12 +37,17 @@ class Template extends React.Component {
             black: '#3c3b3b',
             grey: 'grey',
             lightGrey: '#eaeaea',
+            bestSeller: 'rgba(0,147,255,0.5)',
+            mostPopular: 'yellow',
+            new: 'green',
+            onSale: 'pink',
+            missing: 'gray',
           },
         }}
         className={this.props.rtl ? 'rtl' : 'ltr'}
       >
         <SiteNavi title={siteMetadata.title} {...this.props} />
-        <Container className="wrapper" mt={4} pb={5}>
+        <Container className="wrapper" mt={4} pb={5} pt={4}>
           {children()}
         </Container>
         <BottomNavBar />

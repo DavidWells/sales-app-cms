@@ -12,6 +12,16 @@ let initialState = {
   userAgent: userAgent(),
   os: osType(),
   count: 0,
+  colors: {
+    black: '#3c3b3b',
+    grey: 'grey',
+    lightGrey: '#eaeaea',
+    bestSeller: 'rgba(0,147,255,0.5)',
+    mostPopular: 'yellow',
+    new: 'green',
+    onSale: 'pink',
+    missing: 'gray',
+  },
 }
 
 let store =

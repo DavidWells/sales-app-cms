@@ -14,7 +14,9 @@ const Task = styled.div`
   transition: all 250ms ease-in-out;
   border-bottom: 1px solid #f1f1f1;
   &:hover {
-    background: #e3eef9;
+    @media (min-width: 700px) {
+      background: #e3eef9;
+    }
   }
 `
 

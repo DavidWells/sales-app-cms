@@ -11,6 +11,11 @@ const CustomLink = styled(Link)`
   color: white;
 `
 const Header = styled(Toolbar)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
   background: linear-gradient(135deg, #736cc7 21%, #3190f0 100%, #3190f0 100%);
 `
 

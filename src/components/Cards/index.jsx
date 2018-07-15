@@ -13,14 +13,14 @@ import image6 from '../../assets/6.jpg'
 import image7 from '../../assets/7.png'
 
 const data = [
-  { title: 'Dress', id: '98797', image: image1 },
-  { title: 'Swimsuit', id: '98797', image: image2 },
-  { title: 'Red Dress', id: '98797', image: image3 },
-  { title: 'Blue Dress', id: '98797', image: image4 },
-  { title: 'White Dress', id: '98797', image: image5 },
-  { title: 'Dress', id: '98797', image: image6 },
-  { title: 'Swimsuit', id: '98797', image: image7 },
-  { title: 'Red Dress', id: '98797', image: image2 },
+  { title: 'Dress', id: '98797', image: image1, badge: 'bestSeller' },
+  { title: 'Swimsuit', id: '98797', image: image2, badge: 'mostPopular' },
+  { title: 'Red Dress', id: '98797', image: image3, badge: 'new' },
+  { title: 'Blue Dress', id: '98797', image: image4, badge: 'onSale' },
+  { title: 'White Dress', id: '98797', image: image5, badge: 'missing' },
+  { title: 'Dress', id: '98797', image: image6, badge: 'mostPopular' },
+  { title: 'Swimsuit', id: '98797', image: image7, badge: 'new' },
+  { title: 'Red Dress', id: '98797', image: image2, badge: 'missing' },
 ]
 
 const CardList = styled.div``
@@ -42,6 +42,7 @@ class Cards extends React.Component {
                 title={item.title}
                 id={item.id}
                 imageSrc={item.image}
+                badge={item.badge}
               />
             </Box>
           ))}

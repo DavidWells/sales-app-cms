@@ -73,7 +73,7 @@ const ItemBadge = styled(Badge)`
   border-radius: 0;
   margin: 8px;
   padding: 5px 10px;
-  background-color: rgba(0, 147, 255, 0.5);
+  background-color: ${props => props.theme.colors[props.badge]};
 `
 
 class Card extends React.Component {
@@ -94,7 +94,9 @@ class Card extends React.Component {
     return (
       <CardWrapper mb={3} p={0} onClick={this.handleModal}>
         <BackgroundImage ratio={1} src={this.props.imageSrc} />
-        <ItemBadge bg="red">Best Seller</ItemBadge>
+
+        <ItemBadge badge={this.props.badge}>Best Seller</ItemBadge>
+
         <Subhead p={2} fontSize={1} fontWeight={400}>
           {this.props.title}
         </Subhead>
@@ -126,10 +128,17 @@ class Card extends React.Component {
 
 Card.defaultProps = {
   title: 'default title',
+  badge: 'bestSeller',
 }
 Card.propTypes = {
   title: PropTypes.string,
-  badge: PropTypes.any,
+  badge: PropTypes.oneOf([
+    'bestSeller',
+    'mostPopular',
+    'new',
+    'onSale',
+    'missing',
+  ]),
   id: PropTypes.any,
   imageSrc: PropTypes.string,
   progress: PropTypes.any,
