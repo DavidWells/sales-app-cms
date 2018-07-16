@@ -24,7 +24,7 @@ const CardWrapper = styled(CustomCard)`
 `
 
 const CardModal = styled.div`
-  /* background: rgba(0, 0, 0, 0.13); */
+  background: rgba(0, 0, 0, 0.07);
   position: fixed;
   z-index: 12;
   top: 0;
@@ -93,6 +93,7 @@ class Card extends React.Component {
     })
     this.props.toggleModal()
   }
+
   render() {
     return (
       <CardWrapper mb={3} p={0}>

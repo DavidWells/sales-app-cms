@@ -167,8 +167,8 @@ class Cards extends React.Component {
   }
 
   componentDidMount() {
-    let sorted = sortBy(data, ['badge'])
-    console.log(sorted)
+    // let sorted = sortBy(data, ['badge'])
+    // console.log(sorted)
   }
 
   render() {
