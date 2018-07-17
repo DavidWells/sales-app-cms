@@ -4,10 +4,13 @@ import { siteMetadata } from '../../gatsby-config'
 import SiteNavi from '../components/SiteNavi'
 import emergence from 'emergence.js'
 import { Provider, Heading, Container } from 'rebass'
+import { Provider as ReduxProvider } from 'unistore/react'
 import { connect } from 'unistore/react'
 import { injectGlobal } from 'styled-components'
 import 'normalize.css'
 import BottomNavBar from '../components/BottonNavBar'
+
+import store from '../store/createStore'
 
 injectGlobal`
   * { box-sizing: border-box; }
@@ -27,31 +30,34 @@ class Template extends React.Component {
   render() {
     const { location, children } = this.props
     return (
-      <Provider
-        theme={{
-          fonts: {
-            sans: '"Source Sans Pro","Avenir Next", Helvetica, sans-serif',
-          },
-          fontSizes: [12, 16, 24, 32, 42, 52],
-          colors: {
-            black: '#3c3b3b',
-            grey: 'grey',
-            lightGrey: '#eaeaea',
-            bestSeller: 'rgba(0,147,255,0.5)',
-            mostPopular: 'yellow',
-            new: 'green',
-            onSale: 'pink',
-            missing: 'gray',
-          },
-        }}
-        className={this.props.rtl ? 'rtl' : 'ltr'}
-      >
-        <SiteNavi title={siteMetadata.title} {...this.props} />
-        <Container className="wrapper" mt={4} pb={5} pt={4}>
-          {children()}
-        </Container>
-        <BottomNavBar />
-      </Provider>
+      <ReduxProvider store={store}>
+        <Provider
+          theme={{
+            fonts: {
+              sans: '"Source Sans Pro","Avenir Next", Helvetica, sans-serif',
+            },
+            fontSizes: [12, 16, 24, 32, 42, 52],
+            colors: {
+              black: '#3c3b3b',
+              grey: 'grey',
+              lightGrey: '#eaeaea',
+              bestSeller: 'rgba(0,147,255,0.5)',
+              mostPopular: 'yellow',
+              new: 'green',
+              onSale: 'pink',
+              missing: 'gray',
+            },
+          }}
+          className={this.props.rtl ? 'rtl' : 'ltr'}
+        >
+          <SiteNavi title={siteMetadata.title} {...this.props} />
+
+          <Container className="wrapper" mt={4} pb={5} pt={4}>
+            {children()}
+          </Container>
+          <BottomNavBar />
+        </Provider>
+      </ReduxProvider>
     )
   }
 }

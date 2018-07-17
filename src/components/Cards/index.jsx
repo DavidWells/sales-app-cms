@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import { sortBy } from 'lodash'
 import { Flex, Box } from 'rebass'
 import Card from './Card'
+import { connect } from 'unistore/react'
+import actions from '../../store/actions'
 
 import image1 from '../../assets/1.jpg'
 import image2 from '../../assets/2.jpg'
@@ -166,9 +168,13 @@ class Cards extends React.Component {
     data: sortBy(data, ['badge']),
   }
 
-  componentDidMount() {
-    // let sorted = sortBy(data, ['badge'])
-    // console.log(sorted)
+  async componentDidMount() {
+    // const response = await fetch(
+    //   `https://api.coinmarketcap.com/v1/ticker/?limit=10`
+    // )
+    // const json = await response.json()
+    // console.log(json)
+    this.props.addItems()
   }
 
   render() {
@@ -176,7 +182,12 @@ class Cards extends React.Component {
       <CardList className="card-list">
         <Flex mx={-2} flexWrap="wrap">
           {this.state.data.map((item, index) => (
-            <Box key={index} width={[1 / 2, 1 / 3, 1 / 4]} px={2}>
+            <Box
+              id={item.title}
+              key={index}
+              width={[1 / 2, 1 / 3, 1 / 4]}
+              px={2}
+            >
               <Card
                 onClick={this.handleModal}
                 key={index}
@@ -199,4 +210,10 @@ Cards.propTypes = {
   src: PropTypes.string,
 }
 
-export default Cards
+const mapStateToProps = ({ modalOpen }) => ({
+  modalOpen,
+})
+export default connect(
+  mapStateToProps,
+  actions
+)(Cards)

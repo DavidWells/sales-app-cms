@@ -23,6 +23,14 @@ let initialState = {
     onSale: 'pink',
     missing: 'gray',
   },
+  items: [],
+  itemCategories: [],
+  tasks: [
+    { name: 'Highlight Best Sellers!', type: 'regular', done: false },
+    { name: 'Increase the sales', type: 'trend', done: false },
+    { name: 'Trend alert', type: 'trend', done: false },
+    { name: 'Sold together', type: 'pair', done: false },
+  ],
 }
 
 let store =

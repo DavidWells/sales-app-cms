@@ -5,7 +5,8 @@ import userIcon from '../../assets/user.png'
 import styled from 'styled-components'
 
 const ProfileIcon = styled(Avatar)`
-  max-width: 50px;
+  max-width: 40px;
+  max-height 40px;
 `
 
 const ProfileButton = props => {

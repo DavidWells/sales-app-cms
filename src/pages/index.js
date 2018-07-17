@@ -30,10 +30,8 @@ class BlogIndex extends React.Component {
           ]}
         />
 
-        <div>
-          <TopNavBar />
-          <Cards />
-        </div>
+        <TopNavBar />
+        <Cards />
       </div>
     )
   }

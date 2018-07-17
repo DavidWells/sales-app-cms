@@ -4,7 +4,7 @@ import defaultLogo from '../../assets/logo-white.png'
 import styled from 'styled-components'
 
 const StyledLogo = styled.img`
-  max-width: 150px;
+  max-width: 130px;
 `
 
 const Logo = props => {

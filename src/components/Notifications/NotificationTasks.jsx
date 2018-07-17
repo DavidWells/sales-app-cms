@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { navigateTo } from 'gatsby-link'
+import { connect } from 'unistore/react'
 import styled from 'styled-components'
 import TaskItem from './TaskItem'
 
@@ -15,27 +17,29 @@ class NotificationTasks extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      items: [
-        {
-          name: 'Highlight "Bst Selllers"!',
-          selected: false,
-        },
-        {
-          name: 'Increase the sales!',
-          selected: false,
-        },
-        {
-          name: 'Keep it visible!',
-          selected: false,
-        },
-      ],
+      items: this.props.tasks,
     }
   }
+
+  toggleItem = index => {
+    let items = this.state.items
+    items[index].selected = !items[index].selected
+    this.setState({
+      items,
+    })
+  }
+
   render() {
     return (
       <TaskList>
         {this.state.items.map((item, index) => (
-          <TaskItem key={index} taskName={item.name} index={index} />
+          <TaskItem
+            key={index}
+            taskName={item.name}
+            index={index}
+            selected={item.selected}
+            onClick={() => navigateTo(`/${item.type}`)}
+          />
         ))}
       </TaskList>
     )
@@ -49,4 +53,7 @@ NotificationTasks.propTypes = {
   items: PropTypes.array,
 }
 
-export default NotificationTasks
+const mapStateToProps = ({ tasks }) => ({
+  tasks,
+})
+export default connect(mapStateToProps)(NotificationTasks)

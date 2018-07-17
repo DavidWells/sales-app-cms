@@ -24,7 +24,7 @@ const CardWrapper = styled(CustomCard)`
 `
 
 const CardModal = styled.div`
-  background: rgba(0, 0, 0, 0.07);
+  background: rgba(0, 0, 0, 0.5);
   position: fixed;
   z-index: 12;
   top: 0;
@@ -82,14 +82,14 @@ class Card extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: this.props.modalOpen,
+      modalOpen: false,
     }
   }
 
   handleModal = event => {
     // console.log(event.pageX, event.pageY)
     this.setState({
-      show: this.props.showModal,
+      modalOpen: !this.state.modalOpen,
     })
     this.props.toggleModal()
   }
@@ -100,17 +100,12 @@ class Card extends React.Component {
         <BackgroundImage
           ratio={1}
           src={this.props.imageSrc}
-          onClick={this.props.toggleModal}
+          onClick={this.handleModal}
         />
 
         <ItemBadge badge={this.props.badge}>{this.props.badgeTitle}</ItemBadge>
 
-        <Subhead
-          p={2}
-          fontSize={1}
-          fontWeight={400}
-          onClick={this.props.toggleModal}
-        >
+        <Subhead p={2} fontSize={1} fontWeight={400} onClick={this.handleModal}>
           {this.props.title}
         </Subhead>
         <Subhead p={2} fontSize={0} fontWeight={400} color="gray">
@@ -122,9 +117,9 @@ class Card extends React.Component {
           <Progress value={0.5} color="blue" bg={'red'} />
           <Text children="12" fontSize={0} pl={1} />
         </Flex>
-        <CardModal show={this.props.modalOpen}>
-          <CardModalInner show={this.props.modalOpen}>
-            <CloseModal onClick={this.props.toggleModal} />
+        <CardModal show={this.state.modalOpen}>
+          <CardModalInner show={this.state.modalOpen}>
+            <CloseModal onClick={this.handleModal} />
             <BackgroundImage ratio={1} src={this.props.imageSrc} />
             <Subhead p={2} fontSize={1} fontWeight={400}>
               {this.props.title}

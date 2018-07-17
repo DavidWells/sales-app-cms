@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import CardsWithCamera from '../../components/CardsWithCamera'
 
-class Selection extends Component {
+class Regular extends Component {
   render() {
     return <CardsWithCamera />
   }
 }
 
-Selection.propTypes = {}
+Regular.propTypes = {}
 
-export default Selection
+export default Regular

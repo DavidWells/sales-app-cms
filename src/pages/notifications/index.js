@@ -5,13 +5,14 @@ import styled from 'styled-components'
 
 const NotificationText = styled.h4`
   font-size: 26px;
+  text-align: center;
 `
 
 class NotificationsPage extends Component {
   render() {
     return (
       <div className="notification-page">
-        <NotificationText>Please complete your tasks</NotificationText>
+        <NotificationText>Please complete your weekly tasks</NotificationText>
         <NotificationTasks />
       </div>
     )

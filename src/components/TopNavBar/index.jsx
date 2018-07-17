@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import userIcon from '../../assets/user.png'
 import styled from 'styled-components'
 import Nav from '../TopNavBar/Nav'
+import { Container } from 'rebass'
 
 const WrapNav = styled.div`
   display: flex;
@@ -12,7 +13,7 @@ const WrapNav = styled.div`
   padding-bottom: 20px;
   overflow: hidden;
   position: fixed;
-  top: 60px;
+  top: 56px;
   left: 0;
   z-index: 2;
   background: white;
@@ -21,8 +22,10 @@ const WrapNav = styled.div`
 
 const TopNavBar = props => {
   return (
-    <WrapNav>
-      <Nav />
+    <WrapNav className="wrap-top-nav">
+      <Container>
+        <Nav />
+      </Container>
     </WrapNav>
   )
 }

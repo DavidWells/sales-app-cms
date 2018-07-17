@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Avatar, Badge, Text, Flex } from 'rebass'
@@ -20,24 +20,15 @@ const Task = styled.div`
   }
 `
 
-class TaskItem extends Component {
-  state = {
-    selected: false,
-  }
-  toggleItem = () => {
-    this.setState({
-      selected: !this.state.selected,
-    })
-  }
-
+class TaskItem extends React.Component {
   render() {
     return (
-      <Task onClick={this.toggleItem}>
+      <Task onClick={this.props.onClick}>
         <Flex>
           <Badge bg="#3190f0">{this.props.index + 1}</Badge>
           <Text ml={3}>{this.props.taskName}</Text>
         </Flex>
-        {this.state.selected && <Avatar size={20} src={checkIcon} />}
+        {this.props.selected && <Avatar size={20} src={checkIcon} />}
       </Task>
     )
   }
@@ -46,6 +37,8 @@ class TaskItem extends Component {
 TaskItem.propTypes = {
   taskName: PropTypes.any,
   index: PropTypes.number,
+  selected: PropTypes.bool,
+  onClick: PropTypes.func,
 }
 
 export default TaskItem
