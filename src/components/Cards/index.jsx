@@ -168,7 +168,7 @@ class Cards extends React.Component {
     data: sortBy(data, ['badge']),
   }
 
-  async componentDidMount() {
+  componentDidMount() {
     // const response = await fetch(
     //   `https://api.coinmarketcap.com/v1/ticker/?limit=10`
     // )
