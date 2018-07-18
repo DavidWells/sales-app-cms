@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { connect } from 'unistore/react'
 import actions from '../../store/actions'
 import styled from 'styled-components'
+import LineChart from '../Chart/LineChart'
+
 import {
   Card as CustomCard,
   Subhead,
@@ -127,6 +129,7 @@ class Card extends React.Component {
             <Subhead p={2} fontSize={0} fontWeight={400} color="gray">
               ID: {this.props.id}
             </Subhead>
+            <LineChart />
           </CardModalInner>
         </CardModal>
       </CardWrapper>

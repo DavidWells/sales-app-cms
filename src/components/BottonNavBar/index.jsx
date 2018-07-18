@@ -15,6 +15,7 @@ const Nav = styled.div`
   left: 0;
   width: 100%;
   padding: 10px;
+  z-index: 7;
 `
 const Notification = styled(Badge)`
   position: absolute;
