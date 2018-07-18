@@ -81,6 +81,11 @@ const ItemBadge = styled(Badge)`
   background-color: ${props => props.theme.colors[props.badge]};
 `
 
+const CustomBorderLine = styled(BorderLine)`
+  margin-top: 2px;
+  margin-bottom: 12px;
+`
+
 class Card extends React.Component {
   constructor(props) {
     super(props)
@@ -159,13 +164,18 @@ class Card extends React.Component {
 
         <ItemBadge badge={this.props.badge}>{this.props.badgeTitle}</ItemBadge>
 
-        <Subhead p={2} fontSize={1} fontWeight={400} onClick={this.handleModal}>
+        <Subhead
+          px={2}
+          fontSize={1}
+          fontWeight={400}
+          onClick={this.handleModal}
+        >
           {this.props.title}
         </Subhead>
-        <Subhead p={2} fontSize={0} fontWeight={400} color="gray">
+        {/* <Subhead px={2} fontSize={0} fontWeight={400} color="gray">
           ID: {this.props.id}
-        </Subhead>
-        <BorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
+        </Subhead> */}
+        <CustomBorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
         <Flex mx={2} pb={3} alignItems="center">
           <Text children="34%" fontSize={0} pr={1} />
           <Progress value={0.5} color="blue" bg={'red'} />

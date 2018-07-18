@@ -45,8 +45,10 @@ class Template extends React.Component {
               bestSeller: 'rgba(0, 184, 148, 0.7)',
               // trending: '#0984e3',
               trending: 'rgba(9, 132, 227, 0.7)',
+              // new: '#e84393',
               new: 'rgba(232, 67, 147, 0.68)',
-              onSale: 'pink',
+              // onSale: '#d63031',
+              onSale: 'rgba(214, 48, 49, 0.7)',
               missing: 'rgba(0, 0, 0, 0.5)',
             },
           }}

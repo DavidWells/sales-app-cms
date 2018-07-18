@@ -103,10 +103,26 @@ export const dataItems = [
   {
     title: 'Blue Dress',
     id: '98797',
-    image: image4,
+    image: image6,
     badge: 'onSale',
     badgeTitle: 'On Sale',
   },
+  {
+    title: 'Blue Dress',
+    id: '98797',
+    image: image1,
+    badge: 'onSale',
+    badgeTitle: 'On Sale',
+  },
+
+  {
+    title: 'Blue Dress',
+    id: '98797',
+    image: image2,
+    badge: 'onSale',
+    badgeTitle: 'On Sale',
+  },
+
   {
     title: 'White Dress',
     id: '98797',

@@ -8,7 +8,7 @@ import { connect } from 'unistore/react'
 import actions from '../../store/actions'
 
 const CardList = styled.div`
-  padding-top: 80px;
+  padding-top: 45px;
 `
 
 class Cards extends React.Component {
