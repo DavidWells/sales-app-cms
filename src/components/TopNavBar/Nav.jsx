@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { connect } from 'unistore/react'
+import smoothscroll from 'smoothscroll-polyfill'
+
+smoothscroll.polyfill()
 
 const NavList = styled.nav`
   mask-image: linear-gradient(
@@ -66,7 +69,7 @@ class Nav extends React.Component {
 
   scrollTo = id => {
     if (document.getElementById(id) !== null) {
-      let element = document.getElementById(id).offsetTop - 150
+      let element = document.getElementById(id).offsetTop - 130
       // element.scrollIntoView({
       //   behavior: 'smooth',
       //   block: 'end',
