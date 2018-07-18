@@ -17,6 +17,7 @@ const Header = styled(Toolbar)`
   width: 100%;
   z-index: 3;
   background: linear-gradient(135deg, #736cc7 21%, #3190f0 100%, #3190f0 100%);
+  background: #3c4350;
 `
 
 class SiteNavi extends React.Component {

@@ -178,7 +178,7 @@ class Card extends React.Component {
         <CustomBorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
         <Flex mx={2} pb={3} alignItems="center">
           <Text children="34%" fontSize={0} pr={1} />
-          <Progress value={0.5} color="blue" bg={'red'} />
+          <Progress value={0.5} color="#3190f0" bg={'red'} />
           <Text children="12" fontSize={0} pl={1} />
         </Flex>
         <CardModal show={this.state.modalOpen}>
