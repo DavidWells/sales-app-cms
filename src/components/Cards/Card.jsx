@@ -59,6 +59,7 @@ const CardModalInner = styled.div`
 
 const CloseModal = styled(Close)`
   position: absolute;
+  right: 0;
   background: gainsboro;
   display: flex;
   align-items: center;
@@ -75,7 +76,7 @@ const ItemBadge = styled(Badge)`
   top: 0;
   left: 0;
   border-radius: 0;
-  margin: 8px;
+  margin: 10px;
   padding: 5px 10px;
   background-color: ${props => props.theme.colors[props.badge]};
 `
@@ -122,6 +123,10 @@ class Card extends React.Component {
         <CardModal show={this.state.modalOpen}>
           <CardModalInner show={this.state.modalOpen}>
             <CloseModal onClick={this.handleModal} />
+            <ItemBadge badge={this.props.badge}>
+              {this.props.badgeTitle}
+            </ItemBadge>
+
             <BackgroundImage ratio={1} src={this.props.imageSrc} />
             <Subhead p={2} fontSize={1} fontWeight={400}>
               {this.props.title}

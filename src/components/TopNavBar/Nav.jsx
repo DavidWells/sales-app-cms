@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { connect } from 'unistore/react'
 
 const NavList = styled.nav`
   mask-image: linear-gradient(
@@ -41,7 +42,7 @@ const Span = styled.span`
     props.isActive ? '2px solid #5476d4' : '2px solid transparent'};
 `
 
-export default class Nav extends React.Component {
+class Nav extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -63,20 +64,41 @@ export default class Nav extends React.Component {
     })
   }
 
+  scrollTo = id => {
+    if (document.getElementById(id) !== null) {
+      let element = document.getElementById(id).offsetTop - 150
+      // element.scrollIntoView({
+      //   behavior: 'smooth',
+      //   block: 'end',
+      //   inline: 'nearest',
+      // })
+      window.scroll({ top: element, behavior: 'smooth' })
+    }
+  }
+
   render() {
     const { items, currentIndex } = this.state
     return (
       <NavList>
-        {items.map((item, index) => (
+        {this.props.itemCategories.map((item, index) => (
           <NavItem
             key={index}
+            // id={item.id}
             isActive={index === currentIndex}
-            onClick={() => this.setCurrentIndex(index)}
+            onClick={() => {
+              this.setCurrentIndex(index)
+              this.scrollTo(item.id)
+            }}
           >
-            <Span isActive={index === currentIndex}> {item} </Span>
+            <Span isActive={index === currentIndex}> {item.name} </Span>
           </NavItem>
         ))}
       </NavList>
     )
   }
 }
+
+const mapStateToProps = ({ itemCategories }) => ({
+  itemCategories,
+})
+export default connect(mapStateToProps)(Nav)

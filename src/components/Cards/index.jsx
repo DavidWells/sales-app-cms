@@ -183,7 +183,7 @@ class Cards extends React.Component {
         <Flex mx={-2} flexWrap="wrap">
           {this.state.data.map((item, index) => (
             <Box
-              id={item.title}
+              id={item.badge}
               key={index}
               width={[1 / 2, 1 / 3, 1 / 4]}
               px={2}

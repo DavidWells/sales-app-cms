@@ -24,7 +24,14 @@ let initialState = {
     missing: 'gray',
   },
   items: [],
-  itemCategories: [],
+  itemCategories: [
+    { name: 'Best Seller', id: 'bestSeller' },
+    { name: 'Most Popular', id: 'mostPopular' },
+    { name: 'New', id: 'new' },
+    { name: 'On Sale', id: 'onSale' },
+    { name: 'Missing', id: 'missing' },
+    { name: 'Favorites', id: 'favorites' },
+  ],
   tasks: [
     { name: 'Highlight Best Sellers!', type: 'regular', done: false },
     { name: 'Increase the sales', type: 'trend', done: false },
