@@ -4,8 +4,6 @@ import styled from 'styled-components'
 import { connect } from 'unistore/react'
 import smoothscroll from 'smoothscroll-polyfill'
 
-smoothscroll.polyfill()
-
 const NavList = styled.nav`
   mask-image: linear-gradient(
     to right,
@@ -59,6 +57,10 @@ class Nav extends React.Component {
       ],
       currentIndex: 0,
     }
+  }
+
+  componentDidMount() {
+    smoothscroll.polyfill()
   }
 
   setCurrentIndex = index => {
