@@ -46,6 +46,7 @@ const CheckBox = styled(Box)`
 const CameraIcon = styled.img`
   cursor: pointer;
   transition: all 300ms ease-in-out;
+  display: flex;
   &:hover {
     opacity: 0.8;
   }
@@ -83,10 +84,15 @@ class Card extends React.Component {
     let file = e.target.files[0]
     console.log(e.target.value)
     reader.onloadend = () => {
-      this.setState({
-        file: file,
-        currentImage: reader.result,
-      })
+      this.setState(
+        {
+          // file: file,
+          currentImage: reader.result,
+        },
+        () => {
+          this.setState({ selected: true })
+        }
+      )
     }
     reader.readAsDataURL(file)
   }
@@ -97,8 +103,8 @@ class Card extends React.Component {
         <BackgroundImage ratio={1} src={this.state.currentImage} />
         <ItemBadge bg="red">Best Seller</ItemBadge>
         <BorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
-        <Flex justifyContent="space-between" alignItems="center">
-          <Box p={2}>
+        <Flex justifyContent="center" alignItems="center">
+          <Box p={2} mx={2}>
             <InputCamera
               type="file"
               accept="image/*"
@@ -108,7 +114,7 @@ class Card extends React.Component {
           </Box>
           <CheckBox m={2} onClick={this.toggleSelection}>
             {this.state.selected && (
-              <img src={checkIcon} width="12" height="12" alt="" />
+              <img src={checkIcon} width="14" height="14" alt="" />
             )}
           </CheckBox>
         </Flex>

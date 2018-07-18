@@ -25,6 +25,11 @@ const data = [
 
 const CardList = styled.div``
 
+const Text = styled.div`
+  font-size: 30px;
+  text-align: center;
+`
+
 class CardsWithCamera extends React.Component {
   state = {
     show: false,
@@ -34,6 +39,13 @@ class CardsWithCamera extends React.Component {
     return (
       <CardList className="card-list">
         <Flex mx={-2} flexWrap="wrap">
+          <Box p={2} width={[1 / 1]}>
+            <Text>
+              High probability for sales!
+              <br />
+              Ensure smart locations!
+            </Text>
+          </Box>
           {data.map((item, index) => (
             <Box key={index} width={[1 / 2, 1 / 3, 1 / 4]} px={2}>
               <Card
