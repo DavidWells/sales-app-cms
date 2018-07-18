@@ -9,7 +9,7 @@ const WrapNav = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 13px;
   padding-bottom: 0px;
   overflow: hidden;
   position: fixed;

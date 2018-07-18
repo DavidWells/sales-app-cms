@@ -40,7 +40,7 @@ const BottomNavBar = props => {
           </Link>
         </NotificationButton>
 
-        <Button color="green">I GOT IT</Button>
+        <Button color="#00b894">Approved</Button>
 
         <ButtonTransparent>
           <img width={25} src={AnalyticsIcon} alt="" />

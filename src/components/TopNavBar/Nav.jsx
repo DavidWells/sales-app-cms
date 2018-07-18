@@ -38,7 +38,7 @@ const NavItem = styled.a`
 `
 
 const Span = styled.span`
-  padding-bottom: 5px;
+  padding-bottom: 7px;
   transition: all 0.2s ease-out;
   border-bottom: 2px solid
     ${props =>
@@ -75,7 +75,7 @@ class Nav extends React.Component {
 
   scrollTo = id => {
     if (document.getElementById(id) !== null) {
-      let element = document.getElementById(id).offsetTop - 130
+      let element = document.getElementById(id).offsetTop - 100
       window.scroll({ top: element, behavior: 'smooth' })
     }
   }
