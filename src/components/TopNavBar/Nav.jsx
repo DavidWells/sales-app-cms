@@ -21,6 +21,7 @@ const NavList = styled.nav`
   height: 100%;
   flex-grow: 1;
   max-width: 100%;
+  max-width: 343px;
 `
 
 const NavItem = styled.a`
