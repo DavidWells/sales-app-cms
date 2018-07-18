@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import defaultLogo from '../../assets/logo-white.png'
+import defaultLogo from '../../assets/logo-black.png'
 import styled from 'styled-components'
 
 const StyledLogo = styled.img`
