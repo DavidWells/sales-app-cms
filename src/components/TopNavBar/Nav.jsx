@@ -40,8 +40,11 @@ const NavItem = styled.a`
 const Span = styled.span`
   padding-bottom: 5px;
   transition: all 0.2s ease-out;
-  border-bottom: ${props =>
-    props.isActive ? '2px solid #5476d4' : '2px solid transparent'};
+  border-bottom: 2px solid
+    ${props =>
+      props.isActive
+        ? props => props.theme.colors[props.badge]
+        : ' transparent'};
 `
 
 class Nav extends React.Component {
@@ -73,11 +76,6 @@ class Nav extends React.Component {
   scrollTo = id => {
     if (document.getElementById(id) !== null) {
       let element = document.getElementById(id).offsetTop - 130
-      // element.scrollIntoView({
-      //   behavior: 'smooth',
-      //   block: 'end',
-      //   inline: 'nearest',
-      // })
       window.scroll({ top: element, behavior: 'smooth' })
     }
   }
@@ -96,7 +94,9 @@ class Nav extends React.Component {
               this.scrollTo(item.id)
             }}
           >
-            <Span isActive={index === currentIndex}> {item.name} </Span>
+            <Span badge={item.id} isActive={index === currentIndex}>
+              {item.name}
+            </Span>
           </NavItem>
         ))}
       </NavList>

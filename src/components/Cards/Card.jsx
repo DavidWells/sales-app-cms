@@ -202,7 +202,7 @@ Card.propTypes = {
   title: PropTypes.string,
   badge: PropTypes.oneOf([
     'bestSeller',
-    'mostPopular',
+    'trending',
     'new',
     'onSale',
     'missing',

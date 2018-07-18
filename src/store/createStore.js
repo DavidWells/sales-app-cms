@@ -4,6 +4,7 @@
 import createStore from 'unistore'
 import devtools from 'unistore/devtools'
 import { userAgent, osType } from '../utils'
+import { dataItems } from '../data/fakeData'
 
 let initialState = {
   auth: false,
@@ -18,19 +19,18 @@ let initialState = {
     grey: 'grey',
     lightGrey: '#eaeaea',
     bestSeller: 'rgba(0,147,255,0.5)',
-    mostPopular: 'yellow',
+    trending: 'yellow',
     new: 'green',
     onSale: 'pink',
     missing: 'gray',
   },
-  items: [],
+  items: dataItems,
   itemCategories: [
-    { name: 'Best Seller', id: 'bestSeller' },
-    { name: 'Most Popular', id: 'mostPopular' },
-    { name: 'New', id: 'new' },
-    { name: 'On Sale', id: 'onSale' },
-    { name: 'Missing', id: 'missing' },
-    { name: 'Favorites', id: 'favorites' },
+    { name: 'Best Seller', id: 'bestSeller', position: 0 },
+    { name: 'Trending', id: 'trending', position: 1 },
+    { name: 'New', id: 'new', position: 2 },
+    { name: 'On Sale', id: 'onSale', position: 3 },
+    { name: 'Missing', id: 'missing', position: 4 },
   ],
   tasks: [
     { name: 'Highlight Best Sellers!', type: 'regular', done: false },

@@ -41,11 +41,13 @@ class Template extends React.Component {
               black: '#3c3b3b',
               grey: 'grey',
               lightGrey: '#eaeaea',
-              bestSeller: 'rgba(0,147,255,0.5)',
-              mostPopular: 'yellow',
-              new: 'green',
+              // bestSeller: '#00b894',
+              bestSeller: 'rgba(0, 184, 148, 0.7)',
+              // trending: '#0984e3',
+              trending: 'rgba(9, 132, 227, 0.7)',
+              new: 'rgba(232, 67, 147, 0.68)',
               onSale: 'pink',
-              missing: 'gray',
+              missing: 'rgba(0, 0, 0, 0.5)',
             },
           }}
           className={this.props.rtl ? 'rtl' : 'ltr'}
