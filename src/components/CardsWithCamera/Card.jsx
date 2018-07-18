@@ -5,12 +5,9 @@ import {
   Card as CustomCard,
   Subhead,
   BackgroundImage,
-  Divider as BorderLine,
-  Progress,
   Box,
   Text,
   Flex,
-  Close,
   Badge,
 } from 'rebass'
 import cameraIcon from '../../assets/camera.svg'
@@ -21,6 +18,7 @@ const CardWrapper = styled(CustomCard)`
     0 2px 9px 0 rgba(18, 106, 211, 0.06);
 
   position: relative;
+  ${props => props.selected && ' border: 1px solid rgba(0, 184, 148, 0.4)'};
 `
 
 const ItemBadge = styled(Badge)`
@@ -59,6 +57,15 @@ const InputCamera = styled.input`
   width: 55px;
   height: 35px;
   display: flex;
+  justify-content: center;
+  margin: auto;
+`
+
+const Check = styled.img`
+  max-width: 20px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
 `
 
 class Card extends React.Component {
@@ -89,15 +96,16 @@ class Card extends React.Component {
       })
     }
     reader.readAsDataURL(file)
+    this.setState({ selected: true })
   }
 
   render() {
     return (
-      <CardWrapper mb={3} p={0}>
+      <CardWrapper mb={3} p={0} selected={this.state.selected}>
         <BackgroundImage ratio={1} src={this.state.currentImage} />
         <ItemBadge bg="red">Best Seller</ItemBadge>
-        <BorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
-        <Flex justifyContent="space-between" alignItems="center">
+
+        <Flex justifyContent="center" alignItems="center">
           <Box p={2}>
             <InputCamera
               type="file"
@@ -106,11 +114,12 @@ class Card extends React.Component {
             />
             <CameraIcon src={cameraIcon} width="30" height="30" />
           </Box>
-          <CheckBox m={2} onClick={this.toggleSelection}>
+          {/* <CheckBox m={2} onClick={this.toggleSelection}>
             {this.state.selected && (
               <img src={checkIcon} width="12" height="12" alt="" />
             )}
-          </CheckBox>
+          </CheckBox> */}
+          {this.state.selected && <Check src={checkIcon} />}
         </Flex>
       </CardWrapper>
     )

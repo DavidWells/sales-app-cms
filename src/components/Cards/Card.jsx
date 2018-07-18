@@ -60,7 +60,7 @@ const CardModalInner = styled.div`
 const CloseModal = styled(Close)`
   position: absolute;
   right: 0;
-  background: gainsboro;
+  /* background: gainsboro; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,7 +182,7 @@ class Card extends React.Component {
           <Progress value={0.5} color="#3190f0" bg={'red'} />
           <Text children="12" fontSize={0} pl={1} />
         </Flex>
-        <CardModal show={this.state.modalOpen}>
+        <CardModal show={this.state.modalOpen} onClick={this.handleModal}>
           <CardModalInner show={this.state.modalOpen}>
             <CloseModal onClick={this.handleModal} />
             <ItemBadge badge={this.props.badge}>
@@ -190,10 +190,10 @@ class Card extends React.Component {
             </ItemBadge>
 
             <BackgroundImage ratio={1} src={this.props.imageSrc} />
-            <Subhead p={2} fontSize={1} fontWeight={400}>
+            {/* <Subhead p={2} fontSize={1} fontWeight={400}>
               {this.props.title}
-            </Subhead>
-            <Subhead p={2} fontSize={0} fontWeight={400} color="gray">
+            </Subhead> */}
+            <Subhead p={2} pt={3} fontSize={1} fontWeight={400} color="gray">
               ID: {this.props.id}
             </Subhead>
             <LineChart />
