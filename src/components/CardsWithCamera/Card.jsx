@@ -54,6 +54,7 @@ const InputCamera = styled.input`
   position: absolute;
   cursor: pointer;
   left: 0;
+  right: 0;
   width: 55px;
   height: 35px;
   display: flex;

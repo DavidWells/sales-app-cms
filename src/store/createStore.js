@@ -38,6 +38,7 @@ let initialState = {
     { name: 'Trend alert', type: 'trend', done: false },
     { name: 'Sold together', type: 'pair', done: false },
   ],
+  pagesButton: { feed: false, trend: false, pair: false },
 }
 
 let store =
