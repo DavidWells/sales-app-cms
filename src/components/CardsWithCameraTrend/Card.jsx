@@ -15,7 +15,7 @@ import {
 } from 'rebass'
 import cameraIcon from '../../assets/camera.svg'
 import checkIcon from '../../assets/check.svg'
-import instagramLogo from '../../assets/instagram-logo-2.svg'
+import instagramLogo from '../../assets/instagram-logo.svg'
 
 const CardWrapper = styled(CustomCard)`
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
