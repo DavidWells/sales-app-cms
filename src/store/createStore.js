@@ -33,12 +33,12 @@ let initialState = {
     { name: 'Missing', id: 'missing', position: 4 },
   ],
   tasks: [
-    { name: 'Highlight Best Sellers!', type: 'regular', done: false },
+    { name: 'Highlight Best Sellers!', type: 'improve', done: false },
     { name: 'Increase the sales', type: 'trend', done: false },
     { name: 'Trend alert', type: 'trend', done: false },
     { name: 'Sold together', type: 'pair', done: false },
   ],
-  pagesButton: { feed: false, trend: false, pair: false },
+  pagesButton: { feed: false, improve: false, trend: false, pair: false },
 }
 
 let store =

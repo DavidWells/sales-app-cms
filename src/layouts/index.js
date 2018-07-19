@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
 import { siteMetadata } from '../../gatsby-config'
 import SiteNavi from '../components/SiteNavi'
 import emergence from 'emergence.js'
@@ -15,6 +16,7 @@ import store from '../store/createStore'
 injectGlobal`
   * { box-sizing: border-box; }
   body {color: #3c3b3b; background: #f0f6ff;}
+  .no-scroll {overflow: hidden}
 `
 
 class Template extends React.Component {
@@ -50,10 +52,17 @@ class Template extends React.Component {
               // onSale: '#d63031',
               onSale: 'rgba(214, 48, 49, 0.7)',
               missing: 'rgba(0, 0, 0, 0.5)',
+              greenButton: '#00b894',
+              disabledButton: 'red',
             },
           }}
           className={this.props.rtl ? 'rtl' : 'ltr'}
         >
+          <Helmet
+            bodyAttributes={{
+              class: this.props.modalOpen ? 'no-scroll' : 'scroll',
+            }}
+          />
           <SiteNavi title={siteMetadata.title} {...this.props} />
 
           <Container className="wrapper" mt={4} pb={5} pt={4}>
@@ -66,9 +75,9 @@ class Template extends React.Component {
   }
 }
 
-const mapStateToProps = ({ rtl, count }) => ({
+const mapStateToProps = ({ rtl, modalOpen }) => ({
   rtl,
-  count,
+  modalOpen,
 })
 
 export default connect(mapStateToProps)(Template)
