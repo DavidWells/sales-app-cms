@@ -11,6 +11,7 @@ import image4 from '../../assets/4.jpg'
 import image5 from '../../assets/5.jpg'
 import image6 from '../../assets/6.jpg'
 import image7 from '../../assets/7.png'
+import Heading from '../Elements/Heading'
 
 const data = [
   { title: 'Dress', id: '98797', image: image1 },
@@ -40,7 +41,7 @@ class CardsWithCameraPair extends React.Component {
       <CardList className="card-list">
         <Flex mx={-2} flexWrap="wrap">
           <Box p={2} width={[1 / 1]}>
-            <Text>People attend to buy both of those items together</Text>
+            <Heading>People attend to buy both of those items together</Heading>
           </Box>
           {data.map((item, index) => (
             <Box key={index} width={[1 / 2, 1 / 2, 1 / 2]} px={2}>

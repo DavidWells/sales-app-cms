@@ -15,6 +15,7 @@ import {
 } from 'rebass'
 import cameraIcon from '../../assets/camera.svg'
 import checkIcon from '../../assets/check.svg'
+import instagramLogo from '../../assets/instagram-logo-2.svg'
 
 const CardWrapper = styled(CustomCard)`
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
@@ -30,7 +31,7 @@ const ItemBadge = styled(Badge)`
   border-radius: 0;
   margin: 8px;
   padding: 5px 10px;
-  background-color: rgba(0, 147, 255, 0.5);
+  background-color: white;
 `
 
 const CheckBox = styled(Box)`
@@ -101,7 +102,9 @@ class Card extends React.Component {
     return (
       <CardWrapper mb={3} p={0}>
         <BackgroundImage ratio={1} src={this.state.currentImage} />
-        <ItemBadge bg="red">Best Seller</ItemBadge>
+        <ItemBadge bg="red">
+          <img width="60" src={instagramLogo} />
+        </ItemBadge>
         <BorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
         <Flex justifyContent="center" alignItems="center">
           <Box p={2} mx={2}>

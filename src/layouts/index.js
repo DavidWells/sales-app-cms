@@ -12,6 +12,7 @@ import 'normalize.css'
 import BottomNavBar from '../components/BottonNavBar'
 
 import store from '../store/createStore'
+import actions from '../store/actions'
 
 injectGlobal`
   * { box-sizing: border-box; }
@@ -22,11 +23,17 @@ injectGlobal`
 class Template extends React.Component {
   componentDidMount() {
     emergence.init()
-    // this.props.incrementAsync()
+    this.props.addCurrentLocation(this.props.location)
   }
 
   componentDidUpdate() {
     emergence.init()
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (this.props.location.pathname !== nextProps.location.pathname) {
+      this.props.addCurrentLocation(nextProps.location)
+    }
   }
 
   render() {
@@ -53,6 +60,8 @@ class Template extends React.Component {
               // onSale: '#d63031',
               onSale: 'rgba(214, 48, 49, 0.7)',
               missing: 'rgba(0, 0, 0, 0.5)',
+              pair: 'orange',
+              instagram: 'grey',
               greenButton: '#00b894',
               disabledButton: 'red',
             },
@@ -81,4 +90,7 @@ const mapStateToProps = ({ rtl, modalOpen }) => ({
   modalOpen,
 })
 
-export default connect(mapStateToProps)(Template)
+export default connect(
+  mapStateToProps,
+  actions
+)(Template)

@@ -7,6 +7,7 @@ import {
   BackgroundImage,
   Box,
   Text,
+  Divider as BorderLine,
   Flex,
   Badge,
 } from 'rebass'
@@ -26,21 +27,10 @@ const ItemBadge = styled(Badge)`
   top: 0;
   left: 0;
   border-radius: 0;
-  margin: 8px;
+  margin: 10px;
   padding: 5px 10px;
-  background-color: rgba(0, 147, 255, 0.5);
+  background-color: ${props => props.theme.colors[props.badge]};
 `
-
-const CheckBox = styled(Box)`
-  border: 1px solid #8e8e8e;
-  cursor: pointer;
-  padding: 3px 7px 3px 7px;
-  width: 28px;
-  height: 26px;
-  position: relative;
-  z-index: 4;
-`
-
 const CameraIcon = styled.img`
   cursor: pointer;
   transition: all 300ms ease-in-out;
@@ -67,6 +57,11 @@ const Check = styled.img`
   position: absolute;
   right: 0;
   margin-right: 20px;
+`
+
+const CustomBorderLine = styled(BorderLine)`
+  margin-top: 2px;
+  margin-bottom: 3px;
 `
 
 class Card extends React.Component {
@@ -103,9 +98,24 @@ class Card extends React.Component {
   render() {
     return (
       <CardWrapper mb={3} p={0} selected={this.state.selected}>
-        <BackgroundImage ratio={1} src={this.state.currentImage} />
-        <ItemBadge bg="red">Best Seller</ItemBadge>
+        <BackgroundImage
+          ratio={1}
+          src={this.state.currentImage}
+          onClick={this.toggleSelection}
+        />
+        <ItemBadge badge={this.props.badge}>{this.props.badgeTitle}</ItemBadge>
 
+        <Subhead
+          px={2}
+          pt={1}
+          pb={1}
+          fontSize={0}
+          fontWeight={400}
+          color="gray"
+        >
+          ID: {this.props.id}
+        </Subhead>
+        <CustomBorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
         <Flex justifyContent="center" alignItems="center">
           <Box p={2}>
             <InputCamera
@@ -115,11 +125,7 @@ class Card extends React.Component {
             />
             <CameraIcon src={cameraIcon} width="30" height="30" />
           </Box>
-          {/* <CheckBox m={2} onClick={this.toggleSelection}>
-            {this.state.selected && (
-              <img src={checkIcon} width="12" height="12" alt="" />
-            )}
-          </CheckBox> */}
+
           {this.state.selected && <Check src={checkIcon} />}
         </Flex>
       </CardWrapper>
@@ -129,10 +135,19 @@ class Card extends React.Component {
 
 Card.defaultProps = {
   title: 'default title',
+  badge: 'bestSeller',
+  badgeTitle: 'trending',
 }
 Card.propTypes = {
   title: PropTypes.string,
-  badge: PropTypes.any,
+  badge: PropTypes.oneOf([
+    'bestSeller',
+    'trending',
+    'new',
+    'onSale',
+    'missing',
+  ]),
+  badgeTitle: PropTypes.string,
   id: PropTypes.any,
   imageSrc: PropTypes.string,
   progress: PropTypes.any,

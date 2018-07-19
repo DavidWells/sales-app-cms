@@ -14,6 +14,7 @@ let initialState = {
   os: osType(),
   count: 0,
   modalOpen: false,
+  location: null,
   colors: {
     black: '#3c3b3b',
     grey: 'grey',
@@ -33,10 +34,25 @@ let initialState = {
     { name: 'Missing', id: 'missing', position: 4 },
   ],
   tasks: [
-    { name: 'Highlight Best Sellers!', type: 'improve', done: false },
-    { name: 'Increase the sales', type: 'trend', done: false },
-    { name: 'Trend alert', type: 'trend', done: false },
-    { name: 'Sold together', type: 'pair', done: false },
+    {
+      name: 'Help your trending items',
+      type: 'improve',
+      done: false,
+      badge: 'trending',
+    },
+    {
+      name: 'New instagram post!',
+      type: 'trend',
+      done: false,
+      badge: 'instagram',
+    },
+    { name: 'Sold together!', type: 'pair', done: false, badge: 'pair' },
+    {
+      name: 'Record best seller locations',
+      type: 'improve',
+      done: false,
+      badge: 'bestSeller',
+    },
   ],
   pagesButton: { feed: false, improve: false, trend: false, pair: false },
 }

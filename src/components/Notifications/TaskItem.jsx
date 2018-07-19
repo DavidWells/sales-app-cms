@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Avatar, Badge, Text, Flex } from 'rebass'
 import checkIcon from '../../assets/check.svg'
+import instagramLogo from '../../assets/instagram.svg'
 
 const Task = styled.div`
   padding: 20px;
@@ -20,12 +21,26 @@ const Task = styled.div`
   }
 `
 
+const TaskBadge = styled(Badge)`
+  padding: 14px;
+`
+
+const InstaBadge = styled.img`
+  margin-left: 4px;
+  margin-right: 4px;
+`
+
 class TaskItem extends React.Component {
   render() {
     return (
       <Task onClick={this.props.onClick}>
-        <Flex>
-          <Badge bg="#3190f0">{this.props.index + 1}</Badge>
+        <Flex alignItems="center">
+          {this.props.badge === 'instagram' ? (
+            <InstaBadge width={28} src={instagramLogo} alt="" />
+          ) : (
+            <TaskBadge py={3} px={3} bg={this.props.badge} borderRadius={5} />
+          )}
+
           <Text ml={3}>{this.props.taskName}</Text>
         </Flex>
         {this.props.selected && <Avatar size={20} src={checkIcon} />}
@@ -39,6 +54,7 @@ TaskItem.propTypes = {
   index: PropTypes.number,
   selected: PropTypes.bool,
   onClick: PropTypes.func,
+  badge: PropTypes.any,
 }
 
 export default TaskItem

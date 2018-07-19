@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Flex, Box } from 'rebass'
 import Card from './Card'
+import Heading from '../Elements/Heading'
 
 import image1 from '../../assets/1.jpg'
 
@@ -25,11 +26,11 @@ class CardsWithCameraTrend extends React.Component {
       <CardList className="card-list">
         <Flex mx={-2} flexWrap="wrap">
           <Box p={2} width={[1 / 1]}>
-            <Text>
-              <strong>It's a new trend! </strong>
+            <Heading>
+              People might search for
               <br />
-              Make it visible!
-            </Text>
+              this look today!
+            </Heading>
           </Box>
 
           {data.map((item, index) => (

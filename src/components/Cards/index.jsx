@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { sortBy } from 'lodash'
 import { Flex, Box, Text, Subhead } from 'rebass'
 import Card from './Card'
+import Heading from '../Elements/Heading'
 import { connect } from 'unistore/react'
 import actions from '../../store/actions'
 
@@ -29,9 +30,9 @@ class Cards extends React.Component {
   render() {
     return (
       <CardList className="card-list">
-        <HeadText textAlign="center" fontSize={2} px={2} pt={1} pb={3}>
+        <Heading px={2} pt={1} pb={3}>
           Learn about your stores highlight!
-        </HeadText>
+        </Heading>
         <Flex mx={-2} flexWrap="wrap">
           {this.state.data.map((item, index) => (
             <Box

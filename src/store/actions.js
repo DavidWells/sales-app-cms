@@ -10,6 +10,10 @@ const actions = store => ({
   addItems: state => ({
     items: dataItems,
   }),
+
+  addCurrentLocation: (state, newLocation) => ({
+    location: { ...newLocation },
+  }),
   // async getStuff(state) {
   //   let res = await fetch(data)
   //   return { stuff: await res.json() }

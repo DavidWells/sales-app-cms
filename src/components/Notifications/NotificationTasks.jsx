@@ -35,6 +35,7 @@ class NotificationTasks extends React.Component {
         {this.state.items.map((item, index) => (
           <TaskItem
             key={index}
+            badge={item.badge}
             taskName={item.name}
             index={index}
             selected={item.selected}

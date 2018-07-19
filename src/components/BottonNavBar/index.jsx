@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { connect } from 'unistore/react'
 import Link, { push } from 'gatsby-link'
 import userIcon from '../../assets/user.png'
 import styled from 'styled-components'
@@ -30,25 +31,38 @@ const NotificationButton = styled(ButtonTransparent)`
   padding-right: 25px;
 `
 
-const BottomNavBar = props => {
-  return (
-    <Nav>
-      <Flex justifyContent="space-between" alignItems="center">
-        <Link to="/notifications">
-          <NotificationButton>
-            <Notification bg="red"> 2 </Notification>
-            <img width={25} src={NotificationIcon} alt="" />
-          </NotificationButton>
-        </Link>
+class BottomNavBar extends React.Component {
+  addTextButtonByLocation = () => {
+    if (this.props.location !== null) {
+      return 'Approve'
+    } else {
+      return 'Some text'
+    }
+  }
 
-        <Button>Approved</Button>
+  render() {
+    return (
+      <Nav>
+        <Flex justifyContent="space-between" alignItems="center">
+          <Link to="/notifications">
+            <NotificationButton>
+              <Notification bg="red"> 2 </Notification>
+              <img width={25} src={NotificationIcon} alt="" />
+            </NotificationButton>
+          </Link>
 
-        <ButtonTransparent>
-          <img width={25} src={AnalyticsIcon} alt="" />
-        </ButtonTransparent>
-      </Flex>
-    </Nav>
-  )
+          {this.props.location !== null &&
+          this.props.location.pathname.includes('notifications') ? null : (
+            <Button>{this.addTextButtonByLocation()}</Button>
+          )}
+
+          <ButtonTransparent>
+            <img width={25} src={AnalyticsIcon} alt="" />
+          </ButtonTransparent>
+        </Flex>
+      </Nav>
+    )
+  }
 }
 
 BottomNavBar.defaultProps = {
@@ -58,4 +72,8 @@ BottomNavBar.propTypes = {
   src: PropTypes.string,
 }
 
-export default BottomNavBar
+const mapStateToProps = ({ location }) => ({
+  location,
+})
+
+export default connect(mapStateToProps)(BottomNavBar)
