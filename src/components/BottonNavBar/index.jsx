@@ -70,10 +70,11 @@ BottomNavBar.defaultProps = {
 }
 BottomNavBar.propTypes = {
   src: PropTypes.string,
+  location: PropTypes.any,
 }
 
 const mapStateToProps = ({ location }) => ({
-  location,
+  // location,
 })
 
 export default connect(mapStateToProps)(BottomNavBar)

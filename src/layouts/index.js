@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import { siteMetadata } from '../../gatsby-config'
 import SiteNavi from '../components/SiteNavi'
-import emergence from 'emergence.js'
+// import emergence from 'emergence.js'
 import { Provider, Heading, Container } from 'rebass'
 import { Provider as ReduxProvider } from 'unistore/react'
 import { connect } from 'unistore/react'
@@ -22,18 +22,18 @@ injectGlobal`
 
 class Template extends React.Component {
   componentDidMount() {
-    emergence.init()
-    this.props.addCurrentLocation(this.props.location)
+    // emergence.init()
+    // this.props.addCurrentLocation(this.props.location)
   }
 
   componentDidUpdate() {
-    emergence.init()
+    // emergence.init()
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.location.pathname !== nextProps.location.pathname) {
-      this.props.addCurrentLocation(nextProps.location)
-    }
+    // if (this.props.location.pathname !== nextProps.location.pathname) {
+    //   this.props.addCurrentLocation(nextProps.location)
+    // }
   }
 
   render() {
@@ -78,7 +78,7 @@ class Template extends React.Component {
           <Container className="wrapper" mt={4} pb={5} pt={4}>
             {children()}
           </Container>
-          <BottomNavBar />
+          <BottomNavBar location={this.props.location} />
         </Provider>
       </ReduxProvider>
     )
@@ -90,7 +90,4 @@ const mapStateToProps = ({ rtl, modalOpen }) => ({
   modalOpen,
 })
 
-export default connect(
-  mapStateToProps,
-  actions
-)(Template)
+export default connect(mapStateToProps)(Template)
