@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link, { navigateTo } from 'gatsby-link'
+import Link, { push } from 'gatsby-link'
 import userIcon from '../../assets/user.png'
 import styled from 'styled-components'
 import { Flex, ButtonTransparent, Badge } from 'rebass'
@@ -34,7 +34,7 @@ const BottomNavBar = props => {
     <Nav>
       <Flex justifyContent="space-between" alignItems="center">
         <NotificationButton>
-          <Link to="notifications">
+          <Link to="/notifications">
             <Notification bg="red"> 2 </Notification>
             <img width={25} src={NotificationIcon} alt="" />
           </Link>

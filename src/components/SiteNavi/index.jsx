@@ -1,5 +1,5 @@
 import React from 'react'
-import Link, { navigateTo } from 'gatsby-link'
+import Link, { push } from 'gatsby-link'
 import { Toolbar, NavLink } from 'rebass'
 import styled from 'styled-components'
 

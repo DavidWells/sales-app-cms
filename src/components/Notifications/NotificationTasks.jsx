@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { navigateTo } from 'gatsby-link'
+import { push } from 'gatsby-link'
 import { connect } from 'unistore/react'
 import styled from 'styled-components'
 import TaskItem from './TaskItem'
@@ -38,7 +38,7 @@ class NotificationTasks extends React.Component {
             taskName={item.name}
             index={index}
             selected={item.selected}
-            onClick={() => navigateTo(`/${item.type}`)}
+            onClick={() => push(`${item.type}`)}
           />
         ))}
       </TaskList>
