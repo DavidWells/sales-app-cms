@@ -2,13 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { sortBy } from 'lodash'
-import { Flex, Box } from 'rebass'
+import { Flex, Box, Text, Subhead } from 'rebass'
 import Card from './Card'
 import { connect } from 'unistore/react'
 import actions from '../../store/actions'
 
 const CardList = styled.div`
   padding-top: 45px;
+`
+
+const HeadText = styled(Text)`
+  font-family: 'Montserrat', 'Source Sans Pro', sans-serif;
 `
 
 class Cards extends React.Component {
@@ -25,6 +29,9 @@ class Cards extends React.Component {
   render() {
     return (
       <CardList className="card-list">
+        <HeadText textAlign="center" fontSize={2} px={2} pt={1} pb={3}>
+          Learn about your stores highlight!
+        </HeadText>
         <Flex mx={-2} flexWrap="wrap">
           {this.state.data.map((item, index) => (
             <Box

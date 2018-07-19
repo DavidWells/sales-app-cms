@@ -4,7 +4,7 @@ import React from 'react'
 import get from 'lodash/get'
 // import sortBy from 'lodash/sortBy'
 import Helmet from 'react-helmet'
-import { Flex, Box, Text, Container, DarkMode } from 'rebass'
+import { Flex, Box, Text, Container, DarkMode, Subhead } from 'rebass'
 import Cards from '../components/Cards'
 import TopNavBar from '../components/TopNavBar'
 
@@ -31,6 +31,7 @@ class BlogIndex extends React.Component {
         />
 
         <TopNavBar />
+
         <Cards />
       </div>
     )

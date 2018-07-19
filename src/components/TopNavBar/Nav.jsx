@@ -75,7 +75,7 @@ class Nav extends React.Component {
 
   scrollTo = id => {
     if (document.getElementById(id) !== null) {
-      let element = document.getElementById(id).offsetTop - 100
+      let element = document.getElementById(id).offsetTop - 110
       window.scroll({ top: element, behavior: 'smooth' })
     }
   }
