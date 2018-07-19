@@ -21,24 +21,25 @@ const Notification = styled(Badge)`
   position: absolute;
   padding: 1px 4px;
   border-radius: 8px;
-  right: 7px;
+  right: 15px;
   top: 3px;
 `
 
 const NotificationButton = styled(ButtonTransparent)`
   position: relative;
+  padding-right: 25px;
 `
 
 const BottomNavBar = props => {
   return (
     <Nav>
       <Flex justifyContent="space-between" alignItems="center">
-        <NotificationButton>
-          <Link to="/notifications">
+        <Link to="/notifications">
+          <NotificationButton>
             <Notification bg="red"> 2 </Notification>
             <img width={25} src={NotificationIcon} alt="" />
-          </Link>
-        </NotificationButton>
+          </NotificationButton>
+        </Link>
 
         <Button>Approved</Button>
 
