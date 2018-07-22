@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { connect } from 'unistore/react'
+// import { connect } from 'unistore/react'
+import favicon from './favicon.ico'
 
 let stylesStr
 if (process.env.NODE_ENV === 'production') {
@@ -34,6 +35,7 @@ export default class HTML extends React.Component {
             content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
           />
           {this.props.headComponents}
+          <link rel="shortcut icon" href={favicon} />
           <link
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Montserrat:600"
             rel="stylesheet"
