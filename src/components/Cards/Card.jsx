@@ -106,55 +106,30 @@ class Card extends React.Component {
     )
   }
 
-  componentDidMount() {
-    // this.handleModalWithTouch()
+  openModal = e => {
+    if (this.state.modalOpen === false) {
+      this.setState(
+        {
+          modalOpen: true,
+        },
+        () => this.props.toggleModal()
+      )
+    } else {
+      e.preventDefault()
+    }
   }
 
-  handleModalWithTouch = e => {
-    var xDown = null
-    var yDown = null
-
-    this.handleTouchStart = evt => {
-      xDown = evt.touches[0].clientX
-      yDown = evt.touches[0].clientY
+  closeModal = e => {
+    if (this.state.modalOpen === true) {
+      this.setState(
+        {
+          modalOpen: false,
+        },
+        () => this.props.toggleModal()
+      )
+    } else {
+      e.preventDefault()
     }
-
-    this.handleTouchMove = evt => {
-      if (!xDown || !yDown) {
-        return
-      }
-
-      var xUp = evt.touches[0].clientX
-      var yUp = evt.touches[0].clientY
-
-      var xDiff = xDown - xUp
-      var yDiff = yDown - yUp
-
-      if (Math.abs(xDiff) > Math.abs(yDiff)) {
-        /*most significant*/
-        if (xDiff > 0) {
-          /* left swipe */
-        } else {
-          /* right swipe */
-        }
-      } else {
-        if (yDiff > 5) {
-          /* up swipe */
-          console.log(yDiff)
-          this.setState({
-            modalOpen: false,
-          })
-        } else {
-          /* down swipe */
-        }
-      }
-      /* reset values */
-      xDown = null
-      yDown = null
-    }
-
-    document.addEventListener('touchstart', this.handleTouchStart, false)
-    document.addEventListener('touchmove', this.handleTouchMove, false)
   }
 
   render() {
@@ -163,7 +138,7 @@ class Card extends React.Component {
         <BackgroundImage
           ratio={1}
           src={this.props.imageSrc}
-          onClick={this.handleModal}
+          onClick={this.openModal}
         />
 
         <ItemBadge badge={this.props.badge}>{this.props.badgeTitle}</ItemBadge>
@@ -173,7 +148,7 @@ class Card extends React.Component {
           py={1}
           fontSize={1}
           fontWeight={400}
-          onClick={this.handleModal}
+          onClick={this.openModal}
         >
           {this.props.title}
         </Subhead>
@@ -186,9 +161,9 @@ class Card extends React.Component {
           <Progress value={0.5} color="#3190f0" bg={'red'} />
           <Text children="12" fontSize={0} pl={1} />
         </Flex>
-        <CardModal show={this.state.modalOpen} onClick={this.handleModal}>
+        <CardModal show={this.state.modalOpen} onClick={this.closeModal}>
           <CardModalInner show={this.state.modalOpen}>
-            <CloseModal onClick={this.handleModal} />
+            <CloseModal onClick={this.closeModal} />
             <ItemBadge badge={this.props.badge}>
               {this.props.badgeTitle}
             </ItemBadge>
