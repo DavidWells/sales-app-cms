@@ -96,10 +96,14 @@ class Card extends React.Component {
 
   handleModal = event => {
     // console.log(event.pageX, event.pageY)
-    this.setState({
-      modalOpen: !this.state.modalOpen,
-    })
-    this.props.toggleModal()
+    this.setState(
+      {
+        modalOpen: !this.state.modalOpen,
+      },
+      () => {
+        this.props.toggleModal()
+      }
+    )
   }
 
   componentDidMount() {

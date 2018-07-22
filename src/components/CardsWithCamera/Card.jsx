@@ -19,7 +19,7 @@ const CardWrapper = styled(CustomCard)`
     0 2px 9px 0 rgba(18, 106, 211, 0.06);
 
   position: relative;
-  ${props => props.selected && ' border: 1px solid rgba(0, 184, 148, 0.4)'};
+  ${props => props.selected && 'border: 2px solid rgba(0, 184, 148, 0.72);'};
 `
 
 const ItemBadge = styled(Badge)`

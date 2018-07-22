@@ -20,8 +20,11 @@ import instagramLogo from '../../assets/instagram-logo.svg'
 const CardWrapper = styled(CustomCard)`
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
     0 2px 9px 0 rgba(18, 106, 211, 0.06);
-
+  max-width: 320px;
+  margin: auto;
+  margin-bottom: 20px;
   position: relative;
+  ${props => props.selected && 'border: 2px solid rgba(0, 184, 148, 0.72);'};
 `
 
 const ItemBadge = styled(Badge)`
@@ -32,16 +35,6 @@ const ItemBadge = styled(Badge)`
   margin: 8px;
   padding: 5px 10px;
   background-color: white;
-`
-
-const CheckBox = styled(Box)`
-  border: 1px solid #8e8e8e;
-  cursor: pointer;
-  padding: 3px 7px 3px 7px;
-  width: 28px;
-  height: 26px;
-  position: relative;
-  z-index: 4;
 `
 
 const CameraIcon = styled.img`
@@ -58,9 +51,24 @@ const InputCamera = styled.input`
   position: absolute;
   cursor: pointer;
   left: 0;
+  right: 0;
   width: 55px;
   height: 35px;
   display: flex;
+  justify-content: center;
+  margin: auto;
+`
+
+const Check = styled.img`
+  max-width: 20px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+`
+
+const CustomBorderLine = styled(BorderLine)`
+  margin-top: 0px;
+  margin-bottom: 3px;
 `
 
 class Card extends React.Component {
@@ -100,12 +108,16 @@ class Card extends React.Component {
 
   render() {
     return (
-      <CardWrapper mb={3} p={0}>
-        <BackgroundImage ratio={1} src={this.state.currentImage} />
+      <CardWrapper mb={3} p={0} selected={this.state.selected}>
+        <BackgroundImage
+          ratio={1}
+          src={this.state.currentImage}
+          onClick={this.toggleSelection}
+        />
         <ItemBadge bg="red">
           <img width="60" src={instagramLogo} />
         </ItemBadge>
-        <BorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
+        {/* <CustomBorderLine mx={2} borderColor="lightGrey" borderBottom={1} /> */}
         <Flex justifyContent="center" alignItems="center">
           <Box p={2} mx={2}>
             <InputCamera
@@ -115,11 +127,7 @@ class Card extends React.Component {
             />
             <CameraIcon src={cameraIcon} width="30" height="30" />
           </Box>
-          <CheckBox m={2} onClick={this.toggleSelection}>
-            {this.state.selected && (
-              <img src={checkIcon} width="14" height="14" alt="" />
-            )}
-          </CheckBox>
+          {this.state.selected && <Check src={checkIcon} />}
         </Flex>
       </CardWrapper>
     )
