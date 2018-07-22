@@ -24,7 +24,12 @@ class Cards extends React.Component {
   }
 
   componentDidMount() {
-    // this.props.addItems()
+    window.onscroll = ev => {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        this.props.highLightButtonFeed()
+        console.log('dasdsa')
+      }
+    }
   }
 
   render() {
@@ -63,9 +68,10 @@ Cards.propTypes = {
   src: PropTypes.string,
 }
 
-const mapStateToProps = ({ modalOpen, items }) => ({
+const mapStateToProps = ({ modalOpen, items, buttonFeed }) => ({
   modalOpen,
   items,
+  buttonFeed,
 })
 export default connect(
   mapStateToProps,

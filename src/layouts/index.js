@@ -21,6 +21,9 @@ injectGlobal`
 `
 
 class Template extends React.Component {
+  state = {
+    entered: false,
+  }
   componentDidMount() {
     // emergence.init()
     // this.props.addCurrentLocation(this.props.location)
@@ -31,9 +34,19 @@ class Template extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    // if (this.props.location.pathname !== nextProps.location.pathname) {
-    //   this.props.addCurrentLocation(nextProps.location)
-    // }
+    if (this.props.location.pathname !== nextProps.location.pathname) {
+      console.log('new location')
+      this.setState(
+        {
+          entered: true,
+        },
+        () => {
+          setTimeout(() => {
+            this.setState({ entered: false })
+          }, 1000)
+        }
+      )
+    }
   }
 
   render() {
@@ -52,7 +65,7 @@ class Template extends React.Component {
               grey: 'grey',
               lightGrey: '#eaeaea',
               // bestSeller: '#00b894',
-              bestSeller: 'rgba(0, 184, 148, 0.7)',
+              bestSeller: 'rgba(232, 126, 4, 0.7)',
               // trending: '#0984e3',
               trending: 'rgba(9, 132, 227, 0.7)',
               // new: '#e84393',
@@ -60,7 +73,7 @@ class Template extends React.Component {
               // onSale: '#d63031',
               onSale: 'rgba(214, 48, 49, 0.7)',
               missing: 'rgba(0, 0, 0, 0.5)',
-              pair: 'orange',
+              pair: '#9B59B6',
               instagram: 'grey',
               greenButton: '#00b894',
               disabledButton: 'red',
@@ -75,7 +88,12 @@ class Template extends React.Component {
           />
           <SiteNavi title={siteMetadata.title} {...this.props} />
 
-          <Container className="wrapper" mt={4} pb={5} pt={4}>
+          <Container
+            className={`wrapper ${this.state.entered ? 'entered' : 'exited'}`}
+            mt={4}
+            pb={5}
+            pt={4}
+          >
             {children()}
           </Container>
           <BottomNavBar location={this.props.location} />

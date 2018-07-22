@@ -11,6 +11,18 @@ const actions = store => ({
     items: dataItems,
   }),
 
+  highLightButtonFeed: state => ({
+    buttonFeed: true,
+  }),
+  highLightButtonImprove: state => ({
+    buttonImprove: true,
+  }),
+  highLightButtonTrend: state => ({
+    buttonTrend: true,
+  }),
+  highLightButtonPair: state => ({
+    buttonPair: true,
+  }),
   addCurrentLocation: (state, newLocation) => ({
     location: { ...newLocation },
   }),

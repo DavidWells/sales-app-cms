@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { connect } from 'unistore/react'
+import actions from '../../store/actions'
+
 import {
   Card as CustomCard,
   Subhead,
@@ -77,6 +80,7 @@ class Card extends React.Component {
     this.setState({
       selected: !this.state.selected,
     })
+    this.props.highLightButtonImprove()
   }
 
   getImage = e => {
@@ -154,4 +158,11 @@ Card.propTypes = {
   onClick: PropTypes.func,
 }
 
-export default Card
+const mapStateToProps = ({ buttonImprove }) => ({
+  buttonImprove,
+})
+
+export default connect(
+  mapStateToProps,
+  actions
+)(Card)

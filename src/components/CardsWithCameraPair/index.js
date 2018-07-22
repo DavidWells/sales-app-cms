@@ -14,14 +14,62 @@ import image7 from '../../assets/7.png'
 import Heading from '../Elements/Heading'
 
 const data = [
-  { title: 'Dress', id: '98797', image: image1 },
-  { title: 'Swimsuit', id: '98797', image: image2 },
-  { title: 'Red Dress', id: '98797', image: image3 },
-  { title: 'Blue Dress', id: '98797', image: image4 },
-  { title: 'White Dress', id: '98797', image: image5 },
-  { title: 'Dress', id: '98797', image: image6 },
-  { title: 'Swimsuit', id: '98797', image: image7 },
-  { title: 'Red Dress', id: '98797', image: image2 },
+  {
+    title: 'Dress',
+    id: '98797',
+    image: image1,
+    badge: 'bestSeller',
+    badgeTitle: 'Best Seller',
+  },
+  {
+    title: 'Swimsuit',
+    id: '98797',
+    image: image2,
+    badge: 'bestSeller',
+    badgeTitle: 'Best Seller',
+  },
+  {
+    title: 'Red Dress',
+    id: '98797',
+    image: image3,
+    badge: 'bestSeller',
+    badgeTitle: 'Best Seller',
+  },
+  {
+    title: 'Blue Dress',
+    id: '98797',
+    image: image4,
+    badge: 'bestSeller',
+    badgeTitle: 'Best Seller',
+  },
+  {
+    title: 'White Dress',
+    id: '98797',
+    image: image5,
+    badge: 'bestSeller',
+    badgeTitle: 'Best Seller',
+  },
+  {
+    title: 'Dress',
+    id: '98797',
+    image: image6,
+    badge: 'bestSeller',
+    badgeTitle: 'Best Seller',
+  },
+  {
+    title: 'Swimsuit',
+    id: '98797',
+    image: image7,
+    badge: 'bestSeller',
+    badgeTitle: 'Best Seller',
+  },
+  {
+    title: 'Red Dress',
+    id: '98797',
+    image: image2,
+    badge: 'bestSeller',
+    badgeTitle: 'Best Seller',
+  },
 ]
 
 const CardList = styled.div``
@@ -46,11 +94,12 @@ class CardsWithCameraPair extends React.Component {
           {data.map((item, index) => (
             <Box key={index} width={[1 / 2, 1 / 2, 1 / 2]} px={2}>
               <Card
-                onClick={this.handleModal}
                 key={index}
                 title={item.title}
                 id={item.id}
                 imageSrc={item.image}
+                badge={item.badge}
+                badgeTitle={item.badgeTitle}
               />
             </Box>
           ))}

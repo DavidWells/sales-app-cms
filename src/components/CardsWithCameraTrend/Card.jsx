@@ -67,7 +67,7 @@ const Check = styled.img`
 `
 
 const CustomBorderLine = styled(BorderLine)`
-  margin-top: 0px;
+  margin-top: 5px;
   margin-bottom: 3px;
 `
 
@@ -117,7 +117,17 @@ class Card extends React.Component {
         <ItemBadge bg="red">
           <img width="60" src={instagramLogo} />
         </ItemBadge>
-        {/* <CustomBorderLine mx={2} borderColor="lightGrey" borderBottom={1} /> */}
+        <Subhead
+          px={2}
+          pt={2}
+          pb={1}
+          fontSize={0}
+          fontWeight={400}
+          color="gray"
+        >
+          ID: {this.props.id}
+        </Subhead>
+        <CustomBorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
         <Flex justifyContent="center" alignItems="center">
           <Box p={2} mx={2}>
             <InputCamera
