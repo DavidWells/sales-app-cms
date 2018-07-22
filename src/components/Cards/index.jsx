@@ -23,14 +23,7 @@ class Cards extends React.Component {
     data: this.props.items,
   }
 
-  componentDidMount() {
-    window.onscroll = ev => {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        this.props.highLightButtonFeed()
-        console.log('dasdsa')
-      }
-    }
-  }
+  componentDidMount() {}
 
   render() {
     return (

@@ -32,26 +32,16 @@ const NotificationButton = styled(ButtonTransparent)`
 `
 
 class BottomNavBar extends React.Component {
-  addTextButtonByLocation = () => {
-    if (this.props.location !== null) {
-      return 'Done'
-    } else {
-      return 'Some text'
-    }
-  }
-
   getButtonState = () => {
     if (this.props.location !== null) {
       if (!this.props.location.pathname.includes('notifications')) {
         return (
-          <Button disabled={!this.props.buttonFeed}>
-            {this.addTextButtonByLocation()}
-          </Button>
+          <Button disabled={!this.props.buttonFeed}>{this.props.text}</Button>
         )
       } else if (this.props.location.pathname.includes('improve')) {
         return (
           <Button disabled={!this.props.buttonImprove}>
-            {this.addTextButtonByLocation()}
+            {this.props.text}
           </Button>
         )
       }
@@ -69,7 +59,9 @@ class BottomNavBar extends React.Component {
             </NotificationButton>
           </Link>
 
-          {this.getButtonState()}
+          <Button disabled={!this.props.buttonDisabled}>
+            {this.props.text}
+          </Button>
 
           <ButtonTransparent>
             <img width={25} src={AnalyticsIcon} alt="" />
@@ -82,10 +74,14 @@ class BottomNavBar extends React.Component {
 
 BottomNavBar.defaultProps = {
   src: userIcon,
+  text: 'Done',
+  buttonDisabled: true,
 }
 BottomNavBar.propTypes = {
   src: PropTypes.string,
   location: PropTypes.any,
+  text: PropTypes.string,
+  buttonDisabled: PropTypes.bool,
 }
 
 const mapStateToProps = ({ buttonFeed, buttonImprove }) => ({

@@ -4,13 +4,15 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import CardsWithCamera from '../../components/CardsWithCamera'
 import { siteMetadata } from '../../../gatsby-config'
+import BottomNavBar from '../../components/BottonNavBar'
 
 class Improve extends Component {
   render() {
     return (
-      <div>
+      <div className="improve-page">
         <Helmet title={`Improve | ${get(siteMetadata, 'title')}`} />
         <CardsWithCamera />
+        <BottomNavBar location={this.props.location} />
       </div>
     )
   }

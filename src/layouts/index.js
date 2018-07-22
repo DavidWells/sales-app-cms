@@ -96,7 +96,6 @@ class Template extends React.Component {
           >
             {children()}
           </Container>
-          <BottomNavBar location={this.props.location} />
         </Provider>
       </ReduxProvider>
     )
