@@ -54,6 +54,7 @@ const Text = styled.div`
 class CardsWithCamera extends React.Component {
   state = {
     show: false,
+    selected: {},
   }
 
   render() {

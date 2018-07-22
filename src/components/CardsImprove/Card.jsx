@@ -16,6 +16,7 @@ import {
 } from 'rebass'
 import cameraIcon from '../../assets/camera.svg'
 import checkIcon from '../../assets/check.svg'
+import { IncomingMessage } from 'http'
 
 const CardWrapper = styled(CustomCard)`
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
@@ -77,9 +78,23 @@ class Card extends React.Component {
   }
 
   toggleSelection = e => {
-    this.setState({
-      selected: !this.state.selected,
-    })
+    this.setState(
+      {
+        selected: !this.state.selected,
+      },
+      () => {
+        if (this.state.selected) {
+          this.props.incremenImproveSelectedItems()
+        } else {
+          this.props.decrementImproveSelectedItems()
+        }
+
+        if (this.props.improvePageSelectedItems > 0) {
+          console.log('items more than 0')
+        }
+      }
+    )
+
     this.props.highLightButtonImprove()
   }
 
@@ -158,8 +173,9 @@ Card.propTypes = {
   onClick: PropTypes.func,
 }
 
-const mapStateToProps = ({ buttonImprove }) => ({
+const mapStateToProps = ({ buttonImprove, improvePageSelectedItems }) => ({
   buttonImprove,
+  improvePageSelectedItems,
 })
 
 export default connect(
