@@ -5,7 +5,7 @@ import { siteMetadata } from '../../gatsby-config'
 import SiteNavi from '../components/SiteNavi'
 // import emergence from 'emergence.js'
 import { Provider, Container } from 'rebass'
-import { Provider as ReduxProvider } from 'unistore/react'
+import StoreProvider from './StoreProvider'
 import { connect } from 'unistore/react'
 import { injectGlobal } from 'styled-components'
 import 'normalize.css'
@@ -26,33 +26,27 @@ class Template extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.location.pathname !== nextProps.location.pathname) {
-      this.setState(
-        {
-          entered: true,
-        },
-        () => {
-          setTimeout(() => {
-            this.setState({ entered: false })
-          }, 1000)
-        }
-      )
-    }
-    if (nextProps.location.pathname !== '/') {
-      this.props.hideBoarding()
+    if (
+      nextProps.location.pathname !== '/' &&
+      this.props.showBoarding === true
+    ) {
+      // this.props.hideBoarding()
     }
   }
 
   componentDidMount() {
-    if (this.props.location.pathname !== '/') {
-      this.props.hideBoarding()
+    if (
+      this.props.location.pathname !== '/' &&
+      this.props.showBoarding === true
+    ) {
+      // this.props.hideBoarding()
     }
   }
 
   render() {
     const { location, children } = this.props
     return (
-      <ReduxProvider store={store}>
+      <StoreProvider>
         <Provider
           theme={{
             fonts: {
@@ -98,12 +92,12 @@ class Template extends React.Component {
             pb={5}
             pt={4}
           >
-            <Boarding />
+            <Boarding location={this.props.location} />
 
             {children()}
           </Container>
         </Provider>
-      </ReduxProvider>
+      </StoreProvider>
     )
   }
 }
@@ -114,7 +108,4 @@ const mapStateToProps = ({ rtl, modalOpen, showBoarding }) => ({
   showBoarding,
 })
 
-export default connect(
-  mapStateToProps,
-  actions
-)(Template)
+export default connect(mapStateToProps)(Template)

@@ -21,6 +21,24 @@ const WrapBoarding = styled.div`
 `
 
 class Boarding extends Component {
+  componentWillReceiveProps(nextProps) {
+    if (
+      nextProps.location.pathname !== '/' &&
+      this.props.showBoarding === true
+    ) {
+      this.props.hideBoarding()
+    }
+  }
+
+  componentDidMount() {
+    if (
+      this.props.location.pathname !== '/' &&
+      this.props.showBoarding === true
+    ) {
+      this.props.hideBoarding()
+    }
+  }
+
   render() {
     return (
       <WrapBoarding
@@ -34,6 +52,7 @@ class Boarding extends Component {
 
 Boarding.propTypes = {
   show: PropTypes.bool,
+  location: PropTypes.any,
 }
 
 const mapStateToProps = ({ showBoarding }) => ({
