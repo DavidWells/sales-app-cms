@@ -15,32 +15,37 @@ import Heading from '../Elements/Heading'
 
 const data = [
   {
-    title: 'Swimsuit',
-    id: '98797',
-    image: image2,
-    badge: 'bestSeller',
-    badgeTitle: 'Best Seller',
+    title: 'חזייה מרופדת',
+    id: '131343__6',
+    image:
+      'https://fashion-media.apps-checkout.com/afrodita_131343__6-v-1509610422.jpg',
+    badge: 'new',
+    badgeTitle: 'New',
   },
   {
-    title: 'Dress',
-    id: '98797',
-    image: image6,
-    badge: 'bestSeller',
-    badgeTitle: 'Best Seller',
+    title: 'חזיית טי שירט',
+    id: '13135T',
+    image:
+      'https://fashion-media.apps-checkout.com/afrodita/13135T_1525327134.jpg',
+    badge: 'onSale',
+    badgeTitle: 'On Sale',
+  },
+
+  {
+    title: 'חזיית חצי קאפ',
+    id: '13e330',
+    image:
+      'https://fashion-media.apps-checkout.com/afrodita_13e330-v-1509610422.jpg',
+    badge: 'onSale',
+    badgeTitle: 'On Sale',
   },
   {
-    title: 'Swimsuit',
-    id: '98797',
-    image: image2,
-    badge: 'bestSeller',
-    badgeTitle: 'Best Seller',
-  },
-  {
-    title: 'Dress',
-    id: '98797',
-    image: image6,
-    badge: 'bestSeller',
-    badgeTitle: 'Best Seller',
+    title: 'סלוגי',
+    id: '27401T',
+    image:
+      'https://fashion-media.apps-checkout.com/afrodita/27401T_1525327134.jpg',
+    badge: 'onSale',
+    badgeTitle: 'On Sale',
   },
 ]
 
