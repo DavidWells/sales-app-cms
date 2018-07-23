@@ -37,7 +37,7 @@ export default class HTML extends React.Component {
           {this.props.headComponents}
           <link rel="shortcut icon" href={favicon} />
           <link
-            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Montserrat:600"
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Montserrat:600|Rubik&amp;subset=hebrew"
             rel="stylesheet"
           />
           {css}

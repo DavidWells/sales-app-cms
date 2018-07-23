@@ -146,7 +146,7 @@ class Card extends React.Component {
         <Subhead
           px={2}
           py={1}
-          fontSize={1}
+          fontSize={0}
           fontWeight={400}
           onClick={this.openModal}
         >

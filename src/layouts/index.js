@@ -56,7 +56,8 @@ class Template extends React.Component {
         <Provider
           theme={{
             fonts: {
-              sans: '"Source Sans Pro","Avenir Next", Helvetica, sans-serif',
+              sans:
+                '"Source Sans Pro","Rubik","Avenir Next", Helvetica, sans-serif',
               heading: '"Montserrat", "Source Sans Pro", sans-serif;',
             },
             fontSizes: [12, 16, 20, 24, 32, 42, 52],
