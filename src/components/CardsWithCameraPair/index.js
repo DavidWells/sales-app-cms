@@ -15,60 +15,69 @@ import Heading from '../Elements/Heading'
 
 const data = [
   {
-    title: 'Dress',
-    id: '98797',
-    image: image1,
+    title: 'חזיית המינימייזר',
+    id: '16030',
+    image:
+      'https://fashion-media.apps-checkout.com/afrodita/16030_1525327134.jpg',
     badge: 'bestSeller',
     badgeTitle: 'Best Seller',
   },
   {
-    title: 'Swimsuit',
-    id: '98797',
-    image: image2,
+    title: 'גוזייה מרופדת',
+    id: '17010',
+    image:
+      'https://fashion-media.apps-checkout.com/afrodita/17010_1525327134.jpg',
     badge: 'bestSeller',
     badgeTitle: 'Best Seller',
   },
   {
-    title: 'Red Dress',
-    id: '98797',
-    image: image3,
+    title: 'אנדורה חזייה מרופדת',
+    id: '98745',
+    image:
+      'https://fashion-media.apps-checkout.com/afrodita_98745-v-1509610422.jpg',
     badge: 'bestSeller',
     badgeTitle: 'Best Seller',
   },
   {
-    title: 'Blue Dress',
-    id: '98797',
-    image: image4,
+    title: 'חליפת פנאי',
+    id: '991526',
+    image:
+      'https://fashion-media.apps-checkout.com/afrodita/991526_1525327134.jpg',
     badge: 'bestSeller',
     badgeTitle: 'Best Seller',
   },
+
   {
-    title: 'White Dress',
-    id: '98797',
-    image: image5,
-    badge: 'bestSeller',
-    badgeTitle: 'Best Seller',
+    title: 'חליפת פנאי',
+    id: '991527',
+    image:
+      'https://fashion-media.apps-checkout.com/afrodita/991527_1525327134.jpg',
+    badge: 'trending',
+    badgeTitle: 'Trending',
   },
   {
-    title: 'Dress',
-    id: '98797',
-    image: image6,
-    badge: 'bestSeller',
-    badgeTitle: 'Best Seller',
+    title: 'חזיית פוש אפ',
+    id: '03-12c347',
+    image:
+      'https://fashion-media.apps-checkout.com/afrodita_03-12c347_-v-1509610422.jpg',
+    badge: 'trending',
+    badgeTitle: 'Trending',
   },
   {
-    title: 'Swimsuit',
-    id: '98797',
-    image: image7,
-    badge: 'bestSeller',
-    badgeTitle: 'Best Seller',
+    title: 'בגד גוף',
+    id: '09-12c541',
+    image:
+      'https://fashion-media.apps-checkout.com/afrodita_09-12c541-v-1509610422.jpg',
+    badge: 'trending',
+    badgeTitle: 'Trending',
   },
   {
-    title: 'Red Dress',
-    id: '98797',
-    image: image2,
-    badge: 'bestSeller',
-    badgeTitle: 'Best Seller',
+    title: 'חולצת פלנל משובצת',
+    id: '093a1205',
+    image:
+      'https://fashion-media.apps-checkout.com/afrodita_093a1205-v-1509610422.jpg',
+    badge: 'trending',
+    badgeTitle: 'Trending',
   },
 ]
 

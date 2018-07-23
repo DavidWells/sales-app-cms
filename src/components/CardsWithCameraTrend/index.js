@@ -7,7 +7,16 @@ import Heading from '../Elements/Heading'
 
 import image1 from '../../assets/1.jpg'
 
-const data = [{ title: 'Dress', id: '98797', image: image1 }]
+const data = [
+  {
+    title: 'חזיית המינימייזר',
+    id: '16030',
+    image:
+      'https://fashion-media.apps-checkout.com/afrodita/16030_1525327134.jpg',
+    badge: 'bestSeller',
+    badgeTitle: 'Best Seller',
+  },
+]
 
 const CardList = styled.div``
 
