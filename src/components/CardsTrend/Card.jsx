@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+
 import {
   Card as CustomCard,
   Subhead,
@@ -16,6 +17,9 @@ import {
 import cameraIcon from '../../assets/camera.svg'
 import checkIcon from '../../assets/check.svg'
 import instagramLogo from '../../assets/instagram-logo.svg'
+
+import { connect } from 'unistore/react'
+import actions from '../../store/actions'
 
 const CardWrapper = styled(CustomCard)`
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
@@ -81,9 +85,14 @@ class Card extends React.Component {
   }
 
   toggleSelection = e => {
-    this.setState({
-      selected: !this.state.selected,
-    })
+    this.setState(
+      {
+        selected: !this.state.selected,
+      },
+      () => {
+        this.props.toggleTrendItem()
+      }
+    )
   }
 
   getImage = e => {
@@ -156,4 +165,11 @@ Card.propTypes = {
   onClick: PropTypes.func,
 }
 
-export default Card
+const mapStateToProps = ({ trendItemSelected }) => ({
+  trendItemSelected,
+})
+
+export default connect(
+  mapStateToProps,
+  actions
+)(Card)

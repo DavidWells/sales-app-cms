@@ -16,7 +16,7 @@ const Text = styled.div`
   text-align: center;
 `
 
-class CardsWithCameraTrend extends React.Component {
+class CardsTrend extends React.Component {
   state = {
     show: false,
   }
@@ -50,9 +50,9 @@ class CardsWithCameraTrend extends React.Component {
   }
 }
 
-CardsWithCameraTrend.defaultProps = {}
-CardsWithCameraTrend.propTypes = {
+CardsTrend.defaultProps = {}
+CardsTrend.propTypes = {
   src: PropTypes.string,
 }
 
-export default CardsWithCameraTrend
+export default CardsTrend
