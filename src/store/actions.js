@@ -26,10 +26,13 @@ const actions = store => ({
   addCurrentLocation: (state, newLocation) => ({
     location: { ...newLocation },
   }),
-  // async getStuff(state) {
-  //   let res = await fetch(data)
-  //   return { stuff: await res.json() }
-  // },
+
+  incremenImproveSelectedItems: ({ improvePageSelectedItems }) => ({
+    improvePageSelectedItems: improvePageSelectedItems + 1,
+  }),
+  decrementImproveSelectedItems: ({ improvePageSelectedItems }) => ({
+    improvePageSelectedItems: improvePageSelectedItems - 1,
+  }),
 })
 
 export default actions
