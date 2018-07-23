@@ -27,11 +27,21 @@ const actions = store => ({
     location: { ...newLocation },
   }),
 
+  toggleTrendItem: state => ({
+    trendItemSelected: !state.trendItemSelected,
+  }),
+  resetTrendItem: state => ({
+    trendItemSelected: false,
+  }),
+
   incremenImproveSelectedItems: ({ improvePageSelectedItems }) => ({
     improvePageSelectedItems: improvePageSelectedItems + 1,
   }),
   decrementImproveSelectedItems: ({ improvePageSelectedItems }) => ({
     improvePageSelectedItems: improvePageSelectedItems - 1,
+  }),
+  resetImproveSelectedItems: state => ({
+    improvePageSelectedItems: 0,
   }),
 })
 

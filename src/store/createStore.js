@@ -20,6 +20,7 @@ let initialState = {
   buttonTrend: false,
   buttonPair: false,
   improvePageSelectedItems: 0,
+  trendItemSelected: false,
   colors: {
     black: '#3c3b3b',
     grey: 'grey',

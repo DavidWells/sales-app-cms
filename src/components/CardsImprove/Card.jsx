@@ -88,14 +88,8 @@ class Card extends React.Component {
         } else {
           this.props.decrementImproveSelectedItems()
         }
-
-        if (this.props.improvePageSelectedItems > 0) {
-          console.log('items more than 0')
-        }
       }
     )
-
-    this.props.highLightButtonImprove()
   }
 
   getImage = e => {

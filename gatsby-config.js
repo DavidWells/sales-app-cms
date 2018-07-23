@@ -65,12 +65,7 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: '',
-      },
-    },
+
     {
       resolve: 'gatsby-plugin-netlify',
       options: {
@@ -86,7 +81,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-twitter',
+
     'gatsby-transformer-sharp',
     'gatsby-plugin-styled-components',
   ],

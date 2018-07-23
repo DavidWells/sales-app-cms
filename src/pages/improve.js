@@ -10,6 +10,10 @@ import { connect } from 'unistore/react'
 import actions from '../store/actions'
 
 class Improve extends Component {
+  componentWillUnmount() {
+    console.log('componentUnmounted')
+    this.props.resetImproveSelectedItems()
+  }
   render() {
     return (
       <div className="improve-page">
