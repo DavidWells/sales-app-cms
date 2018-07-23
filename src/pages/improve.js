@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Link, { push } from 'gatsby-link'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import { siteMetadata } from '../../gatsby-config'
@@ -22,6 +23,7 @@ class Improve extends Component {
         <BottomNavBar
           text="Done"
           buttonDisabled={this.props.improvePageSelectedItems > 0}
+          buttonClick={() => push('/notifications')}
           location={this.props.location}
         />
       </div>

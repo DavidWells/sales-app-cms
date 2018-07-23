@@ -29,7 +29,7 @@ const ItemBadge = styled(Badge)`
   top: 0;
   left: 0;
   border-radius: 0;
-  margin: 10px;
+  margin: 5px;
   padding: 5px 10px;
   background-color: ${props => props.theme.colors[props.badge]};
 `

@@ -58,7 +58,7 @@ class Template extends React.Component {
               grey: 'grey',
               lightGrey: '#eaeaea',
               // bestSeller: '#00b894',
-              bestSeller: 'rgba(232, 126, 4, 0.7)',
+              bestSeller: 'rgba(61, 193, 211, 0.7)',
               // trending: '#0984e3',
               trending: 'rgba(9, 132, 227, 0.7)',
               // new: '#e84393',

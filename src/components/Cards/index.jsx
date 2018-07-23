@@ -28,9 +28,9 @@ class Cards extends React.Component {
   render() {
     return (
       <CardList className="card-list">
-        <Heading px={2} pt={1} pb={3}>
+        {/* <Heading px={2} pt={1} pb={3}>
           Learn about your stores highlight!
-        </Heading>
+        </Heading> */}
         <Flex mx={-2} flexWrap="wrap">
           {this.state.data.map((item, index) => (
             <Box

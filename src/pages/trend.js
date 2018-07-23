@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Link, { push } from 'gatsby-link'
 import CardsTrend from '../components/CardsTrend'
 import BottomNavBar from '../components/BottonNavBar'
 
@@ -17,6 +18,7 @@ class Trend extends Component {
         <BottomNavBar
           text="Done"
           buttonDisabled={this.props.trendItemSelected}
+          buttonClick={() => push('/notifications')}
           location={this.props.location}
         />
       </div>

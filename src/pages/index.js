@@ -18,18 +18,28 @@ class FeedPage extends React.Component {
       <div className="feed-page">
         <TopNavBar />
         <Cards />
-        <BottomNavBar
-          text="Approve"
-          buttonDisabled={this.props.buttonFeed}
-          location={this.props.location}
-        />
+        {this.props.showBoarding ? (
+          <BottomNavBar
+            text="Let's go"
+            buttonDisabled={this.props.showBoarding}
+            location={this.props.location}
+            buttonClick={this.props.hideBoarding}
+          />
+        ) : (
+          <BottomNavBar
+            text="Approve"
+            buttonDisabled={this.props.buttonFeed}
+            location={this.props.location}
+          />
+        )}
       </div>
     )
   }
 }
 
-const mapStateToProps = ({ buttonFeed }) => ({
+const mapStateToProps = ({ buttonFeed, showBoarding }) => ({
   buttonFeed,
+  showBoarding,
 })
 export default connect(
   mapStateToProps,

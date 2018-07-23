@@ -61,7 +61,10 @@ class BottomNavBar extends React.Component {
             </NotificationButton>
           </Link>
 
-          <Button disabled={!this.props.buttonDisabled}>
+          <Button
+            disabled={!this.props.buttonDisabled}
+            onClick={this.props.buttonClick}
+          >
             {this.props.text}
           </Button>
 
@@ -84,6 +87,7 @@ BottomNavBar.propTypes = {
   location: PropTypes.any,
   text: PropTypes.string,
   buttonDisabled: PropTypes.bool,
+  buttonClick: PropTypes.func,
 }
 
 const mapStateToProps = ({ buttonFeed, buttonImprove }) => ({

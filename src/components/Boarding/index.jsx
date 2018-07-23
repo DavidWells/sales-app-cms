@@ -16,6 +16,8 @@ const WrapBoarding = styled.div`
   height: 100%;
   z-index: 1;
   visibility: ${props => (props.show ? 'visible' : 'hidden')};
+  opacity: ${props => (props.show ? '1' : '0')};
+  transition: all 500ms ease-in-out;
 `
 
 class Boarding extends Component {
@@ -24,7 +26,7 @@ class Boarding extends Component {
       <WrapBoarding
         show={this.props.showBoarding}
         className="boarding"
-        onClick={this.props.hideBoarding}
+        // onClick={this.props.hideBoarding}
       />
     )
   }
