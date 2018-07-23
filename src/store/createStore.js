@@ -12,6 +12,8 @@ let initialState = {
   darkMode: false,
   userAgent: userAgent(),
   os: osType(),
+  firstStart: true,
+  showBoarding: true,
   count: 0,
   modalOpen: false,
   location: null,

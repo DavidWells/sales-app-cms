@@ -4,6 +4,8 @@ import userIcon from '../../assets/user.png'
 import styled from 'styled-components'
 import Nav from '../TopNavBar/Nav'
 import { Container } from 'rebass'
+import TopTooltip from '../Boarding/TopTooltip'
+import { connect } from 'unistore/react'
 
 const WrapNav = styled.div`
   display: flex;
@@ -11,7 +13,7 @@ const WrapNav = styled.div`
   align-items: center;
   padding-top: 13px;
   padding-bottom: 0px;
-  overflow: hidden;
+  overflow: unset;
   position: fixed;
   top: 56px;
   left: 0;
@@ -21,12 +23,17 @@ const WrapNav = styled.div`
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
 `
 
+const CustomContainer = styled(Container)`
+  position: relative;
+`
+
 const TopNavBar = props => {
   return (
     <WrapNav className="wrap-top-nav">
-      <Container>
+      <CustomContainer>
         <Nav />
-      </Container>
+        <TopTooltip />
+      </CustomContainer>
     </WrapNav>
   )
 }

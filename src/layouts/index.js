@@ -4,15 +4,15 @@ import Helmet from 'react-helmet'
 import { siteMetadata } from '../../gatsby-config'
 import SiteNavi from '../components/SiteNavi'
 // import emergence from 'emergence.js'
-import { Provider, Heading, Container } from 'rebass'
+import { Provider, Container } from 'rebass'
 import { Provider as ReduxProvider } from 'unistore/react'
 import { connect } from 'unistore/react'
 import { injectGlobal } from 'styled-components'
 import 'normalize.css'
-import BottomNavBar from '../components/BottonNavBar'
 
 import store from '../store/createStore'
 import actions from '../store/actions'
+import Boarding from '../components/Boarding'
 
 injectGlobal`
   * { box-sizing: border-box; }
@@ -23,14 +23,6 @@ injectGlobal`
 class Template extends React.Component {
   state = {
     entered: false,
-  }
-  componentDidMount() {
-    // emergence.init()
-    // this.props.addCurrentLocation(this.props.location)
-  }
-
-  componentDidUpdate() {
-    // emergence.init()
   }
 
   componentWillReceiveProps(nextProps) {
@@ -84,7 +76,10 @@ class Template extends React.Component {
         >
           <Helmet
             bodyAttributes={{
-              class: this.props.modalOpen ? 'no-scroll' : 'scroll',
+              class:
+                this.props.modalOpen || this.props.showBoarding
+                  ? 'no-scroll'
+                  : 'scroll',
             }}
           />
           <SiteNavi title={siteMetadata.title} {...this.props} />
@@ -95,6 +90,8 @@ class Template extends React.Component {
             pb={5}
             pt={4}
           >
+            {this.props.showBoarding && <Boarding />}
+
             {children()}
           </Container>
         </Provider>
@@ -103,9 +100,10 @@ class Template extends React.Component {
   }
 }
 
-const mapStateToProps = ({ rtl, modalOpen }) => ({
+const mapStateToProps = ({ rtl, modalOpen, showBoarding }) => ({
   rtl,
   modalOpen,
+  showBoarding,
 })
 
 export default connect(mapStateToProps)(Template)

@@ -43,6 +43,10 @@ const actions = store => ({
   resetImproveSelectedItems: state => ({
     improvePageSelectedItems: 0,
   }),
+
+  hideBoarding: state => ({
+    showBoarding: false,
+  }),
 })
 
 export default actions

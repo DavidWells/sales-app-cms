@@ -8,6 +8,7 @@ import { Flex, ButtonTransparent, Badge } from 'rebass'
 import NotificationIcon from '../../assets/shopping-list.svg'
 import AnalyticsIcon from '../../assets/bar-chart.svg'
 import Button from '../Elements/Button'
+import BottomTooltip from '../Boarding/BottomTooltip'
 
 const Nav = styled.div`
   background: white;
@@ -52,6 +53,7 @@ class BottomNavBar extends React.Component {
     return (
       <Nav>
         <Flex justifyContent="space-between" alignItems="center">
+          <BottomTooltip />
           <Link to="/notifications">
             <NotificationButton>
               <Notification bg="red"> 2 </Notification>
