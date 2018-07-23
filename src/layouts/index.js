@@ -90,7 +90,7 @@ class Template extends React.Component {
             pb={5}
             pt={4}
           >
-            {this.props.showBoarding && <Boarding />}
+            {this.props.showBoarding ? <Boarding /> : null}
 
             {children()}
           </Container>
