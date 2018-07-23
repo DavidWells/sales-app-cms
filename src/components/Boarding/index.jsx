@@ -15,12 +15,17 @@ const WrapBoarding = styled.div`
   width: 100%;
   height: 100%;
   z-index: 1;
+  visibility: ${props => (props.show ? 'visible' : 'hidden')};
 `
 
 class Boarding extends Component {
   render() {
     return (
-      <WrapBoarding className="boarding" onClick={this.props.hideBoarding} />
+      <WrapBoarding
+        show={this.props.showBoarding}
+        className="boarding"
+        onClick={this.props.hideBoarding}
+      />
     )
   }
 }
