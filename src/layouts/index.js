@@ -27,7 +27,6 @@ class Template extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     if (this.props.location.pathname !== nextProps.location.pathname) {
-      console.log('new location')
       this.setState(
         {
           entered: true,
@@ -38,6 +37,15 @@ class Template extends React.Component {
           }, 1000)
         }
       )
+    }
+    if (nextProps.location.pathname !== '/') {
+      this.props.hideBoarding()
+    }
+  }
+
+  componentDidMount() {
+    if (this.props.location.pathname !== '/') {
+      this.props.hideBoarding()
     }
   }
 
@@ -106,4 +114,7 @@ const mapStateToProps = ({ rtl, modalOpen, showBoarding }) => ({
   showBoarding,
 })
 
-export default connect(mapStateToProps)(Template)
+export default connect(
+  mapStateToProps,
+  actions
+)(Template)
