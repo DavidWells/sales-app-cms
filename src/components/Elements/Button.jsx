@@ -1,7 +1,32 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Button as Btn } from 'rebass'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const shake = keyframes`
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+`
 
 const CustomButton = styled(Btn)`
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.125));
@@ -23,20 +48,26 @@ const CustomButton = styled(Btn)`
   &:hover {
     opacity: 0.85;
   }
+
   &:focus {
     box-shadow: none;
   }
+  &:disabled {
+    opacity: 0.25;
+  }
+  ${props => props.selected && `animation: ${shake} 1000ms ease-in ;`};
 `
 
-const Button = props => {
-  return <CustomButton bg={props.bg} {...props} />
-}
+const Button = props => (
+  <CustomButton selected={props.selected} bg={props.bg} {...props} />
+)
 
 Button.defaultProps = {
   bg: 'greenButton',
 }
 Button.propTypes = {
   bg: PropTypes.string,
+  selected: PropTypes.any,
 }
 
 export default Button

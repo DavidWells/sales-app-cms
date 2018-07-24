@@ -33,22 +33,47 @@ const NotificationButton = styled(ButtonTransparent)`
 `
 
 class BottomNavBar extends React.Component {
-  getButtonState = () => {
-    if (this.props.location !== null) {
-      if (!this.props.location.pathname.includes('notifications')) {
-        return (
-          <Button disabled={!this.props.buttonFeed}>{this.props.text}</Button>
-        )
-      } else if (this.props.location.pathname.includes('improve')) {
-        return (
-          <Button disabled={!this.props.buttonImprove}>
-            {this.props.text}
-          </Button>
-        )
-      }
+  constructor(props) {
+    super(props)
+    this.state = {
+      shake: false,
     }
   }
 
+  componentDidMount() {
+    if (this.props.showBoarding === true) {
+      console.log('showing boarding')
+
+      window.addEventListener(
+        'click',
+        e => {
+          if (this.props.showBoarding === true) {
+            if (e.target.id !== 'bottom-nav-button') {
+              this.setState({ shake: true }, () => {
+                setTimeout(() => {
+                  this.setState({ shake: false })
+                  window.removeEventListener(
+                    'click',
+                    () => console.log('removed event'),
+                    false
+                  )
+                }, 1000)
+              })
+            }
+          }
+        },
+        true
+      )
+    }
+  }
+
+  // componentWillUnmount() {
+  //   window.removeEventListener(
+  //     'click',
+  //     () => console.log('removed event'),
+  //     false
+  //   )
+  // }
   render() {
     return (
       <Nav>
@@ -62,6 +87,8 @@ class BottomNavBar extends React.Component {
           </Link>
 
           <Button
+            id="bottom-nav-button"
+            selected={this.state.shake}
             disabled={!this.props.buttonDisabled}
             onClick={this.props.buttonClick}
           >
@@ -90,8 +117,9 @@ BottomNavBar.propTypes = {
   buttonClick: PropTypes.func,
 }
 
-const mapStateToProps = ({ buttonFeed, buttonImprove }) => ({
+const mapStateToProps = ({ buttonFeed, showBoarding }) => ({
   buttonFeed,
+  showBoarding,
 })
 
 export default connect(mapStateToProps)(BottomNavBar)
