@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+//import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import { siteMetadata } from '../../gatsby-config'
 import SiteNavi from '../components/SiteNavi'
@@ -10,14 +10,15 @@ import { connect } from 'unistore/react'
 import { injectGlobal } from 'styled-components'
 import 'normalize.css'
 
-import store from '../store/createStore'
-import actions from '../store/actions'
+// import store from '../store/createStore'
+// import actions from '../store/actions'
 import Boarding from '../components/Boarding'
 
 injectGlobal`
   * { box-sizing: border-box; }
   body {color: #3c3b3b; background: #f0f6ff;}
-  .no-scroll {overflow: hidden}
+  .no-scroll {overflow: hidden; position: fixed;}
+  .disable-clicks {pointer-events: none;}
 `
 
 class Template extends React.Component {
@@ -74,7 +75,9 @@ class Template extends React.Component {
               disabledButton: 'red',
             },
           }}
-          className={this.props.rtl ? 'rtl' : 'ltr'}
+          className={` ${this.props.rtl ? 'rtl' : 'ltr'} ${
+            this.props.showBoarding ? 'disable-clicks' : 'enable-clicks'
+          } ${this.props.showBoarding ? 'no-scroll' : 'scroll'}`}
         >
           <Helmet
             bodyAttributes={{

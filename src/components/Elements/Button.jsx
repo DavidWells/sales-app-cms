@@ -19,6 +19,7 @@ const CustomButton = styled(Btn)`
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  pointer-events: visible;
   &:hover {
     opacity: 0.85;
   }
