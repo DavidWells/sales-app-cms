@@ -49,7 +49,7 @@ module.exports = {
         homepage_url: 'https://sales-app.netlify.com',
         start_url: '/',
         background_color: '#fff',
-        theme_color: '#673ab7',
+        theme_color: '#000000',
         orientation: 'portrait',
         display: 'fullscreen',
         icons: [
