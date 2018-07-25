@@ -4,6 +4,7 @@ import TopNavBar from '../components/TopNavBar'
 import BottomNavBar from '../components/BottonNavBar'
 import { connect } from 'unistore/react'
 import actions from '../store/actions'
+import PageTransition from 'gatsby-plugin-page-transitions'
 
 class FeedPage extends React.Component {
   componentDidMount() {
@@ -15,7 +16,7 @@ class FeedPage extends React.Component {
   }
   render() {
     return (
-      <div className="feed-page">
+      <PageTransition transitionTime={300}>
         <TopNavBar />
         <Cards />
         {this.props.showBoarding ? (
@@ -32,7 +33,7 @@ class FeedPage extends React.Component {
             location={this.props.location}
           />
         )}
-      </div>
+      </PageTransition>
     )
   }
 }

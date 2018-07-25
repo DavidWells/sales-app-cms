@@ -81,7 +81,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
-
+    'gatsby-plugin-page-transitions',
     'gatsby-transformer-sharp',
     'gatsby-plugin-styled-components',
   ],

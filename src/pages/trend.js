@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import Link, { push } from 'gatsby-link'
 import CardsTrend from '../components/CardsTrend'
 import BottomNavBar from '../components/BottonNavBar'
-
 import { connect } from 'unistore/react'
 import actions from '../store/actions'
+import PageTransition from 'gatsby-plugin-page-transitions'
 
 class Trend extends Component {
   componentWillUnmount() {
@@ -13,7 +13,7 @@ class Trend extends Component {
   }
   render() {
     return (
-      <div className="trend-page">
+      <PageTransition transitionTime={400}>
         <CardsTrend />
         <BottomNavBar
           text="Done"
@@ -21,7 +21,7 @@ class Trend extends Component {
           buttonClick={() => push('/notifications')}
           location={this.props.location}
         />
-      </div>
+      </PageTransition>
     )
   }
 }

@@ -55,6 +55,7 @@ class Template extends React.Component {
                 '"Source Sans Pro","Rubik","Avenir Next", Helvetica, sans-serif',
               heading: '"Montserrat", "Source Sans Pro", sans-serif;',
             },
+            breakpoints: [320, 480, 768, 992, 1024],
             fontSizes: [12, 16, 20, 24, 32, 42, 52],
             colors: {
               black: '#3c3b3b',

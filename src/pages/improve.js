@@ -6,6 +6,7 @@ import get from 'lodash/get'
 import { siteMetadata } from '../../gatsby-config'
 import CardsImprove from '../components/CardsImprove'
 import BottomNavBar from '../components/BottonNavBar'
+import PageTransition from 'gatsby-plugin-page-transitions'
 
 import { connect } from 'unistore/react'
 import actions from '../store/actions'
@@ -17,7 +18,7 @@ class Improve extends Component {
   }
   render() {
     return (
-      <div className="improve-page">
+      <PageTransition transitionTime={400}>
         <Helmet title={`Improve | ${get(siteMetadata, 'title')}`} />
         <CardsImprove />
         <BottomNavBar
@@ -26,7 +27,7 @@ class Improve extends Component {
           buttonClick={() => push('/notifications')}
           location={this.props.location}
         />
-      </div>
+      </PageTransition>
     )
   }
 }

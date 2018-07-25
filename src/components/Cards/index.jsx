@@ -36,7 +36,7 @@ class Cards extends React.Component {
             <Box
               id={item.badge}
               key={index}
-              width={[1 / 2, 1 / 3, 1 / 4]}
+              width={[1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 6]}
               px={2}
             >
               <Card
