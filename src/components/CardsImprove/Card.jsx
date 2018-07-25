@@ -14,9 +14,11 @@ import {
   Flex,
   Badge,
 } from 'rebass'
+
+import { getOrientation, resetOrientation } from '../../utils'
+
 import cameraIcon from '../../assets/camera.svg'
 import checkIcon from '../../assets/check.svg'
-import { IncomingMessage } from 'http'
 
 const CardWrapper = styled(CustomCard)`
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
@@ -107,11 +109,15 @@ class Card extends React.Component {
 
     let reader = new FileReader()
     let file = e.target.files[0]
-    console.log(e.target.value)
-    reader.onloadend = () => {
-      this.setState({
-        file: file,
-        currentImage: reader.result,
+
+    let orientation = getOrientation(file, image => image)
+
+    reader.onloadend = e => {
+      resetOrientation(e.target.result, 5, image => {
+        this.setState({
+          file: file,
+          currentImage: image,
+        })
       })
     }
     reader.readAsDataURL(file)

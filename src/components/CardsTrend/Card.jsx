@@ -24,7 +24,7 @@ import actions from '../../store/actions'
 const CardWrapper = styled(CustomCard)`
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
     0 2px 9px 0 rgba(18, 106, 211, 0.06);
-  max-width: 320px;
+  max-width: 550px;
   margin: auto;
   margin-bottom: 20px;
   position: relative;
