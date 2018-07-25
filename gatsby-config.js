@@ -50,6 +50,7 @@ module.exports = {
         start_url: '/',
         background_color: '#fff',
         theme_color: '#673ab7',
+        orientation: 'portrait',
         display: 'fullscreen',
         icons: [
           {
