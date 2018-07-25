@@ -33,6 +33,14 @@ class Template extends React.Component {
     }
   }
 
+  classes = () => {
+    if (this.props.showBoarding) {
+      return 'no-scroll disable-clicks'
+    } else if (this.props.modalOpen) {
+      return 'no-scroll'
+    }
+  }
+
   componentDidMount() {}
 
   render() {
@@ -73,10 +81,7 @@ class Template extends React.Component {
         >
           <Helmet
             bodyAttributes={{
-              class:
-                this.props.modalOpen || this.props.showBoarding
-                  ? 'no-scroll'
-                  : 'scroll',
+              class: this.classes(),
             }}
           />
           <SiteNavi title={siteMetadata.title} {...this.props} />

@@ -16,7 +16,7 @@ class FeedPage extends React.Component {
   }
   render() {
     return (
-      <PageTransition transitionTime={300}>
+      <PageTransition transitionTime={300} className="dsadsadas">
         <TopNavBar />
         <Cards />
         {this.props.showBoarding ? (
