@@ -1,177 +1,176 @@
-// import image2 from '../assets/2.jpg'
-// import image3 from '../assets/3.jpg'
-// import image1 from '../assets/1.jpg'
-// import image4 from '../assets/4.jpg'
-// import image5 from '../assets/5.jpg'
-// import image6 from '../assets/6.jpg'
+// import image2 from '../assets/2.jpg?resize=500:500'
+// import image3 from '../assets/3.jpg?resize=500:500'
+// import image1 from '../assets/1.jpg?resize=500:500'
+// import image4 from '../assets/4.jpg?resize=500:500'
+// import image5 from '../assets/5.jpg?resize=500:500'
+// import image6 from '../assets/6.jpg?resize=500:500'
 // import image7 from '../assets/7.png'
 
 export const dataItems = [
   {
-    title:
-      'חזיית המינימייזר חזיית המינימייזר חזיית המינימייזר חזיית המינימייזרחזיית המינימייזרחזיית המינימייזרחזיית המינימייזרחזיית המינימייזר',
-    id: '16030',
+    title: "Citizen Women's Watch Drive",
+    id: '281888608',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita/16030_1525327134.jpg',
+      'https://www.kay.com/images/products/2818/281888608_MV_ZM.jpg?resize=500:500',
     badge: 'bestSeller',
-    badgeTitle: 'Best Seller',
+    badgeTitle: 'Watches',
   },
   {
-    title: 'גוזייה מרופדת',
-    id: '17010',
+    title: "Bulova Precisionist Men's Chronograph Watch",
+    id: '270687407',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita/17010_1525327134.jpg',
+      'https://www.kay.com/images/products/2706/270687407_MV_ZM.jpg?resize=500:500',
     badge: 'bestSeller',
-    badgeTitle: 'Best Seller',
+    badgeTitle: 'Watches',
   },
   {
-    title: 'אנדורה חזייה מרופדת',
-    id: '98745',
+    title: "Tissot Women's Watch Couturier Automatic",
+    id: '311448500',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita_98745-v-1509610422.jpg',
+      'https://www.kay.com/images/products/3114/311448500_MV_ZM.jpg?resize=500:500',
     badge: 'bestSeller',
-    badgeTitle: 'Best Seller',
+    badgeTitle: 'Watches',
   },
   {
-    title: 'חליפת פנאי',
-    id: '991526',
+    title: "Disney Kids' Watch Princesses Time Teacher",
+    id: '321015303',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita/991526_1525327134.jpg',
+      'https://www.kay.com/images/products/3210/321015303_MV_ZM.jpg?resize=500:500',
     badge: 'bestSeller',
-    badgeTitle: 'Best Seller',
+    badgeTitle: 'Watches',
   },
 
   {
-    title: 'חליפת פנאי',
-    id: '991527',
+    title: 'Diamond Engagement Ring 1-3/4 Carats tw 14K White Gold',
+    id: '992653600',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita/991527_1525327134.jpg',
+      'https://www.kay.com/images/products/9926/992653600_MV_ZM.jpg?resize=500:500',
     badge: 'trending',
-    badgeTitle: 'Trending',
+    badgeTitle: 'Engagement Rings',
   },
   {
-    title: 'חזיית פוש אפ',
-    id: '03-12c347',
+    title: 'Neil Lane Aquamarine Engagement Ring 1 ct tw Diamonds 14K Gold',
+    id: '940375619',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita_03-12c347_-v-1509610422.jpg',
+      'https://www.kay.com/images/products/9403/940375619_MV_ZM.jpg?resize=500:500',
     badge: 'trending',
-    badgeTitle: 'Trending',
+    badgeTitle: 'Engagement Rings',
   },
   {
-    title: 'בגד גוף',
-    id: '09-12c541',
+    title: 'Diamond Engagement Ring 1 ct tw Round-cut 14K Two-Tone Gold',
+    id: '992662902',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita_09-12c541-v-1509610422.jpg',
+      'https://www.kay.com/images/products/9926/992662902_MV_ZM.jpg?resize=500:500',
     badge: 'trending',
-    badgeTitle: 'Trending',
+    badgeTitle: 'Engagement Rings',
   },
   {
-    title: 'חולצת פלנל משובצת',
-    id: '093a1205',
+    title: 'Diamond Engagement Ring 3/4 ct tw Princess/Round 14K White Gold',
+    id: '992437400',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita_093a1205-v-1509610422.jpg',
+      'https://www.kay.com/images/products/9924/992437400_MV_ZM.jpg?resize=500:500',
     badge: 'trending',
-    badgeTitle: 'Trending',
+    badgeTitle: 'Engagement Rings',
   },
   {
-    title: 'חזיית ספייסר',
-    id: '11180',
+    title: 'Diamond Earrings 1/2 ct tw Round-cut 10K Yellow Gold',
+    id: '182199101',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita_11180_-v-1509610422.jpg',
+      'https://www.kay.com/images/products/1821/182199101_MV_ZM.jpg?resize=500:500',
     badge: 'new',
-    badgeTitle: 'New',
+    badgeTitle: 'Earrings',
   },
   {
-    title: 'תחתון בוקסר',
-    id: '12b330_3',
+    title: 'Earring Climbers Natural Gemstones 10K White Gold',
+    id: '375401902',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita_12b330_3-v-1509610422.jpg',
+      'https://www.kay.com/images/products/3754/375401902_MV_ZM.jpg?resize=500:500',
     badge: 'new',
-    badgeTitle: 'New',
+    badgeTitle: 'Earrings',
   },
   {
-    title: 'חזיית פוש אפ',
-    id: '12b347_2',
+    title: 'Dangle Earrings 10K Yellow Gold',
+    id: '393435300',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita_12b347_2_-v-1509610422.jpg',
+      'https://www.kay.com/images/products/3934/393435300_MV_ZM.jpg?resize=500:500',
     badge: 'new',
-    badgeTitle: 'New',
+    badgeTitle: 'Earrings',
   },
   {
-    title: 'חזייה מרופדת',
-    id: '131343__6',
+    title: 'Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold',
+    id: '790149809',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita_131343__6-v-1509610422.jpg',
+      'https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500',
     badge: 'new',
-    badgeTitle: 'New',
+    badgeTitle: 'Earrings',
   },
   {
-    title: 'חזיית טי שירט',
-    id: '13135T',
+    title: 'Diamond Horseshoe Choker Necklace 1/10 ct tw 10K Rose Gold Adj.',
+    id: '173831506',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita/13135T_1525327134.jpg',
+      'https://www.kay.com/images/products/1738/173831506_MV_ZM.jpg?resize=500:500',
     badge: 'onSale',
+    badgeTitle: 'Necklaces',
+  },
+
+  {
+    title: 'Amethyst Necklace 1/10 ct tw Diamonds 10K Rose Gold',
+    id: '375851906',
+    image:
+      'https://www.kay.com/images/products/3758/375851906_MV_ZM.jpg?resize=500:500',
+    badge: 'onSale',
+    badgeTitle: 'Necklaces',
+  },
+  {
+    title: 'Chain Necklace Bronze/14K Yellow Gold Electroplate 18"-20" Adj',
+    id: '714248109',
+    image:
+      'https://www.kay.com/images/products/7142/714248109_MV_ZM.jpg?resize=500:500',
+    badge: 'onSale',
+    badgeTitle: 'Necklaces',
+  },
+
+  {
+    title: 'Emmy London Diamond Shoe Necklace 3/4 ct tw 14K Rose Gold',
+    id: '580438000',
+    image:
+      'https://www.kay.com/images/products/5804/580438000_MV_ZM.jpg?resize=500:500',
+    badge: 'onSale',
+    badgeTitle: 'Necklaces',
+  },
+
+  {
+    title: 'Infinity/Cross Ring 1/10 cttw Diamonds Sterling Silver/10K Gold',
+    id: '23614403',
+    image:
+      'https://www.kay.com/images/products/0236/023614403_MV_ZM.jpg?resize=500:500',
+    badge: 'missing',
+    badgeTitle: 'On Sale',
+  },
+  {
+    title: 'Diamond Paw Print Bolo Bracelet Sterling Silver/10K Rose Gold',
+    id: '111736500',
+    image:
+      'https://www.kay.com/images/products/1117/111736500_MV_ZM.jpg?resize=500:500',
+    badge: 'missing',
     badgeTitle: 'On Sale',
   },
 
   {
-    title: 'חזיית חצי קאפ',
-    id: '13e330',
+    title: 'Cat Charm Black Crystals & Enamel Sterling Silver',
+    id: '505495301',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita_13e330-v-1509610422.jpg',
-    badge: 'onSale',
-    badgeTitle: 'On Sale',
-  },
-  {
-    title: 'סלוגי',
-    id: '27401T',
-    image:
-      'https://fashion-media.apps-checkout.com/afrodita/27401T_1525327134.jpg',
-    badge: 'onSale',
+      'https://www.kay.com/images/products/5054/505495301_MV_ZM.jpg?resize=500:500',
+    badge: 'missing',
     badgeTitle: 'On Sale',
   },
 
   {
-    title: 'חזיית פוש אפ',
-    id: '3546608289241',
+    title: 'Blue & White Diamonds 1/10 ct tw 10K Rose Gold Crown Ring',
+    id: '23557109',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita/3546608289241_1513781146.jpg',
-    badge: 'onSale',
+      'https://www.kay.com/images/products/0235/023557109_MV_ZM.jpg?resize=500:500',
+    badge: 'missing',
     badgeTitle: 'On Sale',
-  },
-
-  {
-    title: 'חליפת פנאי',
-    id: '7297504077390',
-    image:
-      'https://fashion-media.apps-checkout.com/afrodita/7297504077390_1513865031.jpg',
-    badge: 'missing',
-    badgeTitle: 'Missing',
-  },
-  {
-    title: 'פיג׳מה',
-    id: '7297504088754',
-    image:
-      'https://fashion-media.apps-checkout.com/afrodita/7297504088754_1513782074.jpg',
-    badge: 'missing',
-    badgeTitle: 'Missing',
-  },
-
-  {
-    title: 'חזייה מידות גדולות',
-    id: '786155_1',
-    image:
-      'https://fashion-media.apps-checkout.com/afrodita_786155_1-v-1509610422.jpg',
-    badge: 'missing',
-    badgeTitle: 'Missing',
-  },
-
-  {
-    title: 'פיג׳מה בייסיק',
-    id: '777418',
-    image:
-      'https://fashion-media.apps-checkout.com/afrodita_777418-v-1512750034.jpg',
-    badge: 'missing',
-    badgeTitle: 'Missing',
   },
 ]

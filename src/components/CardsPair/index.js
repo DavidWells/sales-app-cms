@@ -16,75 +16,39 @@ import Heading from '../Elements/Heading'
 const data = [
   [
     {
-      title: 'חזיית המינימייזר',
-      id: '16030',
+      title: 'Earring Climbers Natural Gemstones 10K White Gold',
+      id: '375401902',
       image:
-        'https://fashion-media.apps-checkout.com/afrodita/16030_1525327134.jpg',
-      badge: 'bestSeller',
-      badgeTitle: 'Best Seller',
+        'https://www.kay.com/images/products/3754/375401902_MV_ZM.jpg?resize=500:500',
+      badge: 'new',
+      badgeTitle: 'Earrings',
     },
     {
-      title: 'גוזייה מרופדת',
-      id: '17010',
+      title: 'Dangle Earrings 10K Yellow Gold',
+      id: '393435300',
       image:
-        'https://fashion-media.apps-checkout.com/afrodita/17010_1525327134.jpg',
-      badge: 'bestSeller',
-      badgeTitle: 'Best Seller',
+        'https://www.kay.com/images/products/3934/393435300_MV_ZM.jpg?resize=500:500',
+      badge: 'new',
+      badgeTitle: 'Earrings',
     },
   ],
   [
     {
-      title: 'אנדורה חזייה מרופדת',
-      id: '98745',
+      title: 'Cat Charm Black Crystals & Enamel Sterling Silver',
+      id: '505495301',
       image:
-        'https://fashion-media.apps-checkout.com/afrodita_98745-v-1509610422.jpg',
-      badge: 'bestSeller',
-      badgeTitle: 'Best Seller',
+        'https://www.kay.com/images/products/5054/505495301_MV_ZM.jpg?resize=500:500',
+      badge: 'missing',
+      badgeTitle: 'On Sale',
     },
-    {
-      title: 'חליפת פנאי',
-      id: '991526',
-      image:
-        'https://fashion-media.apps-checkout.com/afrodita/991526_1525327134.jpg',
-      badge: 'bestSeller',
-      badgeTitle: 'Best Seller',
-    },
-  ],
 
-  [
     {
-      title: 'חליפת פנאי',
-      id: '991527',
+      title: 'Blue & White Diamonds 1/10 ct tw 10K Rose Gold Crown Ring',
+      id: '23557109',
       image:
-        'https://fashion-media.apps-checkout.com/afrodita/991527_1525327134.jpg',
-      badge: 'trending',
-      badgeTitle: 'Trending',
-    },
-    {
-      title: 'חזיית פוש אפ',
-      id: '03-12c347',
-      image:
-        'https://fashion-media.apps-checkout.com/afrodita_03-12c347_-v-1509610422.jpg',
-      badge: 'trending',
-      badgeTitle: 'Trending',
-    },
-  ],
-  [
-    {
-      title: 'בגד גוף',
-      id: '09-12c541',
-      image:
-        'https://fashion-media.apps-checkout.com/afrodita_09-12c541-v-1509610422.jpg',
-      badge: 'trending',
-      badgeTitle: 'Trending',
-    },
-    {
-      title: 'חולצת פלנל משובצת',
-      id: '093a1205',
-      image:
-        'https://fashion-media.apps-checkout.com/afrodita_093a1205-v-1509610422.jpg',
-      badge: 'trending',
-      badgeTitle: 'Trending',
+        'https://www.kay.com/images/products/0235/023557109_MV_ZM.jpg?resize=500:500',
+      badge: 'missing',
+      badgeTitle: 'On Sale',
     },
   ],
 ]
