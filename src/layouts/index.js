@@ -75,9 +75,7 @@ class Template extends React.Component {
               disabledButton: 'red',
             },
           }}
-          className={` ${this.props.rtl ? 'rtl' : 'ltr'} ${
-            this.state.showBoarding ? 'disable-clicks' : 'enable-clicks'
-          } ${this.state.showBoarding ? 'no-scroll' : 'scroll'}`}
+          className={` ${this.props.rtl ? 'rtl' : 'ltr'}   `}
         >
           <Helmet
             bodyAttributes={{

@@ -173,7 +173,7 @@ class Card extends React.Component {
         </Flex>
         <CardModal show={this.state.modalOpen} onClick={this.closeModal}>
           <CardModalInner show={this.state.modalOpen}>
-            <CloseModal onClick={this.closeModal} />
+            <CloseModal />
             <ItemBadge badge={this.props.badge}>
               {this.props.badgeTitle}
             </ItemBadge>
