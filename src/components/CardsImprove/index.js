@@ -68,9 +68,9 @@ class CardsWithCamera extends React.Component {
         <Flex mx={-2} flexWrap="wrap">
           <Box p={2} width={[1 / 1]}>
             <Heading>
-              Set those items in visual
+              Take a photo of these items
               <br />
-              locations!
+              new location
             </Heading>
           </Box>
           {data.map((item, index) => (
