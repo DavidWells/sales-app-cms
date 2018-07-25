@@ -68,6 +68,16 @@ const CustomBorderLine = styled(BorderLine)`
   margin-bottom: 3px;
 `
 
+const Title = styled(Subhead)`
+  /* display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  min-height: 38px; */
+`
+
 class Card extends React.Component {
   constructor(props) {
     super(props)
@@ -118,16 +128,9 @@ class Card extends React.Component {
         />
         <ItemBadge badge={this.props.badge}>{this.props.badgeTitle}</ItemBadge>
 
-        <Subhead
-          px={2}
-          pt={1}
-          pb={1}
-          fontSize={0}
-          fontWeight={400}
-          color="gray"
-        >
+        <Title px={2} pt={1} pb={1} fontSize={0} fontWeight={400} color="gray">
           ID: {this.props.id}
-        </Subhead>
+        </Title>
         <CustomBorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
         <Flex justifyContent="center" alignItems="center">
           <Box p={2}>

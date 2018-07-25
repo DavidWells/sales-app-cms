@@ -54,7 +54,7 @@ let initialState = {
       done: false,
       badge: 'instagram',
     },
-    { name: 'Sold together!', type: 'pair', done: false, badge: 'pair' },
+    { name: 'Complete the look!', type: 'pair', done: false, badge: 'pair' },
     {
       name: 'Record best seller locations',
       type: 'improve',

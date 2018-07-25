@@ -86,6 +86,16 @@ const CustomBorderLine = styled(BorderLine)`
   margin-bottom: 12px;
 `
 
+const Title = styled(Subhead)`
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  min-height: 38px;
+`
+
 class Card extends React.Component {
   constructor(props) {
     super(props)
@@ -143,7 +153,7 @@ class Card extends React.Component {
 
         <ItemBadge badge={this.props.badge}>{this.props.badgeTitle}</ItemBadge>
 
-        <Subhead
+        <Title
           px={2}
           py={1}
           fontSize={0}
@@ -151,7 +161,7 @@ class Card extends React.Component {
           onClick={this.openModal}
         >
           {this.props.title}
-        </Subhead>
+        </Title>
         {/* <Subhead px={2} fontSize={0} fontWeight={400} color="gray">
           ID: {this.props.id}
         </Subhead> */}

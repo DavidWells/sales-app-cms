@@ -74,7 +74,11 @@ class CardsWithCamera extends React.Component {
             </Heading>
           </Box>
           {data.map((item, index) => (
-            <Box key={index} width={[1 / 2, 1 / 3, 1 / 4]} px={2}>
+            <Box
+              key={index}
+              width={[1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 6]}
+              px={2}
+            >
               <Card
                 key={index}
                 title={item.title}
