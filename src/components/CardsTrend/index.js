@@ -9,10 +9,10 @@ import image1 from '../../assets/1.jpg'
 
 const data = [
   {
-    title: 'חזיית המינימייזר',
+    title: 'kayjewelersIt’s #bracelet season! #StyleInspo',
     id: '16030',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita/16030_1525327134.jpg',
+      'https://instagram.fsdv2-1.fna.fbcdn.net/vp/8c54249b6f5b4e3c62d8ac8bd11026a5/5BEEC433/t51.2885-15/e15/36705295_253835758541822_1307095540449673216_n.jpg',
     badge: 'bestSeller',
     badgeTitle: 'Best Seller',
   },

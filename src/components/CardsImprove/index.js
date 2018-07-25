@@ -15,37 +15,36 @@ import Heading from '../Elements/Heading'
 
 const data = [
   {
-    title: 'חזייה מרופדת',
-    id: '131343__6',
+    title: 'Diamond Engagement Ring 1 ct tw Round-cut 14K Two-Tone Gold',
+    id: '992662902',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita_131343__6-v-1509610422.jpg',
+      'https://www.kay.com/images/products/9926/992662902_MV_ZM.jpg?resize=500:500',
+    badge: 'trending',
+    badgeTitle: 'Engagement Rings',
+  },
+  {
+    title: 'Diamond Engagement Ring 3/4 ct tw Princess/Round 14K White Gold',
+    id: '992437400',
+    image:
+      'https://www.kay.com/images/products/9924/992437400_MV_ZM.jpg?resize=500:500',
+    badge: 'trending',
+    badgeTitle: 'Engagement Rings',
+  },
+  {
+    title: 'Diamond Earrings 1/2 ct tw Round-cut 10K Yellow Gold',
+    id: '182199101',
+    image:
+      'https://www.kay.com/images/products/1821/182199101_MV_ZM.jpg?resize=500:500',
     badge: 'new',
-    badgeTitle: 'New',
+    badgeTitle: 'Earrings',
   },
   {
-    title: 'חזיית טי שירט',
-    id: '13135T',
+    title: 'Earring Climbers Natural Gemstones 10K White Gold',
+    id: '375401902',
     image:
-      'https://fashion-media.apps-checkout.com/afrodita/13135T_1525327134.jpg',
-    badge: 'onSale',
-    badgeTitle: 'On Sale',
-  },
-
-  {
-    title: 'חזיית חצי קאפ',
-    id: '13e330',
-    image:
-      'https://fashion-media.apps-checkout.com/afrodita_13e330-v-1509610422.jpg',
-    badge: 'onSale',
-    badgeTitle: 'On Sale',
-  },
-  {
-    title: 'סלוגי',
-    id: '27401T',
-    image:
-      'https://fashion-media.apps-checkout.com/afrodita/27401T_1525327134.jpg',
-    badge: 'onSale',
-    badgeTitle: 'On Sale',
+      'https://www.kay.com/images/products/3754/375401902_MV_ZM.jpg?resize=500:500',
+    badge: 'new',
+    badgeTitle: 'Earrings',
   },
 ]
 
