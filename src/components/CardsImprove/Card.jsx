@@ -15,7 +15,7 @@ import {
   Badge,
 } from 'rebass'
 
-import { getOrientation, resetOrientation } from '../../utils'
+import { resetOrientation } from '../../utils'
 
 import cameraIcon from '../../assets/camera.svg'
 import checkIcon from '../../assets/check.svg'
@@ -106,11 +106,8 @@ class Card extends React.Component {
 
   getImage = e => {
     e.preventDefault()
-
     let reader = new FileReader()
     let file = e.target.files[0]
-
-    let orientation = getOrientation(file, image => image)
 
     reader.onloadend = e => {
       resetOrientation(e.target.result, 5, image => {
