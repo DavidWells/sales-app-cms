@@ -24,25 +24,16 @@ injectGlobal`
 class Template extends React.Component {
   state = {
     entered: false,
+    showBoarding: this.props.showBoarding,
   }
 
   componentWillReceiveProps(nextProps) {
-    if (
-      nextProps.location.pathname !== '/' &&
-      this.props.showBoarding === true
-    ) {
-      // this.props.hideBoarding()
+    if (this.state.showBoarding !== nextProps.showBoarding) {
+      this.setState({ showBoarding: nextProps.showBoarding })
     }
   }
 
-  componentDidMount() {
-    if (
-      this.props.location.pathname !== '/' &&
-      this.props.showBoarding === true
-    ) {
-      // this.props.hideBoarding()
-    }
-  }
+  componentDidMount() {}
 
   render() {
     const { location, children } = this.props
@@ -77,8 +68,8 @@ class Template extends React.Component {
             },
           }}
           className={` ${this.props.rtl ? 'rtl' : 'ltr'} ${
-            this.props.showBoarding ? 'disable-clicks' : 'enable-clicks'
-          } ${this.props.showBoarding ? 'no-scroll' : 'scroll'}`}
+            this.state.showBoarding ? 'disable-clicks' : 'enable-clicks'
+          } ${this.state.showBoarding ? 'no-scroll' : 'scroll'}`}
         >
           <Helmet
             bodyAttributes={{
