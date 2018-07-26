@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Avatar, Badge, Text, Flex, Box, Image } from 'rebass'
+import { connect } from 'unistore/react'
+import actions from '../../store/actions'
+import { push } from 'gatsby-link'
 import checkIcon from '../../assets/check.svg'
 import instagramLogo from '../../assets/instagram.svg'
 
@@ -35,9 +38,13 @@ const FullWidthFlex = styled(Flex)`
 `
 
 class TaskItem extends React.Component {
+  handleTask = () => {
+    this.props.selectCurrentTaskView(this.props.id)
+    push(this.props.type)
+  }
   render() {
     return (
-      <Task onClick={this.props.onClick} done={this.props.done}>
+      <Task onClick={this.handleTask} done={this.props.done}>
         <FullWidthFlex alignItems="center" justifyContent="space-between">
           <Flex alignItems="center">
             {this.props.badge === 'instagram' ? (
@@ -63,10 +70,19 @@ class TaskItem extends React.Component {
 TaskItem.propTypes = {
   taskName: PropTypes.any,
   index: PropTypes.number,
+  id: PropTypes.any,
   selected: PropTypes.bool,
   onClick: PropTypes.func,
   badge: PropTypes.any,
+  type: PropTypes.any,
   done: PropTypes.bool,
 }
 
-export default TaskItem
+const mapStateToProps = ({ currentTaskView }) => ({
+  currentTaskView,
+})
+
+export default connect(
+  mapStateToProps,
+  actions
+)(TaskItem)

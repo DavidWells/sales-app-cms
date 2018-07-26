@@ -17,7 +17,7 @@ class Improve extends Component {
   }
 
   updateTaskAndRedirect = () => {
-    this.props.selectTasks(this.props.tasks, 12)
+    this.props.selectTasks(this.props.tasks, this.props.currentTaskView)
     push('/notifications')
   }
   render() {
@@ -43,10 +43,12 @@ const mapStateToProps = ({
   improvePageSelectedItems,
   buttonImprove,
   tasks,
+  currentTaskView,
 }) => ({
   improvePageSelectedItems,
   buttonImprove,
   tasks,
+  currentTaskView,
 })
 export default connect(
   mapStateToProps,

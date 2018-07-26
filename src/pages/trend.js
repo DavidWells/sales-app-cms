@@ -13,7 +13,7 @@ class Trend extends Component {
   }
 
   updateTaskAndRedirect = () => {
-    this.props.selectTasks(this.props.tasks, 13)
+    this.props.selectTasks(this.props.tasks, this.props.currentTaskView)
     push('/notifications')
   }
 
@@ -35,9 +35,10 @@ class Trend extends Component {
 
 Trend.propTypes = {}
 
-const mapStateToProps = ({ trendItemSelected, tasks }) => ({
+const mapStateToProps = ({ trendItemSelected, tasks, currentTaskView }) => ({
   trendItemSelected,
   tasks,
+  currentTaskView,
 })
 
 export default connect(

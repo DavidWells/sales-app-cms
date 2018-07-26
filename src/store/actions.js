@@ -44,6 +44,16 @@ const actions = store => ({
     improvePageSelectedItems: 0,
   }),
 
+  incremenPairSelectedItems: ({ pairPageSelectedItems }) => ({
+    pairPageSelectedItems: pairPageSelectedItems + 1,
+  }),
+  decrementPairSelectedItems: ({ pairPageSelectedItems }) => ({
+    pairPageSelectedItems: pairPageSelectedItems - 1,
+  }),
+  resetPairSelectedItems: state => ({
+    pairPageSelectedItems: 0,
+  }),
+
   hideBoarding: state => ({
     showBoarding: false,
   }),
@@ -55,6 +65,10 @@ const actions = store => ({
 
     return { tasks: [...newObject] }
   },
+
+  selectCurrentTaskView: (state, id) => ({
+    currentTaskView: id,
+  }),
 })
 
 export default actions

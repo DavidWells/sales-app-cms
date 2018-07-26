@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { push } from 'gatsby-link'
+import Link, { push } from 'gatsby-link'
+import Helmet from 'react-helmet'
+import get from 'lodash/get'
+import { siteMetadata } from '../../gatsby-config'
 import CardsPair from '../components/CardsPair'
 import BottomNavBar from '../components/BottonNavBar'
 import { connect } from 'unistore/react'
@@ -9,17 +12,24 @@ import PageTransition from 'gatsby-plugin-page-transitions'
 
 class Pair extends Component {
   componentWillUnmount() {
-    this.props.resetTrendItem()
+    this.props.resetPairSelectedItems()
+  }
+
+  updateTaskAndRedirect = () => {
+    this.props.selectTasks(this.props.tasks, this.props.currentTaskView)
+    push('/notifications')
   }
   render() {
     return (
       <PageTransition transitionTime={400}>
+        <Helmet title={`Pair | ${get(siteMetadata, 'title')}`} />
         <CardsPair />
         <BottomNavBar
           text="Done"
-          buttonDisabled={this.props.trendItemSelected}
-          buttonClick={() => push('/notifications')}
+          buttonDisabled={this.props.pairPageSelectedItems > 0}
+          buttonClick={() => this.updateTaskAndRedirect()}
           location={this.props.location}
+          type="pair"
         />
       </PageTransition>
     )
@@ -28,8 +38,8 @@ class Pair extends Component {
 
 Pair.propTypes = {}
 
-const mapStateToProps = ({ trendItemSelected }) => ({
-  trendItemSelected,
+const mapStateToProps = ({ pairPageSelectedItems }) => ({
+  pairPageSelectedItems,
 })
 
 export default connect(

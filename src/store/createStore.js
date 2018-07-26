@@ -22,6 +22,7 @@ let initialState = {
   buttonTrend: false,
   buttonPair: false,
   improvePageSelectedItems: 0,
+  pairPageSelectedItems: 0,
   trendItemSelected: false,
   colors: {
     black: '#3c3b3b',
@@ -71,6 +72,7 @@ let initialState = {
       id: 15,
     },
   ],
+  currentTaskView: null,
   pagesButton: { feed: false, improve: false, trend: false, pair: false },
 }
 
