@@ -47,6 +47,10 @@ const actions = store => ({
   hideBoarding: state => ({
     showBoarding: false,
   }),
+
+  selectTasks: (state, obj) => ({
+    tasks: { ...obj },
+  }),
 })
 
 export default actions

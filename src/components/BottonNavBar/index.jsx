@@ -10,6 +10,8 @@ import AnalyticsIcon from '../../assets/bar-chart.svg'
 import Button from '../Elements/Button'
 import BottomTooltip from '../Boarding/BottomTooltip'
 
+import actions from '../../store/actions'
+
 const Nav = styled.div`
   background: white;
   position: fixed;
@@ -113,6 +115,7 @@ BottomNavBar.propTypes = {
   src: PropTypes.string,
   location: PropTypes.any,
   text: PropTypes.string,
+  type: PropTypes.any,
   buttonDisabled: PropTypes.bool,
   buttonClick: PropTypes.func,
 }
@@ -122,4 +125,7 @@ const mapStateToProps = ({ buttonFeed, showBoarding }) => ({
   showBoarding,
 })
 
-export default connect(mapStateToProps)(BottomNavBar)
+export default connect(
+  mapStateToProps,
+  actions
+)(BottomNavBar)

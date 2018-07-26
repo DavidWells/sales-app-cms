@@ -16,6 +16,10 @@ class Improve extends Component {
     console.log('componentUnmounted')
     this.props.resetImproveSelectedItems()
   }
+
+  updateTaskAndRedirect = () => {
+    this.props.selectTasks(this.props.tasks)
+  }
   render() {
     return (
       <PageTransition transitionTime={400}>
@@ -26,6 +30,7 @@ class Improve extends Component {
           buttonDisabled={this.props.improvePageSelectedItems > 0}
           buttonClick={() => push('/notifications')}
           location={this.props.location}
+          type="improve"
         />
       </PageTransition>
     )
@@ -34,9 +39,14 @@ class Improve extends Component {
 
 Improve.propTypes = {}
 
-const mapStateToProps = ({ improvePageSelectedItems, buttonImprove }) => ({
+const mapStateToProps = ({
   improvePageSelectedItems,
   buttonImprove,
+  tasks,
+}) => ({
+  improvePageSelectedItems,
+  buttonImprove,
+  tasks,
 })
 export default connect(
   mapStateToProps,
