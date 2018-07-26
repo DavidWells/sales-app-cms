@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import defaultLogo from '../../assets/logo-black.png'
+import defaultLogo from '../../assets/kay-logo.png'
 import styled from 'styled-components'
 
 const StyledLogo = styled.img`
   max-width: 130px;
+  max-height: 37px;
 `
 
 const Logo = props => {
