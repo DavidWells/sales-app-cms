@@ -13,7 +13,6 @@ import actions from '../store/actions'
 
 class Improve extends Component {
   componentWillUnmount() {
-    console.log('componentUnmounted')
     this.props.resetImproveSelectedItems()
   }
 

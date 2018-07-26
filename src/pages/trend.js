@@ -11,6 +11,12 @@ class Trend extends Component {
   componentWillUnmount() {
     this.props.resetTrendItem()
   }
+
+  updateTaskAndRedirect = () => {
+    this.props.selectTasks(this.props.tasks, 13)
+    push('/notifications')
+  }
+
   render() {
     return (
       <PageTransition transitionTime={400}>
@@ -18,8 +24,9 @@ class Trend extends Component {
         <BottomNavBar
           text="Done"
           buttonDisabled={this.props.trendItemSelected}
-          buttonClick={() => push('/notifications')}
+          buttonClick={() => this.updateTaskAndRedirect()}
           location={this.props.location}
+          type="trend"
         />
       </PageTransition>
     )
@@ -28,8 +35,9 @@ class Trend extends Component {
 
 Trend.propTypes = {}
 
-const mapStateToProps = ({ trendItemSelected }) => ({
+const mapStateToProps = ({ trendItemSelected, tasks }) => ({
   trendItemSelected,
+  tasks,
 })
 
 export default connect(

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Avatar, Badge, Text, Flex, Box } from 'rebass'
+import { Avatar, Badge, Text, Flex, Box, Image } from 'rebass'
 import checkIcon from '../../assets/check.svg'
 import instagramLogo from '../../assets/instagram.svg'
 
@@ -30,11 +30,15 @@ const InstaBadge = styled.img`
   margin-right: 4px;
 `
 
+const FullWidthFlex = styled(Flex)`
+  flex-basis: 100%;
+`
+
 class TaskItem extends React.Component {
   render() {
     return (
       <Task onClick={this.props.onClick} done={this.props.done}>
-        <Flex alignItems="center">
+        <FullWidthFlex alignItems="center" justifyContent="space-between">
           <Flex alignItems="center">
             {this.props.badge === 'instagram' ? (
               <InstaBadge width={28} src={instagramLogo} alt="" />
@@ -44,8 +48,12 @@ class TaskItem extends React.Component {
 
             <Text ml={3}>{this.props.taskName}</Text>
           </Flex>
-          {this.props.done && <div># </div>}
-        </Flex>
+          {this.props.done && (
+            <Box>
+              <Image src={checkIcon} alt="" width={20} />
+            </Box>
+          )}
+        </FullWidthFlex>
         {this.props.selected && <Avatar size={20} src={checkIcon} />}
       </Task>
     )
