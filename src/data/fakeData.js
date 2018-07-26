@@ -8,39 +8,6 @@
 
 export const dataItems = [
   {
-    title: "Citizen Women's Watch Drive",
-    id: '281888608',
-    image:
-      'https://www.kay.com/images/products/2818/281888608_MV_ZM.jpg?resize=500:500',
-    badge: 'bestSeller',
-    badgeTitle: 'Watches',
-  },
-  {
-    title: "Bulova Precisionist Men's Chronograph Watch",
-    id: '270687407',
-    image:
-      'https://www.kay.com/images/products/2706/270687407_MV_ZM.jpg?resize=500:500',
-    badge: 'bestSeller',
-    badgeTitle: 'Watches',
-  },
-  {
-    title: "Tissot Women's Watch Couturier Automatic",
-    id: '311448500',
-    image:
-      'https://www.kay.com/images/products/3114/311448500_MV_ZM.jpg?resize=500:500',
-    badge: 'bestSeller',
-    badgeTitle: 'Watches',
-  },
-  {
-    title: "Disney Kids' Watch Princesses Time Teacher",
-    id: '321015303',
-    image:
-      'https://www.kay.com/images/products/3210/321015303_MV_ZM.jpg?resize=500:500',
-    badge: 'bestSeller',
-    badgeTitle: 'Watches',
-  },
-
-  {
     title: 'Diamond Engagement Ring 1-3/4 Carats tw 14K White Gold',
     id: '992653600',
     image:
@@ -109,7 +76,7 @@ export const dataItems = [
     id: '173831506',
     image:
       'https://www.kay.com/images/products/1738/173831506_MV_ZM.jpg?resize=500:500',
-    badge: 'onSale',
+    badge: 'missing',
     badgeTitle: 'Necklaces',
   },
 
@@ -118,7 +85,7 @@ export const dataItems = [
     id: '375851906',
     image:
       'https://www.kay.com/images/products/3758/375851906_MV_ZM.jpg?resize=500:500',
-    badge: 'onSale',
+    badge: 'missing',
     badgeTitle: 'Necklaces',
   },
   {
@@ -126,7 +93,7 @@ export const dataItems = [
     id: '714248109',
     image:
       'https://www.kay.com/images/products/7142/714248109_MV_ZM.jpg?resize=500:500',
-    badge: 'onSale',
+    badge: 'missing',
     badgeTitle: 'Necklaces',
   },
 
@@ -135,16 +102,47 @@ export const dataItems = [
     id: '580438000',
     image:
       'https://www.kay.com/images/products/5804/580438000_MV_ZM.jpg?resize=500:500',
-    badge: 'onSale',
+    badge: 'missing',
     badgeTitle: 'Necklaces',
   },
-
+  {
+    title: "Citizen Women's Watch Drive",
+    id: '281888608',
+    image:
+      'https://www.kay.com/images/products/2818/281888608_MV_ZM.jpg?resize=500:500',
+    badge: 'bestSeller',
+    badgeTitle: 'Watches',
+  },
+  {
+    title: "Bulova Precisionist Men's Chronograph Watch",
+    id: '270687407',
+    image:
+      'https://www.kay.com/images/products/2706/270687407_MV_ZM.jpg?resize=500:500',
+    badge: 'bestSeller',
+    badgeTitle: 'Watches',
+  },
+  {
+    title: "Tissot Women's Watch Couturier Automatic",
+    id: '311448500',
+    image:
+      'https://www.kay.com/images/products/3114/311448500_MV_ZM.jpg?resize=500:500',
+    badge: 'bestSeller',
+    badgeTitle: 'Watches',
+  },
+  {
+    title: "Disney Kids' Watch Princesses Time Teacher",
+    id: '321015303',
+    image:
+      'https://www.kay.com/images/products/3210/321015303_MV_ZM.jpg?resize=500:500',
+    badge: 'bestSeller',
+    badgeTitle: 'Watches',
+  },
   {
     title: 'Infinity/Cross Ring 1/10 cttw Diamonds Sterling Silver/10K Gold',
     id: '23614403',
     image:
       'https://www.kay.com/images/products/0236/023614403_MV_ZM.jpg?resize=500:500',
-    badge: 'missing',
+    badge: 'onSale',
     badgeTitle: 'On Sale',
   },
   {
@@ -152,7 +150,7 @@ export const dataItems = [
     id: '111736500',
     image:
       'https://www.kay.com/images/products/1117/111736500_MV_ZM.jpg?resize=500:500',
-    badge: 'missing',
+    badge: 'onSale',
     badgeTitle: 'On Sale',
   },
 
@@ -161,7 +159,7 @@ export const dataItems = [
     id: '505495301',
     image:
       'https://www.kay.com/images/products/5054/505495301_MV_ZM.jpg?resize=500:500',
-    badge: 'missing',
+    badge: 'onSale',
     badgeTitle: 'On Sale',
   },
 
@@ -170,7 +168,7 @@ export const dataItems = [
     id: '23557109',
     image:
       'https://www.kay.com/images/products/0235/023557109_MV_ZM.jpg?resize=500:500',
-    badge: 'missing',
+    badge: 'onSale',
     badgeTitle: 'On Sale',
   },
 ]

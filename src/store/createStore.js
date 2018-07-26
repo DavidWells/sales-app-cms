@@ -35,11 +35,11 @@ let initialState = {
   },
   items: dataItems,
   itemCategories: [
-    { name: 'Watches', id: 'bestSeller', position: 0 },
     { name: 'Engagement Rings', id: 'trending', position: 1 },
     { name: 'Earrings', id: 'new', position: 2 },
-    { name: 'On Sale', id: 'onSale', position: 3 },
     { name: 'Necklaces', id: 'missing', position: 4 },
+    { name: 'Watches', id: 'bestSeller', position: 0 },
+    { name: 'On Sale', id: 'onSale', position: 3 },
   ],
   tasks: [
     {
