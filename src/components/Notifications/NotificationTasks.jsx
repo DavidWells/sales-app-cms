@@ -36,6 +36,7 @@ class NotificationTasks extends React.Component {
           <TaskItem
             key={index}
             badge={item.badge}
+            done={item.done}
             taskName={item.name}
             index={index}
             selected={item.selected}

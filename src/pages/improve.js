@@ -18,7 +18,8 @@ class Improve extends Component {
   }
 
   updateTaskAndRedirect = () => {
-    this.props.selectTasks(this.props.tasks)
+    this.props.selectTasks(this.props.tasks, 12)
+    push('/notifications')
   }
   render() {
     return (
@@ -28,7 +29,7 @@ class Improve extends Component {
         <BottomNavBar
           text="Done"
           buttonDisabled={this.props.improvePageSelectedItems > 0}
-          buttonClick={() => push('/notifications')}
+          buttonClick={() => this.updateTaskAndRedirect()}
           location={this.props.location}
           type="improve"
         />

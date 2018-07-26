@@ -48,9 +48,13 @@ const actions = store => ({
     showBoarding: false,
   }),
 
-  selectTasks: (state, obj) => ({
-    tasks: { ...obj },
-  }),
+  selectTasks: (state, obj, id) => {
+    let newObject = obj.map(
+      item => (item.id === id ? Object.assign({}, item, { done: true }) : item)
+    )
+
+    return { tasks: [...newObject] }
+  },
 })
 
 export default actions
