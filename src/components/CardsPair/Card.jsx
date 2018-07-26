@@ -76,9 +76,18 @@ class Card extends React.Component {
   }
 
   toggleSelection = e => {
-    this.setState({
-      selected: !this.state.selected,
-    })
+    this.setState(
+      {
+        selected: !this.state.selected,
+      },
+      () => {
+        if (this.state.selected) {
+          this.props.incremenPairSelectedItems()
+        } else {
+          this.props.decrementPairSelectedItems()
+        }
+      }
+    )
   }
 
   getImage = e => {

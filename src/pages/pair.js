@@ -38,8 +38,14 @@ class Pair extends Component {
 
 Pair.propTypes = {}
 
-const mapStateToProps = ({ pairPageSelectedItems }) => ({
+const mapStateToProps = ({
   pairPageSelectedItems,
+  tasks,
+  currentTaskView,
+}) => ({
+  pairPageSelectedItems,
+  tasks,
+  currentTaskView,
 })
 
 export default connect(

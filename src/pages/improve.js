@@ -41,12 +41,11 @@ Improve.propTypes = {}
 
 const mapStateToProps = ({
   improvePageSelectedItems,
-  buttonImprove,
   tasks,
   currentTaskView,
 }) => ({
   improvePageSelectedItems,
-  buttonImprove,
+
   tasks,
   currentTaskView,
 })
