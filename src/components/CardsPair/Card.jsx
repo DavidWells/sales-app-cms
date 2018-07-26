@@ -17,11 +17,8 @@ import cameraIcon from '../../assets/camera.svg'
 import checkIcon from '../../assets/check.svg'
 
 const CardWrapper = styled(CustomCard)`
-  box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
-    0 2px 9px 0 rgba(18, 106, 211, 0.06);
-
+  box-shadow: none;
   position: relative;
-  ${props => props.selected && 'border: 2px solid rgba(0, 184, 148, 0.72);'};
 `
 
 const ItemBadge = styled(Badge)`
@@ -75,21 +72,6 @@ class Card extends React.Component {
     }
   }
 
-  toggleSelection = e => {
-    this.setState(
-      {
-        selected: !this.state.selected,
-      },
-      () => {
-        if (this.state.selected) {
-          this.props.incremenPairSelectedItems()
-        } else {
-          this.props.decrementPairSelectedItems()
-        }
-      }
-    )
-  }
-
   getImage = e => {
     e.preventDefault()
 
@@ -109,14 +91,10 @@ class Card extends React.Component {
   render() {
     return (
       <CardWrapper mb={3} p={0} selected={this.state.selected}>
-        <BackgroundImage
-          ratio={1}
-          src={this.state.currentImage}
-          onClick={this.toggleSelection}
-        />
+        <BackgroundImage ratio={1} src={this.state.currentImage} />
         <ItemBadge badge={this.props.badge}>{this.props.badgeTitle}</ItemBadge>
 
-        <Subhead
+        {/* <Subhead
           px={2}
           pt={1}
           pb={1}
@@ -125,8 +103,8 @@ class Card extends React.Component {
           color="gray"
         >
           ID: {this.props.id}
-        </Subhead>
-        <CustomBorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
+        </Subhead> */}
+        {/* <CustomBorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
         <Flex justifyContent="center" alignItems="center">
           <Box p={2}>
             <InputCamera
@@ -138,7 +116,7 @@ class Card extends React.Component {
           </Box>
 
           {this.state.selected && <Check src={checkIcon} />}
-        </Flex>
+        </Flex> */}
       </CardWrapper>
     )
   }

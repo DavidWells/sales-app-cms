@@ -1,17 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Flex, Box } from 'rebass'
+import {
+  Flex,
+  Box,
+  Card as PairCard,
+  Divider as BorderLine,
+  Image,
+} from 'rebass'
+import { connect } from 'unistore/react'
+import actions from '../../store/actions'
 import Card from './Card'
-
-// import image1 from '../../assets/1.jpg'
-// import image2 from '../../assets/2.jpg'
-// import image3 from '../../assets/3.jpg'
-// import image4 from '../../assets/4.jpg'
-// import image5 from '../../assets/5.jpg'
-// import image6 from '../../assets/6.jpg'
-// import image7 from '../../assets/7.png'
+import Row from './Row'
 import Heading from '../Elements/Heading'
+import cameraIcon from '../../assets/camera.svg'
+import checkIcon from '../../assets/check.svg'
 
 const data = [
   [
@@ -53,16 +56,70 @@ const data = [
   ],
 ]
 
+const CardWrapper = styled(PairCard)`
+  box-shadow: none;
+  position: relative;
+  ${props => props.selected && 'border: 2px solid rgba(0, 184, 148, 0.72);'};
+`
+
 const CardList = styled.div``
 
 const Text = styled.div`
   font-size: 30px;
   text-align: center;
 `
+const CameraIcon = styled.img`
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
+`
+
+const InputCamera = styled.input`
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  width: 55px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+`
+
+const Check = styled.img`
+  max-width: 20px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+`
+
+const CustomBorderLine = styled(BorderLine)`
+  margin-top: 2px;
+  margin-bottom: 3px;
+`
+
+const PairCardOverlayImage = styled.div`
+  background-image: url(${props => props.src});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+`
 
 class CardsPair extends React.Component {
-  state = {
-    show: false,
+  constructor(props) {
+    super(props)
+    this.state = {
+      currentImage: this.props.imageSrc,
+      selected: false,
+      show: false,
+    }
   }
 
   render() {
@@ -72,24 +129,7 @@ class CardsPair extends React.Component {
           <Box p={2} width={[1 / 1]}>
             <Heading>People attend to buy both of those items together</Heading>
           </Box>
-          {data.map((row, index) => (
-            <Box width={[1 / 1]} key={index}>
-              <Flex flexWrap="wrap">
-                {row.map((item, index) => (
-                  <Box key={index} width={[1 / 2, 1 / 2, 1 / 2]} px={2}>
-                    <Card
-                      key={index}
-                      title={item.title}
-                      id={item.id}
-                      imageSrc={item.image}
-                      badge={item.badge}
-                      badgeTitle={item.badgeTitle}
-                    />
-                  </Box>
-                ))}
-              </Flex>
-            </Box>
-          ))}
+          {data.map((row, index) => <Row row={row} key={index} />)}
         </Flex>
       </CardList>
     )
@@ -101,4 +141,10 @@ CardsPair.propTypes = {
   src: PropTypes.string,
 }
 
-export default CardsPair
+const mapStateToProps = ({ pairPageSelectedItems }) => ({
+  pairPageSelectedItems,
+})
+export default connect(
+  mapStateToProps,
+  actions
+)(CardsPair)

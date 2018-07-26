@@ -10,8 +10,7 @@ export const dataItems = [
   {
     title: 'Diamond Engagement Ring 1-3/4 Carats tw 14K White Gold',
     id: '992653600',
-    image:
-      'https://www.kay.com/images/products/9926/992653600_MV_ZM.jpg?resize=500:500',
+    image: 'https://www.kay.com/images/products/9926/992653600_MV_ZM.jpg',
     badge: 'trending',
     badgeTitle: 'Engagement Rings',
   },
