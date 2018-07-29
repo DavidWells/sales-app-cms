@@ -96,10 +96,11 @@ class BottomNavBar extends React.Component {
           >
             {this.props.text}
           </Button>
-
-          <ButtonTransparent>
-            <img width={25} src={AnalyticsIcon} alt="" />
-          </ButtonTransparent>
+          <Link to="/charts">
+            <ButtonTransparent>
+              <img width={25} src={AnalyticsIcon} alt="" />
+            </ButtonTransparent>
+          </Link>
         </Flex>
       </Nav>
     )

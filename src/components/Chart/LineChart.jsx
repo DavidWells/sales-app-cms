@@ -1,5 +1,7 @@
 import React from 'react'
 import { Line } from 'react-chartjs-2'
+import { Box } from 'rebass'
+import styled from '../../../node_modules/styled-components'
 
 const data = {
   labels: ['jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
@@ -28,10 +30,12 @@ const data = {
   ],
 }
 
-const LineChart = () => (
-  <div>
+const LineChartWrapper = styled(Box)``
+
+const LineChart = props => (
+  <LineChartWrapper {...props}>
     <Line data={data} />
-  </div>
+  </LineChartWrapper>
 )
 
 export default LineChart

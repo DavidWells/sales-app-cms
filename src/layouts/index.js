@@ -73,6 +73,7 @@ class Template extends React.Component {
               instagram: 'grey',
               greenButton: '#00b894',
               disabledButton: 'red',
+              blueGradient: 'linear-gradient(to top, #3498db, #2c3e50)',
             },
           }}
           className={` ${this.props.rtl ? 'rtl' : 'ltr'}   `}
