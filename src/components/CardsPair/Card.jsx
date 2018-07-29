@@ -18,6 +18,7 @@ import checkIcon from '../../assets/check.svg'
 
 const CardWrapper = styled(CustomCard)`
   position: relative;
+  margin-top: 10px;
 `
 
 const ItemBadge = styled(Badge)`
