@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { connect } from 'unistore/react'
+import actions from '../../store/actions'
 import smoothscroll from 'smoothscroll-polyfill'
 
 const NavList = styled.nav`
@@ -77,6 +78,7 @@ class Nav extends React.Component {
     if (document.getElementById(id) !== null) {
       let element = document.getElementById(id).offsetTop - 110
       window.scroll({ top: element, behavior: 'smooth' })
+      this.props.setCurrentTopMenu(id)
     }
   }
 
@@ -107,4 +109,7 @@ class Nav extends React.Component {
 const mapStateToProps = ({ itemCategories }) => ({
   itemCategories,
 })
-export default connect(mapStateToProps)(Nav)
+export default connect(
+  mapStateToProps,
+  actions
+)(Nav)

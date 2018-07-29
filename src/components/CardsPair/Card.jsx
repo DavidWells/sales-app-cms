@@ -17,7 +17,6 @@ import cameraIcon from '../../assets/camera.svg'
 import checkIcon from '../../assets/check.svg'
 
 const CardWrapper = styled(CustomCard)`
-  box-shadow: none;
   position: relative;
 `
 

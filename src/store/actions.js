@@ -7,6 +7,9 @@ const actions = store => ({
   toggleModal: state => ({
     modalOpen: !state.modalOpen,
   }),
+  setCurrentTopMenu: (state, id) => ({
+    currentTopMenu: id,
+  }),
   addItems: state => ({
     items: dataItems,
   }),

@@ -17,6 +17,7 @@ let initialState = {
   count: 0,
   modalOpen: false,
   location: null,
+  currentTopMenu: null,
   buttonFeed: false,
   buttonImprove: false,
   buttonTrend: false,

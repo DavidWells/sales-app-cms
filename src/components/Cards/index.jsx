@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { sortBy } from 'lodash'
@@ -23,7 +24,22 @@ class Cards extends React.Component {
     data: this.props.items,
   }
 
-  componentDidMount() {}
+  // componentDidMount() {
+  //   window.onscroll = ev => {}
+  // }
+
+  // getCardPosition = id => {
+  //   window.onscroll = ev => {
+  //     // let rex = this.refs(id).getDOMNode()
+  //     let el = document.getElementById(id)
+  //     // let elPosition = el.getBoundingClientRect()
+  //     if (el !== null) {
+  //       let elPosition = el.getBoundingClientRect()
+  //       // console.log(elPosition)
+  //       console.log(id)
+  //     }
+  //   }
+  // }
 
   render() {
     return (
@@ -35,11 +51,14 @@ class Cards extends React.Component {
           {this.state.data.map((item, index) => (
             <Box
               id={item.badge}
+              ref={item.badge}
+              // onScroll={this.getCardPosition(item.badge)}
               key={index}
               width={[1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 6]}
               px={2}
             >
               <Card
+                ref={item.id}
                 onClick={this.handleModal}
                 key={index}
                 title={item.title}
