@@ -23,6 +23,9 @@ const NavList = styled.nav`
   flex-grow: 1;
   max-width: 100%;
   max-width: 343px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `
 
 const NavItem = styled.a`

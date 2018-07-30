@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { connect } from 'unistore/react'
 import actions from '../../store/actions'
-
+import LineChart from '../Chart/LineChart'
 import {
   Card as CustomCard,
   Subhead,
@@ -13,12 +13,8 @@ import {
   Divider as BorderLine,
   Flex,
   Badge,
+  Close,
 } from 'rebass'
-
-import { resetOrientation } from '../../utils'
-
-import cameraIcon from '../../assets/camera.svg'
-import checkIcon from '../../assets/check.svg'
 
 const CardWrapper = styled(CustomCard)`
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
@@ -26,6 +22,52 @@ const CardWrapper = styled(CustomCard)`
 
   position: relative;
   ${props => props.selected && 'border: 2px solid rgba(0, 184, 148, 0.72);'};
+`
+
+const CardModal = styled.div`
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 250ms ease-in-out;
+  visibility: ${props => (props.show ? 'visible' : 'hidden')};
+  opacity: ${props => (props.show ? '1' : '0')};
+
+  @media (max-width: 700px) {
+    background: rgba(0, 0, 0, 0.7);
+  }
+`
+
+const CardModalInner = styled.div`
+  background: white;
+  max-width: 500px;
+  position: relative;
+  margin: 5rem auto;
+  box-shadow: 0 25px 30px -18px rgba(0, 0, 0, 0.28);
+  transition: all 350ms ease-in-out;
+  transform: scale(${props => (props.show ? '1' : '0.2')});
+  opacity: ${props => (props.show ? '1' : '0')};
+  visibility: ${props => (props.show ? 'visible' : 'hidden')};
+  @media (max-width: 700px) {
+    margin: 1rem;
+  }
+`
+
+const CloseModal = styled(Close)`
+  position: absolute;
+  right: 0;
+  /* background: gainsboro; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  padding: 5px 15px;
+  margin: 10px;
+  cursor: pointer;
 `
 
 const ItemBadge = styled(Badge)`
@@ -37,33 +79,6 @@ const ItemBadge = styled(Badge)`
   padding: 5px 10px;
   background-color: ${props => props.theme.colors[props.badge]};
 `
-const CameraIcon = styled.img`
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
-  &:hover {
-    opacity: 0.8;
-  }
-`
-
-const InputCamera = styled.input`
-  opacity: 0;
-  position: absolute;
-  cursor: pointer;
-  left: 0;
-  right: 0;
-  width: 55px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-`
-
-const Check = styled.img`
-  max-width: 20px;
-  position: absolute;
-  right: 0;
-  margin-right: 20px;
-`
 
 const CustomBorderLine = styled(BorderLine)`
   margin-top: 2px;
@@ -71,13 +86,13 @@ const CustomBorderLine = styled(BorderLine)`
 `
 
 const Title = styled(Subhead)`
-  /* display: -webkit-box;
+  display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
-  min-height: 38px; */
+  min-height: 38px;
 `
 
 class Card extends React.Component {
@@ -86,39 +101,46 @@ class Card extends React.Component {
     this.state = {
       currentImage: this.props.imageSrc,
       selected: false,
+      modalOpen: false,
     }
   }
 
-  toggleSelection = e => {
+  handleModal = event => {
+    // console.log(event.pageX, event.pageY)
     this.setState(
       {
-        selected: !this.state.selected,
+        modalOpen: !this.state.modalOpen,
       },
       () => {
-        if (this.state.selected) {
-          this.props.incremenImproveSelectedItems()
-        } else {
-          this.props.decrementImproveSelectedItems()
-        }
+        this.props.toggleModal()
       }
     )
   }
 
-  getImage = e => {
-    e.preventDefault()
-    let reader = new FileReader()
-    let file = e.target.files[0]
-
-    reader.onloadend = e => {
-      resetOrientation(e.target.result, 5, image => {
-        this.setState({
-          file: file,
-          currentImage: image,
-        })
-      })
+  openModal = e => {
+    if (this.state.modalOpen === false) {
+      this.setState(
+        {
+          modalOpen: true,
+        },
+        () => this.props.toggleModal()
+      )
+    } else {
+      e.preventDefault()
     }
-    reader.readAsDataURL(file)
-    this.setState({ selected: true })
+  }
+
+  closeModal = e => {
+    if (this.state.modalOpen === true) {
+      this.setState(
+        {
+          modalOpen: false,
+        },
+        () => this.props.toggleModal()
+      )
+    } else {
+      e.preventDefault()
+    }
   }
 
   render() {
@@ -127,11 +149,17 @@ class Card extends React.Component {
         <BackgroundImage
           ratio={1}
           src={this.state.currentImage}
-          onClick={this.toggleSelection}
+          onClick={this.openModal}
         />
         <ItemBadge badge={this.props.badge}>{this.props.badgeTitle}</ItemBadge>
 
-        <Title px={2} pt={1} pb={1} fontSize={0} fontWeight={400} color="gray">
+        <Title
+          px={2}
+          py={1}
+          fontSize={0}
+          fontWeight={400}
+          onClick={this.openModal}
+        >
           {this.props.title}
         </Title>
         <Text px={2} fontSize={0} fontWeight="bold" mb={1}>
@@ -149,6 +177,23 @@ class Card extends React.Component {
             {this.props.units} units
           </Text>
         </Flex>
+        <CardModal show={this.state.modalOpen} onClick={this.closeModal}>
+          <CardModalInner show={this.state.modalOpen}>
+            <CloseModal />
+            <ItemBadge badge={this.props.badge}>
+              {this.props.badgeTitle}
+            </ItemBadge>
+
+            <BackgroundImage ratio={1} src={this.props.imageSrc} />
+            {/* <Subhead p={2} fontSize={1} fontWeight={400}>
+              {this.props.title}
+            </Subhead> */}
+            <Subhead p={2} pt={3} fontSize={1} fontWeight={400} color="gray">
+              ID: {this.props.id}
+            </Subhead>
+            <LineChart />
+          </CardModalInner>
+        </CardModal>
       </CardWrapper>
     )
   }
