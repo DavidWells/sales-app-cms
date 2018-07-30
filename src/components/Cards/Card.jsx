@@ -142,53 +142,91 @@ class Card extends React.Component {
     }
   }
 
+  getCardPosition = id => {
+    window.onscroll = ev => {
+      // let rex = this.refs(id).getDOMNode()
+      let el = document.getElementById(id)
+      // let elPosition = el.getBoundingClientRect()
+      if (el !== null) {
+        let elPosition = el.getBoundingClientRect()
+        // console.log(elPosition)
+        // console.log(elPosition)
+        if (elPosition.y > 400) {
+          console.log(id + ' : its here')
+        }
+      }
+    }
+    console.log(this.props.badge)
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', e => {
+      let el = document.getElementById(this.props.badge)
+      if (el !== null) {
+        let elPosition = el.getBoundingClientRect()
+        if (this.props.badge === 'new') {
+          // console.log(elPosition)
+        }
+        if (elPosition.y < 120 && elPosition.y > -390) {
+          // console.log(this.props.badge + ' : its here')
+          if (this.props.currentTopMenu !== this.props.badge) {
+            this.props.setCurrentTopMenu(this.props.badge)
+          }
+        }
+      }
+    })
+  }
   render() {
     return (
-      <CardWrapper mb={3} p={0}>
-        <BackgroundImage
-          ratio={1}
-          src={this.props.imageSrc}
-          onClick={this.openModal}
-        />
+      <div>
+        <CardWrapper mb={3} p={0}>
+          <BackgroundImage
+            ratio={1}
+            src={this.props.imageSrc}
+            onClick={this.openModal}
+          />
 
-        <ItemBadge badge={this.props.badge}>{this.props.badgeTitle}</ItemBadge>
+          <ItemBadge badge={this.props.badge}>
+            {this.props.badgeTitle}
+          </ItemBadge>
 
-        <Title
-          px={2}
-          py={1}
-          fontSize={0}
-          fontWeight={400}
-          onClick={this.openModal}
-        >
-          {this.props.title}
-        </Title>
-        {/* <Subhead px={2} fontSize={0} fontWeight={400} color="gray">
+          <Title
+            px={2}
+            py={1}
+            fontSize={0}
+            fontWeight={400}
+            onClick={this.openModal}
+          >
+            {this.props.title}
+          </Title>
+          {/* <Subhead px={2} fontSize={0} fontWeight={400} color="gray">
           ID: {this.props.id}
         </Subhead> */}
-        <CustomBorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
-        <Flex mx={2} pb={3} alignItems="center">
-          <Text children="34%" fontSize={0} pr={1} />
-          <Progress value={0.5} color="#3190f0" bg={'red'} />
-          <Text children="12" fontSize={0} pl={1} />
-        </Flex>
-        <CardModal show={this.state.modalOpen} onClick={this.closeModal}>
-          <CardModalInner show={this.state.modalOpen}>
-            <CloseModal />
-            <ItemBadge badge={this.props.badge}>
-              {this.props.badgeTitle}
-            </ItemBadge>
+          <CustomBorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
+          <Flex mx={2} pb={3} alignItems="center">
+            <Text children="34%" fontSize={0} pr={1} />
+            <Progress value={0.5} color="#3190f0" bg={'red'} />
+            <Text children="12" fontSize={0} pl={1} />
+          </Flex>
+          <CardModal show={this.state.modalOpen} onClick={this.closeModal}>
+            <CardModalInner show={this.state.modalOpen}>
+              <CloseModal />
+              <ItemBadge badge={this.props.badge}>
+                {this.props.badgeTitle}
+              </ItemBadge>
 
-            <BackgroundImage ratio={1} src={this.props.imageSrc} />
-            {/* <Subhead p={2} fontSize={1} fontWeight={400}>
+              <BackgroundImage ratio={1} src={this.props.imageSrc} />
+              {/* <Subhead p={2} fontSize={1} fontWeight={400}>
               {this.props.title}
             </Subhead> */}
-            <Subhead p={2} pt={3} fontSize={1} fontWeight={400} color="gray">
-              ID: {this.props.id}
-            </Subhead>
-            <LineChart />
-          </CardModalInner>
-        </CardModal>
-      </CardWrapper>
+              <Subhead p={2} pt={3} fontSize={1} fontWeight={400} color="gray">
+                ID: {this.props.id}
+              </Subhead>
+              <LineChart />
+            </CardModalInner>
+          </CardModal>
+        </CardWrapper>
+      </div>
     )
   }
 }
@@ -214,8 +252,9 @@ Card.propTypes = {
   onClick: PropTypes.func,
 }
 
-const mapStateToProps = ({ modalOpen }) => ({
+const mapStateToProps = ({ modalOpen, currentTopMenu }) => ({
   modalOpen,
+  currentTopMenu,
 })
 export default connect(
   mapStateToProps,

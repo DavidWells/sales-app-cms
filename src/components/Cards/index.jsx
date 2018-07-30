@@ -28,18 +28,19 @@ class Cards extends React.Component {
   //   window.onscroll = ev => {}
   // }
 
-  // getCardPosition = id => {
-  //   window.onscroll = ev => {
-  //     // let rex = this.refs(id).getDOMNode()
-  //     let el = document.getElementById(id)
-  //     // let elPosition = el.getBoundingClientRect()
-  //     if (el !== null) {
-  //       let elPosition = el.getBoundingClientRect()
-  //       // console.log(elPosition)
-  //       console.log(id)
-  //     }
-  //   }
-  // }
+  getCardPosition = visible => {
+    // window.onscroll = ev => {
+    //   // let rex = this.refs(id).getDOMNode()
+    //   let el = document.getElementById(id)
+    //   // let elPosition = el.getBoundingClientRect()
+    //   if (el !== null) {
+    //     let elPosition = el.getBoundingClientRect()
+    //     // console.log(elPosition)
+    //     console.log(id)
+    //   }
+    // }
+    console.log(visible)
+  }
 
   render() {
     return (
@@ -52,7 +53,6 @@ class Cards extends React.Component {
             <Box
               id={item.badge}
               ref={item.badge}
-              // onScroll={this.getCardPosition(item.badge)}
               key={index}
               width={[1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 6]}
               px={2}
@@ -80,10 +80,11 @@ Cards.propTypes = {
   src: PropTypes.string,
 }
 
-const mapStateToProps = ({ modalOpen, items, buttonFeed }) => ({
+const mapStateToProps = ({ modalOpen, items, buttonFeed, itemCategories }) => ({
   modalOpen,
   items,
   buttonFeed,
+  itemCategories,
 })
 export default connect(
   mapStateToProps,
