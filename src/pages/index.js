@@ -5,6 +5,7 @@ import BottomNavBar from '../components/BottonNavBar'
 import { connect } from 'unistore/react'
 import actions from '../store/actions'
 import PageTransition from 'gatsby-plugin-page-transitions'
+import get from 'lodash/get'
 
 class FeedPage extends React.Component {
   componentDidMount() {
@@ -15,6 +16,8 @@ class FeedPage extends React.Component {
     }
   }
   render() {
+    const site = get(this, 'props.data.site.siteMetadata')
+    console.log(site)
     return (
       <PageTransition transitionTime={300} className="dsadsadas">
         <TopNavBar />
@@ -46,3 +49,32 @@ export default connect(
   mapStateToProps,
   actions
 )(FeedPage)
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    site {
+      siteMetadata {
+        title
+        description
+        url: siteUrl
+        author
+        twitter
+        adsense
+      }
+    }
+    remark: allMarkdownRemark {
+      posts: edges {
+        post: node {
+          html
+          frontmatter {
+            layout
+            title
+            path
+            categories
+            date(formatString: "YYYY/MM/DD")
+          }
+        }
+      }
+    }
+  }
+`

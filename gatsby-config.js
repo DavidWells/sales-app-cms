@@ -19,6 +19,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/img`,
+        name: 'images',
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
@@ -96,6 +103,12 @@ module.exports = {
         mergeSecurityHeaders: true,
         mergeLinkHeaders: true,
         mergeCachingHeaders: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
     'gatsby-plugin-catch-links',
