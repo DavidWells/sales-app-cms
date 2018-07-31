@@ -67,11 +67,7 @@ export const pageQuery = graphql`
         post: node {
           html
           frontmatter {
-            layout
             title
-            path
-            categories
-            date(formatString: "YYYY/MM/DD")
           }
         }
       }
