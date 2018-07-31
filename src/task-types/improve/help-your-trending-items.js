@@ -59,14 +59,16 @@ class Improve extends Component {
     return (
       <PageTransition transitionTime={400}>
         <Helmet
-          title={`Take a photo of these items new location | ${get(
+          title={`Learn about your store’s highlight| ${get(
             siteMetadata,
             'title'
           )}`}
         />
         <CardsImprove
           data={data}
-          title="Take a photo of these items new location"
+          title="
+          Learn about your store’s highlight
+          "
         />
         <BottomNavBar
           text="Done"

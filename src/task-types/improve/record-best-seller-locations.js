@@ -59,12 +59,15 @@ class Improve extends Component {
     return (
       <PageTransition transitionTime={400}>
         <Helmet
-          title={`Learn about your store’s highlight | ${get(
+          title={`Take a photo of these items new location | ${get(
             siteMetadata,
             'title'
           )}`}
         />
-        <CardsImprove data={data} title="Learn about your store’s highlight" />
+        <CardsImprove
+          data={data}
+          title="Take a photo of these items new location"
+        />
         <BottomNavBar
           text="Done"
           buttonDisabled={this.props.improvePageSelectedItems > 0}
