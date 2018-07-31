@@ -25,22 +25,23 @@ class CardsWithCamera extends React.Component {
           <Box p={2} width={[1 / 1]}>
             <Heading>{this.props.title}</Heading>
           </Box>
-          {this.props.data.map((item, index) => (
-            <Box
-              key={index}
-              width={[1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 6]}
-              px={2}
-            >
-              <Card
+          {this.props.data &&
+            this.props.data.map((item, index) => (
+              <Box
                 key={index}
-                title={item.title}
-                id={item.id}
-                imageSrc={item.image}
-                badge={item.badge}
-                badgeTitle={item.badgeTitle}
-              />
-            </Box>
-          ))}
+                width={[1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 6]}
+                px={2}
+              >
+                <Card
+                  key={index}
+                  title={item.title}
+                  id={item.id}
+                  imageSrc={item.image}
+                  badge={item.badge}
+                  badgeTitle={item.badgeTitle}
+                />
+              </Box>
+            ))}
         </Flex>
       </CardList>
     )
