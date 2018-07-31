@@ -71,7 +71,15 @@ const CustomBorderLine = styled(BorderLine)`
   margin-bottom: 3px;
 `
 
-const Title = styled(Subhead)``
+const Title = styled(Subhead)`
+  /* display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  min-height: 38px; */
+`
 
 const BackgroundImageWithLoader = styled(BackgroundImage)`
   ${props =>
