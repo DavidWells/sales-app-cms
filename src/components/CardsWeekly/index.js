@@ -43,6 +43,24 @@ const data = [
     badgeTitle: 'Earrings',
     units: 6,
   },
+  {
+    title: 'Diamond Earrings 1/2 ct tw Round-cut 10K Yellow Gold',
+    id: '182199101',
+    image:
+      'https://www.kay.com/images/products/1821/182199101_MV_ZM.jpg?resize=500:500',
+    badge: 'new',
+    badgeTitle: 'Earrings',
+    units: -1,
+  },
+  {
+    title: 'Earring Climbers Natural Gemstones 10K White Gold',
+    id: '375401902',
+    image:
+      'https://www.kay.com/images/products/3754/375401902_MV_ZM.jpg?resize=500:500',
+    badge: 'new',
+    badgeTitle: 'Earrings',
+    units: 6,
+  },
 ]
 
 const CardList = styled.div``

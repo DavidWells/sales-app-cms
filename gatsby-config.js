@@ -108,5 +108,23 @@ module.exports = {
     'gatsby-plugin-page-transitions',
     'gatsby-transformer-sharp',
     'gatsby-plugin-styled-components',
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/task-types/improve`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/task-types/trend`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/task-types/pair`,
+      },
+    },
   ],
 }

@@ -40,6 +40,7 @@ class NotificationTasks extends React.Component {
             taskName={item.name}
             index={index}
             id={item.id}
+            path={item.path}
             selected={item.selected}
             type={item.type}
             // onClick={() => push(`${item.type}`)}

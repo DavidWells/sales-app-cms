@@ -19,6 +19,7 @@ let initialState = {
   location: null,
   currentTopMenu: null,
   buttonFeed: false,
+  buttonWeekly: false,
   buttonImprove: false,
   buttonTrend: false,
   buttonPair: false,
@@ -49,6 +50,7 @@ let initialState = {
       type: 'improve',
       done: false,
       badge: 'trending',
+      path: 'help-your-trending-items',
       id: 12,
     },
     {
@@ -56,6 +58,7 @@ let initialState = {
       type: 'trend',
       done: false,
       badge: 'instagram',
+      path: 'new-instagram-post',
       id: 13,
     },
     {
@@ -63,6 +66,7 @@ let initialState = {
       type: 'pair',
       done: false,
       badge: 'pair',
+      path: 'complete-the-look',
       id: 14,
     },
     {
@@ -70,6 +74,7 @@ let initialState = {
       type: 'improve',
       done: false,
       badge: 'bestSeller',
+      path: 'record-best-seller-locations',
       id: 15,
     },
   ],

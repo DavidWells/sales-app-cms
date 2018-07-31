@@ -40,7 +40,7 @@ const FullWidthFlex = styled(Flex)`
 class TaskItem extends React.Component {
   handleTask = () => {
     this.props.selectCurrentTaskView(this.props.id)
-    push(this.props.type)
+    push(this.props.path)
   }
   render() {
     return (
@@ -71,6 +71,7 @@ TaskItem.propTypes = {
   taskName: PropTypes.any,
   index: PropTypes.number,
   id: PropTypes.any,
+  path: PropTypes.any,
   selected: PropTypes.bool,
   onClick: PropTypes.func,
   badge: PropTypes.any,

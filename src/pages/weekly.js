@@ -11,16 +11,22 @@ import actions from '../store/actions'
 import CardsWeekly from '../components/CardsWeekly'
 
 class Weekly extends Component {
+  componentDidMount() {
+    window.onscroll = ev => {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        this.props.highLightButtonWeekly()
+      }
+    }
+  }
   render() {
     return (
       <PageTransition transitionTime={400}>
         <Helmet title={`Weekly | ${get(siteMetadata, 'title')}`} />
-
         <CardsWeekly />
         <BottomNavBar
           text="Approve"
-          buttonDisabled={this.props.improvePageSelectedItems > 0}
-          buttonClick={() => this.updateTaskAndRedirect()}
+          buttonDisabled={this.props.buttonWeekly}
+          // buttonClick={() => this.updateTaskAndRedirect()}
           location={this.props.location}
           type="improve"
         />
@@ -31,8 +37,9 @@ class Weekly extends Component {
 
 Weekly.propTypes = {}
 
-const mapStateToProps = ({ tasks }) => ({
+const mapStateToProps = ({ tasks, buttonWeekly }) => ({
   tasks,
+  buttonWeekly,
 })
 
 export default connect(
