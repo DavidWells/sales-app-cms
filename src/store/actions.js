@@ -17,6 +17,9 @@ const actions = store => ({
   highLightButtonFeed: state => ({
     buttonFeed: true,
   }),
+  highLightButtonWeekly: state => ({
+    buttonWeekly: true,
+  }),
   highLightButtonImprove: state => ({
     buttonImprove: true,
   }),

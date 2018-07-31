@@ -127,7 +127,7 @@ class CardsPair extends React.Component {
       <CardList className="card-list">
         <Flex mx={-2} flexWrap="wrap">
           <Box p={2} width={[1 / 1]}>
-            <Heading>People attend to buy both of those items together</Heading>
+            <Heading>{this.props.title}</Heading>
           </Box>
           {data.map((row, index) => <Row row={row} key={index} />)}
         </Flex>
@@ -139,6 +139,7 @@ class CardsPair extends React.Component {
 CardsPair.defaultProps = {}
 CardsPair.propTypes = {
   src: PropTypes.string,
+  title: PropTypes.string,
 }
 
 const mapStateToProps = ({ pairPageSelectedItems }) => ({

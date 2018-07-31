@@ -1,28 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import { connect } from 'unistore/react'
 import actions from '../../store/actions'
-import styled from 'styled-components'
 import LineChart from '../Chart/LineChart'
-
 import {
   Card as CustomCard,
   Subhead,
   BackgroundImage,
-  Divider as BorderLine,
-  Progress,
   Box,
   Text,
+  Divider as BorderLine,
   Flex,
-  Close,
   Badge,
+  Close,
 } from 'rebass'
 
 const CardWrapper = styled(CustomCard)`
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
     0 2px 9px 0 rgba(18, 106, 211, 0.06);
-  cursor: pointer;
+
   position: relative;
+  ${props => props.selected && 'border: 2px solid rgba(0, 184, 148, 0.72);'};
 `
 
 const CardModal = styled.div`
@@ -83,7 +82,7 @@ const ItemBadge = styled(Badge)`
 
 const CustomBorderLine = styled(BorderLine)`
   margin-top: 2px;
-  margin-bottom: 12px;
+  margin-bottom: 3px;
 `
 
 const Title = styled(Subhead)`
@@ -100,6 +99,8 @@ class Card extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      currentImage: this.props.imageSrc,
+      selected: false,
       modalOpen: false,
     }
   }
@@ -142,91 +143,58 @@ class Card extends React.Component {
     }
   }
 
-  getCardPosition = id => {
-    window.onscroll = ev => {
-      // let rex = this.refs(id).getDOMNode()
-      let el = document.getElementById(id)
-      // let elPosition = el.getBoundingClientRect()
-      if (el !== null) {
-        let elPosition = el.getBoundingClientRect()
-        // console.log(elPosition)
-        // console.log(elPosition)
-        if (elPosition.y > 400) {
-          console.log(id + ' : its here')
-        }
-      }
-    }
-    console.log(this.props.badge)
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', e => {
-      let el = document.getElementById(this.props.badge)
-      if (el !== null) {
-        let elPosition = el.getBoundingClientRect()
-        if (this.props.badge === 'new') {
-          // console.log(elPosition)
-        }
-        if (elPosition.y < 120 && elPosition.y > -390) {
-          // console.log(this.props.badge + ' : its here')
-          if (this.props.currentTopMenu !== this.props.badge) {
-            this.props.setCurrentTopMenu(this.props.badge)
-          }
-        }
-      }
-    })
-  }
   render() {
     return (
-      <div>
-        <CardWrapper mb={3} p={0}>
-          <BackgroundImage
-            ratio={1}
-            src={this.props.imageSrc}
-            onClick={this.openModal}
-          />
+      <CardWrapper mb={3} p={0} selected={this.state.selected}>
+        <BackgroundImage
+          ratio={1}
+          src={this.state.currentImage}
+          onClick={this.openModal}
+        />
+        <ItemBadge badge={this.props.badge}>{this.props.badgeTitle}</ItemBadge>
 
-          <ItemBadge badge={this.props.badge}>
-            {this.props.badgeTitle}
-          </ItemBadge>
+        <Title
+          px={2}
+          py={1}
+          fontSize={0}
+          fontWeight={400}
+          onClick={this.openModal}
+        >
+          {this.props.title}
+        </Title>
+        <Text px={2} fontSize={0} fontWeight="bold" mb={1}>
+          New location
+        </Text>
+        <CustomBorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
 
-          <Title
-            px={2}
-            py={1}
+        <Flex flexWrap="wrap" px={2} pb={2} justifyContent="space-between">
+          <Text fontSize={0}> Change:</Text>
+          <Text
+            color={this.props.units >= 0 ? 'greenButton' : 'red'}
             fontSize={0}
-            fontWeight={400}
-            onClick={this.openModal}
+            fontWeight="bold"
           >
-            {this.props.title}
-          </Title>
-          {/* <Subhead px={2} fontSize={0} fontWeight={400} color="gray">
-          ID: {this.props.id}
-        </Subhead> */}
-          <CustomBorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
-          <Flex mx={2} pb={3} alignItems="center">
-            <Text children="34%" fontSize={0} pr={1} />
-            <Progress value={0.5} color="#3190f0" bg={'red'} />
-            <Text children="12" fontSize={0} pl={1} />
-          </Flex>
-          <CardModal show={this.state.modalOpen} onClick={this.closeModal}>
-            <CardModalInner show={this.state.modalOpen}>
-              <CloseModal />
-              <ItemBadge badge={this.props.badge}>
-                {this.props.badgeTitle}
-              </ItemBadge>
+            {this.props.units} units
+          </Text>
+        </Flex>
+        <CardModal show={this.state.modalOpen} onClick={this.closeModal}>
+          <CardModalInner show={this.state.modalOpen}>
+            <CloseModal />
+            <ItemBadge badge={this.props.badge}>
+              {this.props.badgeTitle}
+            </ItemBadge>
 
-              <BackgroundImage ratio={1} src={this.props.imageSrc} />
-              {/* <Subhead p={2} fontSize={1} fontWeight={400}>
+            <BackgroundImage ratio={1} src={this.props.imageSrc} />
+            {/* <Subhead p={2} fontSize={1} fontWeight={400}>
               {this.props.title}
             </Subhead> */}
-              <Subhead p={2} pt={3} fontSize={1} fontWeight={400} color="gray">
-                ID: {this.props.id}
-              </Subhead>
-              <LineChart />
-            </CardModalInner>
-          </CardModal>
-        </CardWrapper>
-      </div>
+            <Subhead p={2} pt={3} fontSize={1} fontWeight={400} color="gray">
+              ID: {this.props.id}
+            </Subhead>
+            <LineChart />
+          </CardModalInner>
+        </CardModal>
+      </CardWrapper>
     )
   }
 }
@@ -234,7 +202,7 @@ class Card extends React.Component {
 Card.defaultProps = {
   title: 'default title',
   badge: 'bestSeller',
-  badgeTitle: 'dsa',
+  badgeTitle: 'trending',
 }
 Card.propTypes = {
   title: PropTypes.string,
@@ -247,15 +215,17 @@ Card.propTypes = {
   ]),
   badgeTitle: PropTypes.string,
   id: PropTypes.any,
+  units: PropTypes.number,
   imageSrc: PropTypes.string,
   progress: PropTypes.any,
   onClick: PropTypes.func,
 }
 
-const mapStateToProps = ({ modalOpen, currentTopMenu }) => ({
-  modalOpen,
-  currentTopMenu,
+const mapStateToProps = ({ buttonImprove, improvePageSelectedItems }) => ({
+  buttonImprove,
+  improvePageSelectedItems,
 })
+
 export default connect(
   mapStateToProps,
   actions

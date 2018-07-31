@@ -35,11 +35,7 @@ class CardsTrend extends React.Component {
       <CardList className="card-list">
         <Flex mx={-2} flexWrap="wrap">
           <Box p={2} width={[1 / 1]}>
-            <Heading>
-              People might search for
-              <br />
-              this look today!
-            </Heading>
+            <Heading>{this.props.title}</Heading>
           </Box>
 
           {data.map((item, index) => (
@@ -62,6 +58,7 @@ class CardsTrend extends React.Component {
 CardsTrend.defaultProps = {}
 CardsTrend.propTypes = {
   src: PropTypes.string,
+  title: PropTypes.string,
 }
 
 export default CardsTrend

@@ -15,10 +15,11 @@ import {
   Badge,
 } from 'rebass'
 
-import { resetOrientation } from '../../utils'
+// import { resetOrientation } from '../../utils'
 
 import cameraIcon from '../../assets/camera.svg'
 import checkIcon from '../../assets/check.svg'
+import Loader from '../../assets/ball-triangle.svg'
 
 const CardWrapper = styled(CustomCard)`
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
@@ -80,12 +81,18 @@ const Title = styled(Subhead)`
   min-height: 38px; */
 `
 
+const BackgroundImageWithLoader = styled(BackgroundImage)`
+  ${props =>
+    props.loader && 'background-size: 140px; background-repeat: no-repeat;'};
+`
+
 class Card extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       currentImage: this.props.imageSrc,
       selected: false,
+      loader: false,
     }
   }
 
@@ -106,28 +113,32 @@ class Card extends React.Component {
 
   getImage = e => {
     e.preventDefault()
+    this.setState({ currentImage: Loader, loader: true })
     let reader = new FileReader()
     let file = e.target.files[0]
-
-    reader.onloadend = e => {
-      resetOrientation(e.target.result, 5, image => {
-        this.setState({
-          file: file,
-          currentImage: image,
-        })
-      })
+    console.log(e.target.value)
+    reader.onloadend = () => {
+      this.setState(
+        {
+          // file: file,
+          currentImage: reader.result,
+        },
+        () => {
+          this.setState({ selected: true, loader: false })
+        }
+      )
     }
     reader.readAsDataURL(file)
-    this.setState({ selected: true })
   }
 
   render() {
     return (
       <CardWrapper mb={3} p={0} selected={this.state.selected}>
-        <BackgroundImage
+        <BackgroundImageWithLoader
           ratio={1}
-          src={this.state.currentImage}
+          src={this.state.loader ? Loader : this.state.currentImage}
           onClick={this.toggleSelection}
+          loader={this.state.loader ? 1 : 0}
         />
         <ItemBadge badge={this.props.badge}>{this.props.badgeTitle}</ItemBadge>
 

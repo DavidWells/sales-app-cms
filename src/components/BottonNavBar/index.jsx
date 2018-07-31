@@ -96,7 +96,7 @@ class BottomNavBar extends React.Component {
           >
             {this.props.text}
           </Button>
-          <Link to="/charts">
+          <Link to="/weekly">
             <ButtonTransparent>
               <img width={25} src={AnalyticsIcon} alt="" />
             </ButtonTransparent>

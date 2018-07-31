@@ -23,6 +23,9 @@ const NavList = styled.nav`
   flex-grow: 1;
   max-width: 100%;
   max-width: 343px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `
 
 const NavItem = styled.a`
@@ -40,7 +43,7 @@ const NavItem = styled.a`
 
 const Span = styled.span`
   padding-bottom: 7px;
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease;
   border-bottom: 2px solid
     ${props =>
       props.isActive
@@ -61,11 +64,13 @@ class Nav extends React.Component {
         'Favorites',
       ],
       currentIndex: 0,
+      selectedItem: this.props.currentTopMenu,
     }
   }
 
   componentDidMount() {
     smoothscroll.polyfill()
+    this.props.setCurrentTopMenu(this.props.itemCategories[0].id)
   }
 
   setCurrentIndex = index => {
@@ -76,27 +81,41 @@ class Nav extends React.Component {
 
   scrollTo = id => {
     if (document.getElementById(id) !== null) {
+      let navlist = document.getElementById('navlist')
       let element = document.getElementById(id).offsetTop - 110
       window.scroll({ top: element, behavior: 'smooth' })
+      // if (this.state.currentIndex > 1) {
+      //   navlist.scrollLeft = 120
+      // }
+
       this.props.setCurrentTopMenu(id)
     }
   }
 
+  scrollNav = id => {
+    const element = document.getElementById(id)
+    if (element !== null) {
+      window.scroll({ left: element, behavior: 'smooth' })
+    }
+  }
   render() {
     const { items, currentIndex } = this.state
     return (
-      <NavList>
+      <NavList id="navlist">
         {this.props.itemCategories.map((item, index) => (
           <NavItem
             key={index}
-            // id={item.id}
-            isActive={index === currentIndex}
+            id={`nav-${item.id}`}
+            isActive={item.id === this.props.currentTopMenu}
             onClick={() => {
               this.setCurrentIndex(index)
               this.scrollTo(item.id)
             }}
           >
-            <Span badge={item.id} isActive={index === currentIndex}>
+            <Span
+              badge={item.id}
+              isActive={item.id === this.props.currentTopMenu}
+            >
               {item.name}
             </Span>
           </NavItem>
@@ -106,8 +125,9 @@ class Nav extends React.Component {
   }
 }
 
-const mapStateToProps = ({ itemCategories }) => ({
+const mapStateToProps = ({ itemCategories, currentTopMenu }) => ({
   itemCategories,
+  currentTopMenu,
 })
 export default connect(
   mapStateToProps,
