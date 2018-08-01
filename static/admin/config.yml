@@ -34,8 +34,8 @@ collections:
           - {label: "Badge", name: "badge", widget: "select", options: ["trending", "instagram", "pair", "bestSeller"]}
           - {label: "Path", name: "path", widget: "string"}
           - {label: "id", name: "ID", widget: "string"}
-      - name: "tasks"
-        label: "Tasks"
+      - name: "categories"
+        label: "Categories"
         widget: "list"
         fields: 
           - {label: "Name", name: "name", widget: "string"}
