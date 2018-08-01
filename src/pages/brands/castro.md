@@ -8,4 +8,9 @@ products:
     photo: /img/1.jpg
     sold: 7
     target: 10
+Tasks:
+  - name: Help your trending items
+    type: improve
+  - name: New instagram post!
+    type: trend
 ---
