@@ -31,5 +31,8 @@ collections:
           - {label: "Name", name: "name", widget: "string"}
           - {label: "Type", name: "type", widget: "select", options: ["improve", "trend", "pair"]}
           - {label: "Done", name: "done", widget: "boolean", default: true}
+          - {label: "Badge", name: "badge", widget: "string"}
+          - {label: "Path", name: "path", widget: "string"}
+          - {label: "id", name: "ID", widget: "string"}
 
          
