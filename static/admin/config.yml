@@ -24,3 +24,12 @@ collections:
           - {label: Sold, name: sold, widget: number, valueType: int}
           - {label: Target, name: target, widget: number, valueType: int}
           - {label: Category, name: category, widget: select, options: ["Trending", "High Profitability", "On Sale", "Missing Inventory"]}
+  - name: tasks
+    label: Tasks
+    widget: list
+    fields: 
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Type", name: "type", widget: "select", options: ["improve", "trend", "pair"]}
+      - {label: "Done", name: "done", widget: "boolean", default: true}
+
+         

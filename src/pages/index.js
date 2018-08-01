@@ -56,15 +56,11 @@ export default connect(
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: { frontmatter: { title: { eq: "Sandro" } } }) {
       edges {
         node {
-          id
-          html
           frontmatter {
             title
-            templateKey
-            logo
             products {
               category
               name

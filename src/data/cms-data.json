@@ -1,0 +1,47 @@
+{
+  "id": 22,
+  "retail": "Afrodita",
+  "logo": null,
+  "stores": [
+    {
+      "tel-aviv_ramat-aviv": {
+        "feed": {},
+        "tasks": [
+          {
+            "name": "Help your trending items",
+            "type": "improve",
+            "done": false,
+            "badge": "trending",
+            "path": "help-your-trending-items",
+            "id": 12
+          },
+          {
+            "name": "New instagram post!",
+            "type": "trend",
+            "done": false,
+            "badge": "instagram",
+            "path": "new-instagram-post",
+            "id": 13
+          },
+          {
+            "name": "Complete the look!",
+            "type": "pair",
+            "done": false,
+            "badge": "pair",
+            "path": "complete-the-look",
+            "id": 14
+          },
+          {
+            "name": "Record best seller locations",
+            "type": "improve",
+            "done": false,
+            "badge": "bestSeller",
+            "path": "record-best-seller-locations",
+            "id": 15
+          }
+        ]
+      }
+    },
+    { "haifa_carmel": "" }
+  ]
+}
