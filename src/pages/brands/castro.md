@@ -1,7 +1,7 @@
 ---
 templateKey: brand
 title: Castro
-logo: /img/castro_logo-2.png
+logo: /img/untitled-1_176.png
 products:
   - category: High Profitability
     name: Cool Shirt
@@ -9,3 +9,4 @@ products:
     sold: 7
     target: 10
 ---
+
