@@ -14,12 +14,14 @@ class FeedPage extends React.Component {
         this.props.highLightButtonFeed()
       }
     }
-
-    console.log(this.props.data)
   }
   render() {
+    const { edges: posts } = this.props.data.allMarkdownRemark
     const site = get(this, 'props.data.site.siteMetadata')
-    console.log(site)
+    console.log(posts)
+    posts.map(({ node: post }) => {
+      console.log(post.frontmatter.title)
+    })
     return (
       <PageTransition transitionTime={300} className="dsadsadas">
         <TopNavBar />
@@ -54,24 +56,22 @@ export default connect(
 
 export const pageQuery = graphql`
   query IndexQuery {
-    site {
-      siteMetadata {
-        title
-        description
-        url: siteUrl
-        author
-        twitter
-        adsense
-      }
-    }
-    remark: allMarkdownRemark {
-      posts: edges {
-        post: node {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
           html
           frontmatter {
             title
-            products
+            templateKey
             logo
+            products {
+              category
+              name
+              photo
+              sold
+              target
+            }
           }
         }
       }
