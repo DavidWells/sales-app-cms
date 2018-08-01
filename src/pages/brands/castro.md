@@ -9,4 +9,3 @@ products:
     sold: 7
     target: 10
 ---
-
