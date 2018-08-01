@@ -14,6 +14,8 @@ class FeedPage extends React.Component {
         this.props.highLightButtonFeed()
       }
     }
+
+    console.log(this.props.data)
   }
   render() {
     const site = get(this, 'props.data.site.siteMetadata')
@@ -68,6 +70,8 @@ export const pageQuery = graphql`
           html
           frontmatter {
             title
+            products
+            logo
           }
         }
       }
