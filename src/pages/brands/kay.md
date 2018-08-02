@@ -8,7 +8,7 @@ products:
     photo: /img/1.jpg
     sold: 2
     target: 2
-Tasks:
+tasks:
   - ID: '12'
     badge: trending
     name: Help your trending items
@@ -29,4 +29,21 @@ Tasks:
     name: Record best seller locations
     path: record-best-seller-locations
     type: improve
+categories:
+  - id: trending
+    name: Engagement Rings
+    position: 2
+  - id: new
+    name: Earrings
+    position: 3
+  - id: missing
+    name: Necklaces
+    position: 5
+  - id: bestSeller
+    name: Watches
+    position: 1
+  - id: onSale
+    name: On Sale
+    position: 4
 ---
+
