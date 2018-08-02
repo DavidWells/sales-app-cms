@@ -17,6 +17,7 @@ feedPage:
     - badge: trending
       badgeTitle: Engagement Rings
       id: '992662902'
+      image: /img/992662902_mv_zm.jpg
       title: Diamond Engagement Ring 1 ct tw Round-cut 14K Two-Tone Gold
     - badge: trending
       badgeTitle: Engagement Rings
@@ -26,6 +27,7 @@ feedPage:
     - badge: bestSeller
       badgeTitle: Earrings
       id: '182199101'
+      image: /img/182199101_mv_zm.jpg
       title: Diamond Earrings 1/2 ct tw Round-cut 10K Yellow Gold
 products:
   - badge: trending
@@ -81,3 +83,4 @@ categories:
     name: On Sale
     position: 4
 ---
+
