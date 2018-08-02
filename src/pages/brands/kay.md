@@ -8,6 +8,11 @@ products:
     id: '992653600'
     image: /img/992653600_mv_zm.jpg
     title: Diamond Engagement Ring 1-3/4 Carats tw 14K White Gold
+  - badge: trending
+    badgeTitle: Engagement Rings
+    id: '940375619'
+    image: /img/940375619_mv_zm.jpg
+    title: Neil Lane Aquamarine Engagement Ring 1 ct tw Diamonds 14K Gold
 tasks:
   - ID: '12'
     badge: trending
@@ -46,4 +51,3 @@ categories:
     name: On Sale
     position: 4
 ---
-
