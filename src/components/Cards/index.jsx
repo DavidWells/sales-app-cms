@@ -49,7 +49,7 @@ class Cards extends React.Component {
           Learn about your stores highlight!
         </Heading> */}
         <Flex mx={-2} flexWrap="wrap">
-          {this.state.data.map((item, index) => (
+          {this.props.products.map((item, index) => (
             <Box
               id={item.badge}
               ref={item.badge}
@@ -78,6 +78,7 @@ class Cards extends React.Component {
 Cards.defaultProps = {}
 Cards.propTypes = {
   src: PropTypes.string,
+  products: PropTypes.array.isRequired,
 }
 
 const mapStateToProps = ({ modalOpen, items, buttonFeed, itemCategories }) => ({

@@ -16,16 +16,15 @@ class FeedPage extends React.Component {
     }
   }
   render() {
-    const { edges: posts } = this.props.data.allMarkdownRemark
-    const site = get(this, 'props.data.site.siteMetadata')
-    console.log(posts)
-    posts.map(({ node: post }) => {
-      console.log(post.frontmatter.title)
-    })
+    const { edges: feedPageObject } = this.props.data.allMarkdownRemark
+
+    const products = feedPageObject[0].node.frontmatter.feedPage.products
+    console.log(products)
+
     return (
       <PageTransition transitionTime={300} className="dsadsadas">
         <TopNavBar />
-        <Cards />
+        <Cards products={products} />
         {this.props.showBoarding ? (
           <BottomNavBar
             text="Let's go"
@@ -56,17 +55,20 @@ export default connect(
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(filter: { frontmatter: { title: { eq: "Sandro" } } }) {
+    allMarkdownRemark(filter: { frontmatter: { title: { eq: "Kay" } } }) {
       edges {
         node {
           frontmatter {
             title
-            products {
-              category
-              name
-              photo
-              sold
-              target
+            logo
+            feedPage {
+              products {
+                id
+                title
+                image
+                badge
+                badgeTitle
+              }
             }
           }
         }
