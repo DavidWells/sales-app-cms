@@ -5,8 +5,10 @@ import createStore from 'unistore'
 import devtools from 'unistore/devtools'
 import { userAgent, osType } from '../utils'
 import { dataItems } from '../data/fakeData'
+import mystoreLogo from '../assets/logo-black.png'
 
 let initialState = {
+  logo: mystoreLogo,
   auth: false,
   rtl: false,
   darkMode: false,
