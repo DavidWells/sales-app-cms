@@ -19,7 +19,7 @@ class FeedPage extends React.Component {
     const { edges: feedPageObject } = this.props.data.allMarkdownRemark
 
     const products = feedPageObject[0].node.frontmatter.feedPage.products
-    console.log(products)
+    console.log(this.props.data)
 
     return (
       <PageTransition transitionTime={300} className="dsadsadas">

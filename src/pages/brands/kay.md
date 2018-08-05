@@ -83,4 +83,3 @@ categories:
     name: On Sale
     position: 4
 ---
-
