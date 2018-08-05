@@ -51,23 +51,23 @@ products:
     image: /img/940375619_mv_zm.jpg
     title: Diamond Engagement Ring 1 ct tw Round-cut 14K Two-Tone Gold
 tasks:
-  - ID: '12'
-    badge: trending
+  - badge: trending
+    id: '12'
     name: Help your trending items
     path: help-your-trending-items
     type: improve
-  - ID: '13'
-    badge: instagram
+  - badge: instagram
+    id: '13'
     name: New instagram post!
     path: new-instagram-post
     type: trend
-  - ID: '14'
-    badge: pair
+  - badge: pair
+    id: '14'
     name: Complete the look!
     path: complete-the-look
     type: pair
-  - ID: '15'
-    badge: bestSeller
+  - badge: bestSeller
+    id: '15'
     name: Record best seller locations
     path: record-best-seller-locations
     type: improve
@@ -88,3 +88,4 @@ categories:
     name: On Sale
     position: 4
 ---
+
