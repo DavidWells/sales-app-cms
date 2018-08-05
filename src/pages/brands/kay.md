@@ -29,6 +29,11 @@ feedPage:
       id: '182199101'
       image: /img/182199101_mv_zm.jpg
       title: Diamond Earrings 1/2 ct tw Round-cut 10K Yellow Gold
+    - badge: new
+      badgeTitle: Earrings
+      id: '375401902'
+      image: /img/375401902_mv_zm.jpg
+      title: Earring Climbers Natural Gemstones 10K White Gold
 products:
   - badge: trending
     badgeTitle: Engagement Rings
