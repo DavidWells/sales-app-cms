@@ -26,15 +26,18 @@ export default class ImageControl extends React.Component {
     } = this.props
 
     return (
-      <input
-        type="text"
-        id={forID}
-        className={classNameWrapper}
-        value={value || ''}
-        onChange={e => onChange(e.target.value)}
-        onFocus={setActiveStyle}
-        onBlur={setInactiveStyle}
-      />
+      <div>
+        <input
+          type="text"
+          id={forID}
+          className={classNameWrapper}
+          value={value || ''}
+          onChange={e => onChange(e.target.value)}
+          onFocus={setActiveStyle}
+          onBlur={setInactiveStyle}
+        />
+        <img width="50" src={value} />
+      </div>
     )
   }
 }
