@@ -43,6 +43,7 @@ feedPage:
       badgeTitle: Earrings
       id: '790149809'
       image: /img/790149809_mv_zm.jpg
+      imageUrl: someurl.com
       title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
 products:
   - badge: trending
