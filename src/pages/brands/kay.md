@@ -46,27 +46,23 @@ feedPage:
       imageUrl: >-
         https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
       title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
-products:
-  - badge: trending
-    badgeTitle: Engagement Rings
-    id: '992653600'
-    image: /img/992653600_mv_zm.jpg
-    title: Diamond Engagement Ring 1-3/4 Carats tw 14K White Gold
-  - badge: trending
-    badgeTitle: Engagement Rings
-    id: '940375619'
-    image: /img/940375619_mv_zm.jpg
-    title: Neil Lane Aquamarine Engagement Ring 1 ct tw Diamonds 14K Gold
-  - badge: trending
-    badgeTitle: Engagement Rings
-    id: '992662902'
-    image: /img/940375619_mv_zm.jpg
-    title: Diamond Engagement Ring 1 ct tw Round-cut 14K Two-Tone Gold
 tasks:
   - badge: trending
     id: '12'
     name: Help your trending items
     path: help-your-trending-items
+    products:
+      - badge: new
+        badgeTitle: Earrings
+        id: '790149809'
+        imageUrl: >-
+          https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
+        title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
+      - badge: trending
+        badgeTitle: Engagement Rings
+        id: '992653600'
+        image: /img/992653600_mv_zm.jpg
+        title: Diamond Engagement Ring 1-3/4 Carats tw 14K White Gold
     type: improve
   - badge: instagram
     id: '13'
@@ -82,6 +78,8 @@ tasks:
     id: '15'
     name: Record best seller locations
     path: record-best-seller-locations
+    products:
+      - {}
     type: improve
 categories:
   - id: trending
@@ -100,3 +98,4 @@ categories:
     name: On Sale
     position: 4
 ---
+
