@@ -39,6 +39,11 @@ feedPage:
       id: '393435300'
       image: /img/393435300_mv_zm.jpg
       title: Dangle Earrings 10K Yellow Gold
+    - badge: new
+      badgeTitle: Earrings
+      id: '790149809'
+      image: /img/790149809_mv_zm.jpg
+      title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
 products:
   - badge: trending
     badgeTitle: Engagement Rings
