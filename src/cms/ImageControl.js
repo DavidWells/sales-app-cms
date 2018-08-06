@@ -33,6 +33,7 @@ export default class ImageControl extends React.Component {
 
     return (
       <div style={style} className={classNameWrapper}>
+        <img width="150" src={value} style={{ marginRight: '1rem' }} />
         <input
           type="text"
           id={forID}
@@ -41,7 +42,6 @@ export default class ImageControl extends React.Component {
           onFocus={setActiveStyle}
           onBlur={setInactiveStyle}
         />
-        <img width="150" src={value} style={{ marginLeft: '1rem' }} />
       </div>
     )
   }
