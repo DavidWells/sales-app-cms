@@ -34,6 +34,11 @@ feedPage:
       id: '375401902'
       image: /img/375401902_mv_zm.jpg
       title: Earring Climbers Natural Gemstones 10K White Gold
+    - badge: new
+      badgeTitle: Earrings
+      id: '393435300'
+      image: /img/393435300_mv_zm.jpg
+      title: Dangle Earrings 10K Yellow Gold
 products:
   - badge: trending
     badgeTitle: Engagement Rings
@@ -88,3 +93,4 @@ categories:
     name: On Sale
     position: 4
 ---
+
