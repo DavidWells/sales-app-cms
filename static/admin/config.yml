@@ -41,6 +41,17 @@ collections:
           - {label: "Badge", name: "badge", widget: "select", options: ["trending", "instagram", "pair", "bestSeller"]}
           - {label: "Path", name: "path", widget: "string"}
           - {label: "ID", name: "id", widget: "string"}
+          - name: products
+            label: Products 
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string }
+              - {label: ID, name: id, widget: string}
+              - {label: Image, name: image, widget: image}
+              - {label: Image URL, name: imageUrl, widget: image-preview}
+              - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
+              - {label: Badge Title, name: badgeTitle, widget: string}
+          
       - name: "categories"
         label: "Categories"
         widget: "list"
