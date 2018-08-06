@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const StringPreview = ({ value }) => (
+const ImagePreview = ({ value }) => (
   <div>
     {value}: <img width="50" src={value} />
   </div>
 )
 
-StringPreview.propTypes = {
+ImagePreview.propTypes = {
   value: PropTypes.node,
 }
 
-export default StringPreview
+export default ImagePreview
