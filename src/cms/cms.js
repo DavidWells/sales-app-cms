@@ -1,8 +1,8 @@
 import React from 'react'
 import CMS from 'netlify-cms'
 import ImageControl from './ImageControl'
-import ImagePreview from './ImagePreview'
+// import ImagePreview from './ImagePreview'
 
 CMS.registerPreviewStyle('/styles.css')
 
-CMS.registerWidget('image-preview', ImageControl, ImagePreview)
+CMS.registerWidget('image-preview', ImageControl)

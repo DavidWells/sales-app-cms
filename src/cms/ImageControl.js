@@ -1,5 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+const style = {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+}
 
 export default class ImageControl extends React.Component {
   static propTypes = {
@@ -26,17 +32,16 @@ export default class ImageControl extends React.Component {
     } = this.props
 
     return (
-      <div>
+      <div style={style} className={classNameWrapper}>
         <input
           type="text"
           id={forID}
-          className={classNameWrapper}
           value={value || ''}
           onChange={e => onChange(e.target.value)}
           onFocus={setActiveStyle}
           onBlur={setInactiveStyle}
         />
-        <img width="50" src={value} />
+        <img width="150" src={value} style={{ marginLeft: '1rem' }} />
       </div>
     )
   }
