@@ -35,6 +35,7 @@ export default class ImageControl extends React.Component {
       <div style={style} className={classNameWrapper}>
         <img width="150" src={value} style={{ marginRight: '1rem' }} />
         <input
+          className={classNameWrapper}
           type="text"
           id={forID}
           value={value || ''}
