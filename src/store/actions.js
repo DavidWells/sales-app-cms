@@ -4,6 +4,11 @@ import { dataItems } from '../data/fakeData'
 // console.log(data)
 
 const actions = store => ({
+  // Async actions can be pure async/promise functions:
+  async getStuff(state) {
+    let res = await fetch('/src/data/StoresData.json')
+    return { data: await res.json() }
+  },
   toggleModal: state => ({
     modalOpen: !state.modalOpen,
   }),

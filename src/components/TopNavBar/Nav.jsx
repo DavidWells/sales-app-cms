@@ -70,7 +70,7 @@ class Nav extends React.Component {
 
   componentDidMount() {
     smoothscroll.polyfill()
-    this.props.setCurrentTopMenu(this.props.itemCategories[0].id)
+    this.props.setCurrentTopMenu(this.props.data.categories[0].id)
   }
 
   setCurrentIndex = index => {
@@ -102,7 +102,7 @@ class Nav extends React.Component {
     const { items, currentIndex } = this.state
     return (
       <NavList id="navlist">
-        {this.props.itemCategories.map((item, index) => (
+        {this.props.data.categories.map((item, index) => (
           <NavItem
             key={index}
             id={`nav-${item.id}`}
@@ -125,10 +125,12 @@ class Nav extends React.Component {
   }
 }
 
-const mapStateToProps = ({ itemCategories, currentTopMenu }) => ({
+const mapStateToProps = ({ itemCategories, currentTopMenu, data }) => ({
   itemCategories,
   currentTopMenu,
+  data,
 })
+
 export default connect(
   mapStateToProps,
   actions

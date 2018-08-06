@@ -5,6 +5,7 @@ import createStore from 'unistore'
 import devtools from 'unistore/devtools'
 import { userAgent, osType } from '../utils'
 import { dataItems } from '../data/fakeData'
+import * as data from '../data/StoresData.json'
 import mystoreLogo from '../assets/logo-black.png'
 
 let initialState = {
@@ -28,6 +29,7 @@ let initialState = {
   improvePageSelectedItems: 0,
   pairPageSelectedItems: 0,
   trendItemSelected: false,
+  data: data['kay'],
   colors: {
     black: '#3c3b3b',
     grey: 'grey',

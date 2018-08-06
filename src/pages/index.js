@@ -10,21 +10,19 @@ import get from 'lodash/get'
 class FeedPage extends React.Component {
   componentDidMount() {
     window.onscroll = ev => {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+      if (
+        window.innerHeight + window.scrollY >= document.body.offsetHeight &&
+        this.props.buttonFeed === false
+      ) {
         this.props.highLightButtonFeed()
       }
     }
   }
   render() {
-    const { edges: feedPageObject } = this.props.data.allMarkdownRemark
-
-    const products = feedPageObject[0].node.frontmatter.feedPage.products
-    console.log(this.props.data)
-
     return (
       <PageTransition transitionTime={300} className="dsadsadas">
         <TopNavBar />
-        <Cards products={products} />
+        <Cards products={this.props.data.feedPage.products} />
         {this.props.showBoarding ? (
           <BottomNavBar
             text="Let's go"
@@ -44,35 +42,12 @@ class FeedPage extends React.Component {
   }
 }
 
-const mapStateToProps = ({ buttonFeed, showBoarding }) => ({
+const mapStateToProps = ({ buttonFeed, showBoarding, data }) => ({
   buttonFeed,
   showBoarding,
+  data,
 })
 export default connect(
   mapStateToProps,
   actions
 )(FeedPage)
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(filter: { frontmatter: { title: { eq: "Kay" } } }) {
-      edges {
-        node {
-          frontmatter {
-            title
-            logo
-            feedPage {
-              products {
-                id
-                title
-                image
-                badge
-                badgeTitle
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
