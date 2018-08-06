@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { get } from 'lodash'
+import { get, has } from 'lodash'
 import { Flex, Box, Text, Subhead } from 'rebass'
 import Card from './Card'
 import Heading from '../Elements/Heading'
@@ -63,7 +63,7 @@ class Cards extends React.Component {
                 key={index}
                 title={item.title}
                 id={item.id}
-                imageSrc={get(item, 'imageUrl', 'image')}
+                imageSrc={get(item, 'imageUrl', item.image)}
                 badge={item.badge}
                 badgeTitle={item.badgeTitle}
               />
