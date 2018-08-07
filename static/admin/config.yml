@@ -101,7 +101,7 @@ collections:
                   - {label: Badge Title, name: badgeTitle, widget: string} 
 
 
-          - name: new-instagram-post
+          - name: new_instagram_post
             label: New instagram post! 
             widget: object
             fields: 
@@ -120,7 +120,7 @@ collections:
                   - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
                   - {label: Badge Title, name: badgeTitle, widget: string}                                 
 
-          - name: complete-the-look
+          - name: complete_the_look
             label: Complete the look!
             widget: object
             fields: 
