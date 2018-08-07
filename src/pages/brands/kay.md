@@ -225,4 +225,16 @@ newTasks:
       image: /img/kay-insta.jpg
       title: 'kayjewelersIt’s #bracelet season! #StyleInspo'
     title: People might search for this look today!
+  record_best_seller_locations:
+    id: '15'
+    path: record-best-seller-locations
+    products:
+      - badge: new
+        badgeTitle: Earrings
+        id: '790149809'
+        imageUrl: >-
+          https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
+        title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
+    title: Take a photo of these items new location
 ---
+
