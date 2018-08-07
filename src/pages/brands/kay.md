@@ -86,7 +86,7 @@ weeklyPage:
       imageUrl: >-
         https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
       title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
-      units: '4'      
+      units: '4'
   title: Your last week results
   toDate: 14th Aug 18
 tasks:
@@ -170,4 +170,16 @@ categories:
   - id: onSale
     name: On Sale
     position: 4
+newTasks:
+  help_your_trending_items:
+    id: '12'
+    path: help-your-trending-items
+    products:
+      - badge: new
+        badgeTitle: Earrings
+        id: '790149809'
+        imageUrl: >-
+          https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
+        title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
+    title: Learn about your store’s highlight
 ---
