@@ -84,7 +84,7 @@ class CardsWeekly extends React.Component {
           {data.map((item, index) => (
             <Box
               key={index}
-              width={[1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 6]}
+              width={[1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 4]}
               px={2}
             >
               <Card
