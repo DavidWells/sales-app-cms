@@ -55,6 +55,38 @@ weeklyPage:
       image: /img/992662902_mv_zm.jpg
       title: Diamond Engagement Ring 1 ct tw Round-cut 14K Two-Tone Gold
       units: '-2'
+    - badge: trending
+      badgeTitle: Engagement Rings
+      id: '992437400'
+      image: /img/992437400_mv_zm.jpg
+      title: Diamond Engagement Ring 3/4 ct tw Princess/Round 14K White Gold
+      units: '4'
+    - badge: bestSeller
+      badgeTitle: Earrings
+      id: '182199101'
+      image: /img/182199101_mv_zm.jpg
+      title: Diamond Earrings 1/2 ct tw Round-cut 10K Yellow Gold
+      units: '-1'
+    - badge: new
+      badgeTitle: Earrings
+      id: '375401902'
+      image: /img/375401902_mv_zm.jpg
+      title: Earring Climbers Natural Gemstones 10K White Gold
+      units: '7'
+    - badge: new
+      badgeTitle: Earrings
+      id: '393435300'
+      image: /img/393435300_mv_zm.jpg
+      title: Dangle Earrings 10K Yellow Gold
+      units: '2'
+    - badge: new
+      badgeTitle: Earrings
+      id: '790149809'
+      image: /img/790149809_mv_zm.jpg
+      imageUrl: >-
+        https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
+      title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
+      units: '4'      
   title: Your last week results
   toDate: 14th Aug 18
 tasks:
@@ -139,4 +171,3 @@ categories:
     name: On Sale
     position: 4
 ---
-
