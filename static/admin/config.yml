@@ -119,4 +119,38 @@ collections:
                   - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
                   - {label: Badge Title, name: badgeTitle, widget: string}                                 
 
+          - name: complete-the-look
+            label: Complete the look!
+            widget: object
+            fields: 
+              - {label: "Page Title", name: "title", widget: "string"}
+              - {label: "Done", name: "done", widget: "boolean", default: true}
+              - {label: "Path", name: "path", widget: "string"}
+              - {label: "ID", name: "id", widget: "string", default: 14}   
+   
+
+              - name: products
+                label: Products 
+                widget: list
+                fields: 
+                  - name: firstProduct
+                    label: First Product
+                    widget: object
+                    fields: 
+                      - {label: Title, name: title, widget: string }
+                      - {label: ID, name: id, widget: string}
+                      - {label: Image, name: image, widget: image}
+                      - {label: Image URL, name: imageUrl, widget: image-preview}
+                      - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
+                      - {label: Badge Title, name: badgeTitle, widget: string}
+                  - name: secondProduct
+                    label: Second Product
+                    widget: object
+                    fields: 
+                      - {label: Title, name: title, widget: string }
+                      - {label: ID, name: id, widget: string}
+                      - {label: Image, name: image, widget: image}
+                      - {label: Image URL, name: imageUrl, widget: image-preview}
+                      - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
+                      - {label: Badge Title, name: badgeTitle, widget: string} 
          
