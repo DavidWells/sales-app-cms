@@ -46,6 +46,17 @@ feedPage:
       imageUrl: >-
         https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
       title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
+weeklyPage:
+  fromDate: 7th Aug 18
+  products:
+    - badge: trending
+      badgeTitle: Engagement Rings
+      id: '992662902'
+      image: /img/992662902_mv_zm.jpg
+      title: Diamond Engagement Ring 1 ct tw Round-cut 14K Two-Tone Gold
+      units: '-2'
+  title: Your last week results
+  toDate: 14th Aug 18
 tasks:
   - badge: trending
     id: '12'
@@ -55,7 +66,8 @@ tasks:
       - badge: new
         badgeTitle: Earrings
         id: '790149809'
-        imageUrl: https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
+        imageUrl: >-
+          https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
         title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
       - badge: trending
         badgeTitle: Engagement Rings
@@ -71,7 +83,7 @@ tasks:
         badgeTitle: Engagement Rings
         id: '992437400'
         image: /img/992437400_mv_zm.jpg
-        title: Diamond Engagement Ring 3/4 ct tw Princess/Round 14K White Gold        
+        title: Diamond Engagement Ring 3/4 ct tw Princess/Round 14K White Gold
     type: improve
   - badge: instagram
     id: '13'
@@ -91,7 +103,8 @@ tasks:
       - badge: new
         badgeTitle: Earrings
         id: '790149809'
-        imageUrl: https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
+        imageUrl: >-
+          https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
         title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
       - badge: trending
         badgeTitle: Engagement Rings
@@ -107,7 +120,7 @@ tasks:
         badgeTitle: Engagement Rings
         id: '992437400'
         image: /img/992437400_mv_zm.jpg
-        title: Diamond Engagement Ring 3/4 ct tw Princess/Round 14K White Gold   
+        title: Diamond Engagement Ring 3/4 ct tw Princess/Round 14K White Gold
     type: improve
 categories:
   - id: trending
@@ -126,3 +139,4 @@ categories:
     name: On Sale
     position: 4
 ---
+
