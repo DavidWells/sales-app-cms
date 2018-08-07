@@ -115,29 +115,25 @@ tasks:
           badge: new
           badgeTitle: Earrings
           id: '375401902'
-          imageUrl: >-
-            https://www.kay.com/images/products/3754/375401902_MV_ZM.jpg?resize=500:500
+          imageUrl: 'https://www.kay.com/images/products/3754/375401902_MV_ZM.jpg?resize=500:500'
           title: Earring Climbers Natural Gemstones 10K White Gold
         secondProduct:
           badge: new
           badgeTitle: Earrings
           id: '393435300'
-          imageUrl: >-
-            https://www.kay.com/images/products/3934/393435300_MV_ZM.jpg?resize=500:500
+          imageUrl: https://www.kay.com/images/products/3934/393435300_MV_ZM.jpg?resize=500:500
           title: Dangle Earrings 10K Yellow Gold
       - firstProduct:
           badge: trending
           badgeTitle: On Sale
           id: '505495301'
-          imageUrl: >-
-            https://www.kay.com/images/products/5054/505495301_MV_ZM.jpg?resize=500:500
+          imageUrl: https://www.kay.com/images/products/5054/505495301_MV_ZM.jpg?resize=500:500
           title: Cat Charm Black Crystals & Enamel Sterling Silver
         secondProduct:
           badge: trending
           badgeTitle: On Sale
           id: '23557109'
-          imageUrl: >-
-            https://www.kay.com/images/products/0235/023557109_MV_ZM.jpg?resize=500:500
+          imageUrl: https://www.kay.com/images/products/0235/023557109_MV_ZM.jpg?resize=500:500
           title: Blue & White Diamonds 1/10 ct tw 10K Rose Gold Crown Ring
     title: People attend to buy both of those items together
   help_your_trending_items:
@@ -147,8 +143,7 @@ tasks:
       - badge: new
         badgeTitle: Earrings
         id: '790149809'
-        imageUrl: >-
-          https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
+        imageUrl: https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
         title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
     title: Learn about your store’s highlight
   new_instagram_post:
@@ -168,8 +163,7 @@ tasks:
       - badge: new
         badgeTitle: Earrings
         id: '790149809'
-        imageUrl: >-
-          https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
+        imageUrl: https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
         title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
     title: Take a photo of these items new location
 ---

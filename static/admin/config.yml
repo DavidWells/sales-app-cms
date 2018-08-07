@@ -56,8 +56,8 @@ collections:
           - {label: "ID", name: "id", widget: "select", options: ["trending", "new", "missing", "bestSeller", "onSale"]}
           - {label: "Position", name: "position", widget: "number", default: 0, valueType: "int"}
 
-      - name: newTasks
-        label: new Tasks
+      - name: tasks
+        label: Tasks
         widget: object
         fields: 
           - name: help_your_trending_items
