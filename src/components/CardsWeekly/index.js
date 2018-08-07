@@ -81,7 +81,7 @@ class CardsWeekly extends React.Component {
               1/8/2018 - 6/8/2018
             </Text>
           </Box>
-          {data.map((item, index) => (
+          {this.props.data.products.map((item, index) => (
             <Box
               key={index}
               width={[1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 4]}
@@ -91,7 +91,7 @@ class CardsWeekly extends React.Component {
                 key={index}
                 title={item.title}
                 id={item.id}
-                units={item.units}
+                units={parseInt(item.units)}
                 imageSrc={item.image}
                 badge={item.badge}
                 badgeTitle={item.badgeTitle}

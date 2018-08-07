@@ -22,7 +22,7 @@ class Weekly extends Component {
     return (
       <PageTransition transitionTime={400}>
         <Helmet title={`Weekly | ${get(siteMetadata, 'title')}`} />
-        <CardsWeekly />
+        <CardsWeekly data={this.props.weeklyPageData} />
         <BottomNavBar
           text="Approve"
           buttonDisabled={this.props.buttonWeekly}
@@ -37,9 +37,10 @@ class Weekly extends Component {
 
 Weekly.propTypes = {}
 
-const mapStateToProps = ({ tasks, buttonWeekly }) => ({
+const mapStateToProps = ({ tasks, buttonWeekly, weeklyPageData }) => ({
   tasks,
   buttonWeekly,
+  weeklyPageData,
 })
 
 export default connect(

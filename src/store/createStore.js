@@ -30,6 +30,8 @@ let initialState = {
   pairPageSelectedItems: 0,
   trendItemSelected: false,
   data: data['kay'],
+  feedPageData: data['kay'].feedPage,
+  weeklyPageData: data['kay'].weeklyPage,
   colors: {
     black: '#3c3b3b',
     grey: 'grey',
