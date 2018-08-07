@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{574:function(t,e){t.exports={data:{allMarkdownRemark:{edges:[{node:{frontmatter:{title:"Sandro",products:[{category:"On Sale",name:"LEATHER SANDALS WITH BOWS",photo:"/img/sandro_ch1625e-803_v_1.jpg",sold:99,target:50}]}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---index-c52e87c6f2903d00d220.js.map

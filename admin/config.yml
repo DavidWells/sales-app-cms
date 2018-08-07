@@ -1,0 +1,167 @@
+backend:
+  name: git-gateway
+  branch: new-netlify-cms
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "brand"
+    label: "Brand"
+    folder: "src/pages/brands"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "brand"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Logo", name: "logo", widget: "image"}
+      - name: feedPage
+        label: Feed Page
+        widget: object
+        fields: 
+          - name: products
+            label: Products 
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string }
+              - {label: ID, name: id, widget: string}
+              - {label: Image, name: image, widget: image}
+              - {label: Image URL, name: imageUrl, widget: image-preview}
+              - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
+              - {label: Badge Title, name: badgeTitle, widget: string}
+      - name: weeklyPage
+        label: Weekly Page
+        widget: object
+        fields:
+          - {label: Title, name: title, widget: string } 
+          - {label: From Date, name: fromDate, widget: date, format: "Do MMM YY" }
+          - {label: To Date, name: toDate, widget: date, format: "Do MMM YY" }
+          - name: products
+            label: Products 
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string }
+              - {label: ID, name: id, widget: string}
+              - {label: Units, name: units, widget: number}
+              - {label: Image, name: image, widget: image}
+              - {label: Image URL, name: imageUrl, widget: image-preview}
+              - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
+              - {label: Badge Title, name: badgeTitle, widget: string}           
+
+      - name: "categories"
+        label: "Categories"
+        widget: "list"
+        fields: 
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "ID", name: "id", widget: "select", options: ["trending", "new", "missing", "bestSeller", "onSale"]}
+          - {label: "Position", name: "position", widget: "number", default: 0, valueType: "int"}
+
+      - name: tasks
+        label: Tasks
+        widget: object
+        fields: 
+          - name: help_your_trending_items
+            label: Help your trending items 
+            widget: object
+            fields: 
+              - {label: "Task Name", name: "taskName", widget: "string"}
+              - {label: "Page Title", name: "title", widget: "string"}
+              - {label: "Type", name: "type", widget: "select", options: ["improve", "trend", "pair"]}              
+              - {label: "Done", name: "done", widget: "boolean", default: false}
+              - {label: "Badge", name: "badge", widget: "select", options: ["trending", "instagram", "pair", "bestSeller"]}              
+              - {label: "Path", name: "path", widget: "string"}
+              - {label: "ID", name: "id", widget: "string", default: 12}   
+              - name: products
+                label: Products 
+                widget: list
+                fields: 
+                  - {label: Title, name: title, widget: string }
+                  - {label: ID, name: id, widget: string}
+                  - {label: Image, name: image, widget: image}
+                  - {label: Image URL, name: imageUrl, widget: image-preview}
+                  - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
+                  - {label: Badge Title, name: badgeTitle, widget: string} 
+
+
+          - name: new_instagram_post
+            label: New instagram post! 
+            widget: object
+            fields: 
+              - {label: "Page Title", name: "title", widget: "string"}
+              - {label: "Task Name", name: "taskName", widget: "string"}              
+              - {label: "Type", name: "type", widget: "select", options: ["improve", "trend", "pair"]}              
+              - {label: "Done", name: "done", widget: "boolean", default: false}
+              - {label: "Badge", name: "badge", widget: "select", options: ["trending", "instagram", "pair", "bestSeller"]}  
+              - {label: "Path", name: "path", widget: "string"}
+              - {label: "ID", name: "id", widget: "string", default: 13}   
+              - name: product
+                label: Product
+                widget: object
+                fields: 
+                  - {label: Title, name: title, widget: string }
+                  - {label: ID, name: id, widget: string}
+                  - {label: Image, name: image, widget: image}
+                  - {label: Image URL, name: imageUrl, widget: image-preview}
+                  - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
+                  - {label: Badge Title, name: badgeTitle, widget: string}                                 
+
+          - name: complete_the_look
+            label: Complete the look!
+            widget: object
+            fields: 
+              - {label: "Page Title", name: "title", widget: "string"}
+              - {label: "Task Name", name: "taskName", widget: "string"}              
+              - {label: "Type", name: "type", widget: "select", options: ["improve", "trend", "pair"]}              
+              - {label: "Done", name: "done", widget: "boolean", default: false}
+              - {label: "Badge", name: "badge", widget: "select", options: ["trending", "instagram", "pair", "bestSeller"]}  
+              - {label: "Path", name: "path", widget: "string"}
+              - {label: "ID", name: "id", widget: "string", default: 14}   
+   
+
+              - name: products
+                label: Products 
+                widget: list
+                fields: 
+                  - name: firstProduct
+                    label: First Product
+                    widget: object
+                    fields: 
+                      - {label: Title, name: title, widget: string }
+                      - {label: ID, name: id, widget: string}
+                      - {label: Image, name: image, widget: image}
+                      - {label: Image URL, name: imageUrl, widget: image-preview}
+                      - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
+                      - {label: Badge Title, name: badgeTitle, widget: string}
+                  - name: secondProduct
+                    label: Second Product
+                    widget: object
+                    fields: 
+                      - {label: Title, name: title, widget: string }
+                      - {label: ID, name: id, widget: string}
+                      - {label: Image, name: image, widget: image}
+                      - {label: Image URL, name: imageUrl, widget: image-preview}
+                      - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
+                      - {label: Badge Title, name: badgeTitle, widget: string} 
+
+          - name: record_best_seller_locations
+            label: Record best seller locations
+            widget: object
+            fields: 
+              - {label: "Page Title", name: "title", widget: "string"}
+              - {label: "Task Name", name: "taskName", widget: "string"}              
+              - {label: "Type", name: "type", widget: "select", options: ["improve", "trend", "pair"]}              
+              - {label: "Done", name: "done", widget: "boolean", default: false}
+              - {label: "Badge", name: "badge", widget: "select", options: ["trending", "instagram", "pair", "bestSeller"]}  
+              - {label: "Path", name: "path", widget: "string"}
+              - {label: "ID", name: "id", widget: "string", default: 12}   
+              - name: products
+                label: Products 
+                widget: list
+                fields: 
+                  - {label: Title, name: title, widget: string }
+                  - {label: ID, name: id, widget: string}
+                  - {label: Image, name: image, widget: image}
+                  - {label: Image URL, name: imageUrl, widget: image-preview}
+                  - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
+                  - {label: Badge Title, name: badgeTitle, widget: string} 
+         

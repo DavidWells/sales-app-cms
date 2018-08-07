@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{572:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Kay",description:"Kay Jewelers",url:"https://sales-app.netlify.com",author:"mystore-e",twitter:"mystore-e",adsense:""}},remark:{posts:[{post:{html:"",frontmatter:{title:"Sandro"}}},{post:{html:"",frontmatter:{title:"Castro"}}},{post:{html:"",frontmatter:{title:"Golbary"}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---index-197a1241207b049d055c.js.map

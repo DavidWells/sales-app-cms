@@ -1,0 +1,2 @@
+webpackJsonp([69504508989315],{573:function(a,o){a.exports={data:{markdownRemark:{id:"/Users/creotip/Desktop/mystore/gitlab-sales-app/src/pages/brands/golbary.md absPath of file >>> MarkdownRemark",frontmatter:{title:"Golbary",logo:"/img/artboard_1-8_copy.png",products:[{photo:"/img/678549_99_1.jpg",name:"Black Dress",category:"High Profitability",sold:5,target:100}]}}},pathContext:{id:"/Users/creotip/Desktop/mystore/gitlab-sales-app/src/pages/brands/golbary.md absPath of file >>> MarkdownRemark"}}}});
+//# sourceMappingURL=path---brands-golbary-51d1129adb61f3ba832c.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([1246768126526],{564:function(a,t){a.exports={data:{markdownRemark:{id:"/Users/creotip/Desktop/mystore/gitlab-sales-app/src/pages/brands/castro.md absPath of file >>> MarkdownRemark",frontmatter:{title:"Castro",logo:"/img/castro_logo-2.png",products:[{photo:"/img/8310158.01.2100_d_0f0fd34.jpg",name:"Cool Shirt",category:"High Profitability",sold:7,target:10}]}}},pathContext:{id:"/Users/creotip/Desktop/mystore/gitlab-sales-app/src/pages/brands/castro.md absPath of file >>> MarkdownRemark"}}}});
+//# sourceMappingURL=path---brands-castro-7088d0b2a381b1e1e44b.js.map

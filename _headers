@@ -1,0 +1,116 @@
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+/static/*
+  Cache-Control: max-age=31536000
+/offline-plugin-app-shell-fallback/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/brands/castro/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---brands-castro-dc19ebf769e0609f6e8f.js>; rel=preload; as=script
+  Link: </component---src-templates-brand-js-31280477fa72c6c5f5f4.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/brands/golbary/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---brands-golbary-51d1129adb61f3ba832c.js>; rel=preload; as=script
+  Link: </component---src-templates-brand-js-31280477fa72c6c5f5f4.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/brands/sandro/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---brands-sandro-edc55f8bb4a3d6cf45a9.js>; rel=preload; as=script
+  Link: </component---src-templates-brand-js-31280477fa72c6c5f5f4.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/brands/kay/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---brands-kay-fba64f8c0c0caa3335f9.js>; rel=preload; as=script
+  Link: </component---src-templates-brand-js-31280477fa72c6c5f5f4.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/help-your-trending-items/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---help-your-trending-items-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---src-task-types-improve-help-your-trending-items-js-9c1a305f72f89d78b3f9.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/record-best-seller-locations/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---record-best-seller-locations-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---src-task-types-improve-record-best-seller-locations-js-436027906fbb6845e182.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/new-instagram-post/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---new-instagram-post-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---src-task-types-trend-new-instagram-post-js-be681f962aed22fb6119.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/complete-the-look/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---complete-the-look-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---src-task-types-pair-complete-the-look-js-1e4895f8155b1a3796d7.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/charts/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---charts-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---src-pages-charts-js-5621d8f7b421e23941d5.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/elements/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---elements-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---src-pages-elements-index-js-47d61732bf8101c9d101.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/improve/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---improve-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---src-pages-improve-js-0cf496cccd0fdee2be4e.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---index-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---src-pages-index-js-26560634d7838c7dcadd.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/notifications/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---notifications-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---src-pages-notifications-index-js-bead7427fe7e938b5bf4.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/pair/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---pair-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---src-pages-pair-js-e216199385202f5f9172.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/profile/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---profile-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---src-pages-profile-index-jsx-2e050374f45601893780.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/trend/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---trend-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---src-pages-trend-js-6cbf11e2de90c5ab5120.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script
+/weekly/
+  Link: </commons-f50681ca2da90a4a1acb.js>; rel=preload; as=script
+  Link: </app-3658e0948d8087683f33.js>; rel=preload; as=script
+  Link: </path---weekly-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---src-pages-weekly-js-182e6c6c3c426e95d973.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-js-265bc332375c7ad35327.js>; rel=preload; as=script

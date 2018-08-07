@@ -1,0 +1,2 @@
+webpackJsonp([0x7b6c36ba44b5],{574:function(a,s){a.exports={data:{markdownRemark:{id:"/Users/creotip/Desktop/mystore/gitlab-sales-app/src/pages/brands/kay.md absPath of file >>> MarkdownRemark",frontmatter:{title:"Kay",logo:"/img/kay-logo.png",products:null}}},pathContext:{id:"/Users/creotip/Desktop/mystore/gitlab-sales-app/src/pages/brands/kay.md absPath of file >>> MarkdownRemark"}}}});
+//# sourceMappingURL=path---brands-kay-fba64f8c0c0caa3335f9.js.map

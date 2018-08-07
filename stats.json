@@ -1,0 +1,160 @@
+{
+  "assetsByChunkName": {
+    "path---brands-castro": [
+      "path---brands-castro-dc19ebf769e0609f6e8f.js",
+      "path---brands-castro-dc19ebf769e0609f6e8f.js.map"
+    ],
+    "path---help-your-trending-items": [
+      "path---help-your-trending-items-a0e39f21c11f6a62c5ab.js",
+      "path---help-your-trending-items-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-task-types-pair-complete-the-look-js": [
+      "component---src-task-types-pair-complete-the-look-js-1e4895f8155b1a3796d7.js",
+      "component---src-task-types-pair-complete-the-look-js-1e4895f8155b1a3796d7.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-26560634d7838c7dcadd.js",
+      "component---src-pages-index-js-26560634d7838c7dcadd.js.map"
+    ],
+    "component---src-pages-trend-js": [
+      "component---src-pages-trend-js-6cbf11e2de90c5ab5120.js",
+      "component---src-pages-trend-js-6cbf11e2de90c5ab5120.js.map"
+    ],
+    "component---src-task-types-improve-help-your-trending-items-js": [
+      "component---src-task-types-improve-help-your-trending-items-js-9c1a305f72f89d78b3f9.js",
+      "component---src-task-types-improve-help-your-trending-items-js-9c1a305f72f89d78b3f9.js.map"
+    ],
+    "component---src-pages-pair-js": [
+      "component---src-pages-pair-js-e216199385202f5f9172.js",
+      "component---src-pages-pair-js-e216199385202f5f9172.js.map"
+    ],
+    "path---elements": [
+      "path---elements-a0e39f21c11f6a62c5ab.js",
+      "path---elements-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---brands-sandro": [
+      "path---brands-sandro-edc55f8bb4a3d6cf45a9.js",
+      "path---brands-sandro-edc55f8bb4a3d6cf45a9.js.map"
+    ],
+    "path---profile": [
+      "path---profile-a0e39f21c11f6a62c5ab.js",
+      "path---profile-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---brands-golbary": [
+      "path---brands-golbary-51d1129adb61f3ba832c.js",
+      "path---brands-golbary-51d1129adb61f3ba832c.js.map"
+    ],
+    "path---complete-the-look": [
+      "path---complete-the-look-a0e39f21c11f6a62c5ab.js",
+      "path---complete-the-look-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-improve-js": [
+      "component---src-pages-improve-js-0cf496cccd0fdee2be4e.js",
+      "component---src-pages-improve-js-0cf496cccd0fdee2be4e.js.map"
+    ],
+    "component---src-pages-elements-index-js": [
+      "component---src-pages-elements-index-js-47d61732bf8101c9d101.js",
+      "component---src-pages-elements-index-js-47d61732bf8101c9d101.js.map"
+    ],
+    "cms": [
+      "cms-35a6925f32ea1f5ef2c5.js",
+      "cms.css",
+      "cms-35a6925f32ea1f5ef2c5.js.map",
+      "cms.css.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "path---notifications": [
+      "path---notifications-a0e39f21c11f6a62c5ab.js",
+      "path---notifications-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-265bc332375c7ad35327.js",
+      "component---src-layouts-index-js-265bc332375c7ad35327.js.map"
+    ],
+    "component---src-pages-notifications-index-js": [
+      "component---src-pages-notifications-index-js-bead7427fe7e938b5bf4.js",
+      "component---src-pages-notifications-index-js-bead7427fe7e938b5bf4.js.map"
+    ],
+    "component---src-task-types-trend-new-instagram-post-js": [
+      "component---src-task-types-trend-new-instagram-post-js-be681f962aed22fb6119.js",
+      "component---src-task-types-trend-new-instagram-post-js-be681f962aed22fb6119.js.map"
+    ],
+    "path---brands-kay": [
+      "path---brands-kay-fba64f8c0c0caa3335f9.js",
+      "path---brands-kay-fba64f8c0c0caa3335f9.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---charts": [
+      "path---charts-a0e39f21c11f6a62c5ab.js",
+      "path---charts-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---improve": [
+      "path---improve-a0e39f21c11f6a62c5ab.js",
+      "path---improve-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "commons": [
+      "commons-f50681ca2da90a4a1acb.js",
+      "commons-f50681ca2da90a4a1acb.js.map"
+    ],
+    "component---src-pages-weekly-js": [
+      "component---src-pages-weekly-js-182e6c6c3c426e95d973.js",
+      "component---src-pages-weekly-js-182e6c6c3c426e95d973.js.map"
+    ],
+    "path---new-instagram-post": [
+      "path---new-instagram-post-a0e39f21c11f6a62c5ab.js",
+      "path---new-instagram-post-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---pair": [
+      "path---pair-a0e39f21c11f6a62c5ab.js",
+      "path---pair-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---trend": [
+      "path---trend-a0e39f21c11f6a62c5ab.js",
+      "path---trend-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-templates-brand-js": [
+      "component---src-templates-brand-js-31280477fa72c6c5f5f4.js",
+      "component---src-templates-brand-js-31280477fa72c6c5f5f4.js.map"
+    ],
+    "path---weekly": [
+      "path---weekly-a0e39f21c11f6a62c5ab.js",
+      "path---weekly-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-3658e0948d8087683f33.js",
+      "build-js-styles.css",
+      "app-3658e0948d8087683f33.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-task-types-improve-record-best-seller-locations-js": [
+      "component---src-task-types-improve-record-best-seller-locations-js-436027906fbb6845e182.js",
+      "component---src-task-types-improve-record-best-seller-locations-js-436027906fbb6845e182.js.map"
+    ],
+    "component---src-pages-charts-js": [
+      "component---src-pages-charts-js-5621d8f7b421e23941d5.js",
+      "component---src-pages-charts-js-5621d8f7b421e23941d5.js.map"
+    ],
+    "component---src-pages-profile-index-jsx": [
+      "component---src-pages-profile-index-jsx-2e050374f45601893780.js",
+      "component---src-pages-profile-index-jsx-2e050374f45601893780.js.map"
+    ],
+    "path---record-best-seller-locations": [
+      "path---record-best-seller-locations-a0e39f21c11f6a62c5ab.js",
+      "path---record-best-seller-locations-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
