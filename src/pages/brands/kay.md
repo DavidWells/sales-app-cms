@@ -136,6 +136,7 @@ tasks:
           imageUrl: https://www.kay.com/images/products/0235/023557109_MV_ZM.jpg?resize=500:500
           title: Blue & White Diamonds 1/10 ct tw 10K Rose Gold Crown Ring
     title: People attend to buy both of those items together
+    taskName: Complete the look!
   help_your_trending_items:
     id: '12'
     path: help-your-trending-items
@@ -146,6 +147,7 @@ tasks:
         imageUrl: https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
         title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
     title: Learn about your store’s highlight
+    taskName: Help your trending items
   new_instagram_post:
     id: '13'
     path: new-instagram-post
@@ -156,6 +158,7 @@ tasks:
       image: /img/kay-insta.jpg
       title: 'kayjewelersIt’s #bracelet season! #StyleInspo'
     title: People might search for this look today!
+    taskName: New instagram post!
   record_best_seller_locations:
     id: '15'
     path: record-best-seller-locations
@@ -166,4 +169,5 @@ tasks:
         imageUrl: https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
         title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
     title: Take a photo of these items new location
+    taskName: Record best seller locations
 ---

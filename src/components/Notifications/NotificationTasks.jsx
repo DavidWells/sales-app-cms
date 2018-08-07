@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import TaskItem from './TaskItem'
 
 const items = [
-  'Highlight "Bst Selllers"!',
+  'Highlight "Best Selllers"!',
   'Increase the sales!',
   'Keep it visible!',
 ]
@@ -30,9 +30,10 @@ class NotificationTasks extends React.Component {
   }
 
   render() {
+    const taskNames = Object.keys(this.props.tasks)
     return (
       <TaskList>
-        {this.state.items.map((item, index) => (
+        {Object.keys(this.props.tasks).map((item, index, array) => (
           <TaskItem
             key={index}
             badge={item.badge}
