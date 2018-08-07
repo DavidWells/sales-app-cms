@@ -171,7 +171,7 @@ categories:
     name: On Sale
     position: 4
 newTasks:
-  complete-the-look:
+  complete_the_look:
     id: '14'
     path: complete-the-look
     products:
@@ -215,7 +215,7 @@ newTasks:
           https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
         title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
     title: Learn about your store’s highlight
-  new-instagram-post:
+  new_instagram_post:
     id: '13'
     path: new-instagram-post
     product:
@@ -226,4 +226,3 @@ newTasks:
       title: 'kayjewelersIt’s #bracelet season! #StyleInspo'
     title: People might search for this look today!
 ---
-
