@@ -66,7 +66,9 @@ collections:
             fields: 
               - {label: "Task Name", name: "taskName", widget: "string"}
               - {label: "Page Title", name: "title", widget: "string"}
-              - {label: "Done", name: "done", widget: "boolean", default: true}
+              - {label: "Type", name: "type", widget: "select", options: ["improve", "trend", "pair"]}              
+              - {label: "Done", name: "done", widget: "boolean", default: false}
+              - {label: "Badge", name: "badge", widget: "select", options: ["trending", "instagram", "pair", "bestSeller"]}              
               - {label: "Path", name: "path", widget: "string"}
               - {label: "ID", name: "id", widget: "string", default: 12}   
               - name: products
@@ -87,7 +89,9 @@ collections:
             fields: 
               - {label: "Page Title", name: "title", widget: "string"}
               - {label: "Task Name", name: "taskName", widget: "string"}              
-              - {label: "Done", name: "done", widget: "boolean", default: true}
+              - {label: "Type", name: "type", widget: "select", options: ["improve", "trend", "pair"]}              
+              - {label: "Done", name: "done", widget: "boolean", default: false}
+              - {label: "Badge", name: "badge", widget: "select", options: ["trending", "instagram", "pair", "bestSeller"]}  
               - {label: "Path", name: "path", widget: "string"}
               - {label: "ID", name: "id", widget: "string", default: 13}   
               - name: product
@@ -107,7 +111,9 @@ collections:
             fields: 
               - {label: "Page Title", name: "title", widget: "string"}
               - {label: "Task Name", name: "taskName", widget: "string"}              
-              - {label: "Done", name: "done", widget: "boolean", default: true}
+              - {label: "Type", name: "type", widget: "select", options: ["improve", "trend", "pair"]}              
+              - {label: "Done", name: "done", widget: "boolean", default: false}
+              - {label: "Badge", name: "badge", widget: "select", options: ["trending", "instagram", "pair", "bestSeller"]}  
               - {label: "Path", name: "path", widget: "string"}
               - {label: "ID", name: "id", widget: "string", default: 14}   
    
@@ -143,7 +149,9 @@ collections:
             fields: 
               - {label: "Page Title", name: "title", widget: "string"}
               - {label: "Task Name", name: "taskName", widget: "string"}              
-              - {label: "Done", name: "done", widget: "boolean", default: true}
+              - {label: "Type", name: "type", widget: "select", options: ["improve", "trend", "pair"]}              
+              - {label: "Done", name: "done", widget: "boolean", default: false}
+              - {label: "Badge", name: "badge", widget: "select", options: ["trending", "instagram", "pair", "bestSeller"]}  
               - {label: "Path", name: "path", widget: "string"}
               - {label: "ID", name: "id", widget: "string", default: 12}   
               - name: products
