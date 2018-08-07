@@ -34,7 +34,8 @@ collections:
         widget: object
         fields:
           - {label: Title, name: title, widget: string } 
-          - {label: Date, name: date, widget: date, format: "Do MMM YY" }
+          - {label: From Date, name: fromDate, widget: date, format: "Do MMM YY" }
+          - {label: To Date, name: toDate, widget: date, format: "Do MMM YY" }
           - name: products
             label: Products 
             widget: list
