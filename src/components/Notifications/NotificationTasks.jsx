@@ -33,7 +33,7 @@ class NotificationTasks extends React.Component {
     const taskNames = Object.keys(this.props.tasks)
     return (
       <TaskList>
-        {Object.keys(this.props.tasks).map((item, index, array) => (
+        {Object.entries(this.props.tasks).map(([key, item], index) => (
           <TaskItem
             key={index}
             badge={item.badge}

@@ -238,7 +238,8 @@
             }
           }
         ],
-        "title": "People attend to buy both of those items together"
+        "title": "People attend to buy both of those items together",
+        "taskName": "Complete the look!"
       },
       "help_your_trending_items": {
         "id": "12",
@@ -253,7 +254,8 @@
             "title": "Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold"
           }
         ],
-        "title": "Learn about your store’s highlight"
+        "title": "Learn about your store’s highlight",
+        "taskName": "Help your trending items"
       },
       "new_instagram_post": {
         "id": "13",
@@ -265,7 +267,8 @@
           "image": "/img/kay-insta.jpg",
           "title": "kayjewelersIt’s #bracelet season! #StyleInspo"
         },
-        "title": "People might search for this look today!"
+        "title": "People might search for this look today!",
+        "taskName": "New instagram post!"
       },
       "record_best_seller_locations": {
         "id": "15",
@@ -280,7 +283,8 @@
             "title": "Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold"
           }
         ],
-        "title": "Take a photo of these items new location"
+        "title": "Take a photo of these items new location",
+        "taskName": "Record best seller locations"
       }
     },
     "preview": "",
