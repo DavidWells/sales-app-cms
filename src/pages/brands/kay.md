@@ -171,6 +171,39 @@ categories:
     name: On Sale
     position: 4
 newTasks:
+  complete-the-look:
+    id: '14'
+    path: complete-the-look
+    products:
+      - firstProduct:
+          badge: new
+          badgeTitle: Earrings
+          id: '375401902'
+          imageUrl: >-
+            https://www.kay.com/images/products/3754/375401902_MV_ZM.jpg?resize=500:500
+          title: Earring Climbers Natural Gemstones 10K White Gold
+        secondProduct:
+          badge: new
+          badgeTitle: Earrings
+          id: '393435300'
+          imageUrl: >-
+            https://www.kay.com/images/products/3934/393435300_MV_ZM.jpg?resize=500:500
+          title: Dangle Earrings 10K Yellow Gold
+      - firstProduct:
+          badge: trending
+          badgeTitle: On Sale
+          id: '505495301'
+          imageUrl: >-
+            https://www.kay.com/images/products/5054/505495301_MV_ZM.jpg?resize=500:500
+          title: Cat Charm Black Crystals & Enamel Sterling Silver
+        secondProduct:
+          badge: trending
+          badgeTitle: On Sale
+          id: '23557109'
+          imageUrl: >-
+            https://www.kay.com/images/products/0235/023557109_MV_ZM.jpg?resize=500:500
+          title: Blue & White Diamonds 1/10 ct tw 10K Rose Gold Crown Ring
+    title: People attend to buy both of those items together
   help_your_trending_items:
     id: '12'
     path: help-your-trending-items
@@ -193,3 +226,4 @@ newTasks:
       title: 'kayjewelersIt’s #bracelet season! #StyleInspo'
     title: People might search for this look today!
 ---
+
