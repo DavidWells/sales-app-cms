@@ -144,6 +144,7 @@ tasks:
     type: pair
   help_your_trending_items:
     badge: trending
+    done: true
     id: '12'
     path: help-your-trending-items
     products:
