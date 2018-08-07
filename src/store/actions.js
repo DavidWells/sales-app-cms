@@ -67,8 +67,9 @@ const actions = store => ({
   }),
 
   selectTasks: (state, obj, id) => {
-    let newObject = obj.map(
-      item => (item.id === id ? Object.assign({}, item, { done: true }) : item)
+    let newObject = Object.entries(obj).map(
+      ([key, item], index) =>
+        item.id === id ? Object.assign({}, item, { done: true }) : item
     )
 
     return { tasks: [...newObject] }

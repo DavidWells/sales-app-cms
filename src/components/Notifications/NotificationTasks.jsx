@@ -30,19 +30,18 @@ class NotificationTasks extends React.Component {
   }
 
   render() {
-    const taskNames = Object.keys(this.props.tasks)
     return (
       <TaskList>
         {Object.entries(this.props.tasks).map(([key, item], index) => (
           <TaskItem
             key={index}
             badge={item.badge}
-            done={item.done}
-            taskName={item.name}
+            done={false}
+            taskName={item.taskName}
             index={index}
             id={item.id}
             path={item.path}
-            selected={item.selected}
+            selected={false}
             type={item.type}
             // onClick={() => push(`${item.type}`)}
           />
