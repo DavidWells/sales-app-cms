@@ -29,6 +29,7 @@ collections:
               - {label: Image URL, name: imageUrl, widget: image-preview}
               - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
               - {label: Badge Title, name: badgeTitle, widget: string}
+              - {label: Rank, name: rank, widget: number}
       - name: weeklyPage
         label: Weekly Page
         widget: object
@@ -46,7 +47,8 @@ collections:
               - {label: Image, name: image, widget: image}
               - {label: Image URL, name: imageUrl, widget: image-preview}
               - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
-              - {label: Badge Title, name: badgeTitle, widget: string}           
+              - {label: Badge Title, name: badgeTitle, widget: string}  
+              - {label: Rank, name: rank, widget: number}         
       - name: "categories"
         label: "Categories"
         widget: "list"
@@ -79,6 +81,7 @@ collections:
                   - {label: Image URL, name: imageUrl, widget: image-preview}
                   - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
                   - {label: Badge Title, name: badgeTitle, widget: string} 
+                  - {label: Rank, name: rank, widget: number}
           - name: new_instagram_post
             label: New instagram post! 
             widget: object
@@ -99,7 +102,8 @@ collections:
                   - {label: Image, name: image, widget: image}
                   - {label: Image URL, name: imageUrl, widget: image-preview}
                   - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
-                  - {label: Badge Title, name: badgeTitle, widget: string}                                 
+                  - {label: Badge Title, name: badgeTitle, widget: string}   
+                  - {label: Rank, name: rank, widget: number}                              
           - name: complete_the_look
             label: Complete the look!
             widget: object
@@ -125,6 +129,7 @@ collections:
                       - {label: Image URL, name: imageUrl, widget: image-preview}
                       - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
                       - {label: Badge Title, name: badgeTitle, widget: string}
+                      - {label: Rank, name: rank, widget: number}                      
                   - name: secondProduct
                     label: Second Product
                     widget: object
@@ -135,6 +140,7 @@ collections:
                       - {label: Image URL, name: imageUrl, widget: image-preview}
                       - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
                       - {label: Badge Title, name: badgeTitle, widget: string} 
+                      - {label: Rank, name: rank, widget: number}                      
 
           - name: record_best_seller_locations
             label: Record best seller locations
@@ -157,4 +163,5 @@ collections:
                   - {label: Image URL, name: imageUrl, widget: image-preview}
                   - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
                   - {label: Badge Title, name: badgeTitle, widget: string} 
+                  - {label: Rank, name: rank, widget: number}
          
