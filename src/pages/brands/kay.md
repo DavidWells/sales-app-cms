@@ -150,8 +150,8 @@ tasks:
       - badge: new
         badgeTitle: Earrings
         id: '790149809'
-        imageUrl: >-
-          https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
+        image: /img/790149809_mv_zm.jpg
+        imageUrl: ''
         title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
       - badge: new
         badgeTitle: Earrings
@@ -190,3 +190,4 @@ tasks:
     title: Take a photo of these items new location
     type: improve
 ---
+
