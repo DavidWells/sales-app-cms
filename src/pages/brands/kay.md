@@ -20,7 +20,7 @@ feedPage:
       badgeTitle: Engagement Rings
       id: '992662902'
       image: /img/992662902_mv_zm.jpg
-      rank: '-4'
+      rank: '15'
       title: Diamond Engagement Ring 1 ct tw Round-cut 14K Two-Tone Gold
     - badge: trending
       badgeTitle: Engagement Rings
