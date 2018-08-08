@@ -45,6 +45,12 @@ let initialState = {
   items: dataItems,
   itemCategories: data['kay'].categories,
   tasks: data['kay'].tasks,
+  tasksStatus: {
+    help_your_trending_items: false,
+    new_instagram_post: false,
+    complete_the_look: false,
+    record_best_seller_locations: false,
+  },
   currentTaskView: null,
   pagesButton: { feed: false, improve: false, trend: false, pair: false },
 }

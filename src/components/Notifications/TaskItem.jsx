@@ -39,7 +39,7 @@ const FullWidthFlex = styled(Flex)`
 
 class TaskItem extends React.Component {
   handleTask = () => {
-    this.props.selectCurrentTaskView(this.props.id)
+    this.props.selectCurrentTaskView(this.props.path)
     push(this.props.path)
   }
   render() {

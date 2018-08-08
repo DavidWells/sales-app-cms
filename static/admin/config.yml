@@ -47,7 +47,6 @@ collections:
               - {label: Image URL, name: imageUrl, widget: image-preview}
               - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
               - {label: Badge Title, name: badgeTitle, widget: string}           
-
       - name: "categories"
         label: "Categories"
         widget: "list"
@@ -55,7 +54,6 @@ collections:
           - {label: "Name", name: "name", widget: "string"}
           - {label: "ID", name: "id", widget: "select", options: ["trending", "new", "missing", "bestSeller", "onSale"]}
           - {label: "Position", name: "position", widget: "number", default: 0, valueType: "int"}
-
       - name: tasks
         label: Tasks
         widget: object
@@ -67,10 +65,10 @@ collections:
               - {label: "Task Name", name: "taskName", widget: "string"}
               - {label: "Page Title", name: "title", widget: "string"}
               - {label: "Type", name: "type", widget: "select", options: ["improve", "trend", "pair"]}              
-              - {label: "Done", name: "done", widget: "boolean", default: false}
               - {label: "Badge", name: "badge", widget: "select", options: ["trending", "instagram", "pair", "bestSeller"]}              
               - {label: "Path", name: "path", widget: "string"}
               - {label: "ID", name: "id", widget: "string", default: 12}   
+              - {label: "Key", name: "key", widget: "hidden", default: help_your_trending_items}
               - name: products
                 label: Products 
                 widget: list
@@ -81,8 +79,6 @@ collections:
                   - {label: Image URL, name: imageUrl, widget: image-preview}
                   - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
                   - {label: Badge Title, name: badgeTitle, widget: string} 
-
-
           - name: new_instagram_post
             label: New instagram post! 
             widget: object
@@ -90,10 +86,10 @@ collections:
               - {label: "Page Title", name: "title", widget: "string"}
               - {label: "Task Name", name: "taskName", widget: "string"}              
               - {label: "Type", name: "type", widget: "select", options: ["improve", "trend", "pair"]}              
-              - {label: "Done", name: "done", widget: "boolean", default: false}
               - {label: "Badge", name: "badge", widget: "select", options: ["trending", "instagram", "pair", "bestSeller"]}  
               - {label: "Path", name: "path", widget: "string"}
               - {label: "ID", name: "id", widget: "string", default: 13}   
+              - {label: "Key", name: "key", widget: "hidden", default: new_instagram_post}
               - name: product
                 label: Product
                 widget: object
@@ -104,7 +100,6 @@ collections:
                   - {label: Image URL, name: imageUrl, widget: image-preview}
                   - {label: Badge, name: badge, widget: select, options: ["trending", "instagram", "pair", "bestSeller", "new"]}
                   - {label: Badge Title, name: badgeTitle, widget: string}                                 
-
           - name: complete_the_look
             label: Complete the look!
             widget: object
@@ -112,12 +107,10 @@ collections:
               - {label: "Page Title", name: "title", widget: "string"}
               - {label: "Task Name", name: "taskName", widget: "string"}              
               - {label: "Type", name: "type", widget: "select", options: ["improve", "trend", "pair"]}              
-              - {label: "Done", name: "done", widget: "boolean", default: false}
               - {label: "Badge", name: "badge", widget: "select", options: ["trending", "instagram", "pair", "bestSeller"]}  
               - {label: "Path", name: "path", widget: "string"}
               - {label: "ID", name: "id", widget: "string", default: 14}   
-   
-
+              - {label: "Key", name: "key", widget: "hidden", default: complete_the_look}
               - name: products
                 label: Products 
                 widget: list
@@ -150,10 +143,10 @@ collections:
               - {label: "Page Title", name: "title", widget: "string"}
               - {label: "Task Name", name: "taskName", widget: "string"}              
               - {label: "Type", name: "type", widget: "select", options: ["improve", "trend", "pair"]}              
-              - {label: "Done", name: "done", widget: "boolean", default: false}
               - {label: "Badge", name: "badge", widget: "select", options: ["trending", "instagram", "pair", "bestSeller"]}  
               - {label: "Path", name: "path", widget: "string"}
               - {label: "ID", name: "id", widget: "string", default: 12}   
+              - {label: "Key", name: "key", widget: "hidden", default: complete_the_look}
               - name: products
                 label: Products 
                 widget: list

@@ -30,9 +30,15 @@ class NotificationTasks extends React.Component {
   }
 
   render() {
+    const helpYourTendingItems = this.props.tasks['help_your_trending_items']
+    const newInstagramPost = this.props.tasks['new_instagram_post']
+    const completeTheLook = this.props.tasks['complete_the_look']
+    const recordBestSellerLocations = this.props.tasks[
+      'record_best_seller_locations'
+    ]
     return (
       <TaskList>
-        {Object.entries(this.props.tasks).map(([key, item], index) => (
+        {/* {Object.entries(this.props.tasks).map(([key, item], index) => (
           <TaskItem
             key={index}
             badge={item.badge}
@@ -45,7 +51,55 @@ class NotificationTasks extends React.Component {
             type={item.type}
             // onClick={() => push(`${item.type}`)}
           />
-        ))}
+        ))} */}
+        <TaskItem
+          key={0}
+          badge={helpYourTendingItems.badge}
+          done={false}
+          taskName={helpYourTendingItems.taskName}
+          index={0}
+          id={helpYourTendingItems.id}
+          path={helpYourTendingItems.path}
+          selected={false}
+          type={helpYourTendingItems.type}
+          // onClick={() => push(`${item.type}`)}
+        />
+        <TaskItem
+          key={1}
+          badge={newInstagramPost.badge}
+          done={false}
+          taskName={newInstagramPost.taskName}
+          index={1}
+          id={newInstagramPost.id}
+          path={newInstagramPost.path}
+          selected={false}
+          type={newInstagramPost.type}
+          // onClick={() => push(`${item.type}`)}
+        />
+        <TaskItem
+          key={2}
+          badge={completeTheLook.badge}
+          done={false}
+          taskName={completeTheLook.taskName}
+          index={2}
+          id={completeTheLook.id}
+          path={completeTheLook.path}
+          selected={false}
+          type={completeTheLook.type}
+          // onClick={() => push(`${item.type}`)}
+        />
+        <TaskItem
+          key={3}
+          badge={recordBestSellerLocations.badge}
+          done={false}
+          taskName={recordBestSellerLocations.taskName}
+          index={3}
+          id={recordBestSellerLocations.id}
+          path={recordBestSellerLocations.path}
+          selected={false}
+          type={recordBestSellerLocations.type}
+          // onClick={() => push(`${item.type}`)}
+        />
       </TaskList>
     )
   }

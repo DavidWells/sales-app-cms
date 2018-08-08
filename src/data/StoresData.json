@@ -1,46 +1,4 @@
 {
-  "castro": {
-    "templateKey": "brand",
-    "title": "Castro",
-    "logo": "/img/untitled-1_176.png",
-    "products": [
-      {
-        "category": "High Profitability",
-        "name": "Cool Shirt",
-        "photo": "/img/1.jpg",
-        "sold": 7,
-        "target": 10
-      }
-    ],
-    "Tasks": [
-      {
-        "name": "Help your trending items",
-        "type": "improve"
-      },
-      {
-        "name": "New instagram post!",
-        "type": "trend"
-      }
-    ],
-    "preview": "",
-    "basename": "castro"
-  },
-  "golbary": {
-    "templateKey": "brand",
-    "title": "Golbary",
-    "logo": "/img/artboard_1-8_copy.png",
-    "products": [
-      {
-        "category": "High Profitability",
-        "name": "Black Dress",
-        "photo": "/img/678549_99_1.jpg",
-        "sold": 5,
-        "target": 100
-      }
-    ],
-    "preview": "",
-    "basename": "golbary"
-  },
   "kay": {
     "templateKey": "brand",
     "title": "Kay",
@@ -245,6 +203,7 @@
       },
       "help_your_trending_items": {
         "badge": "trending",
+        "done": true,
         "id": "12",
         "path": "help-your-trending-items",
         "products": [
@@ -297,21 +256,5 @@
     },
     "preview": "",
     "basename": "kay"
-  },
-  "sandro": {
-    "templateKey": "brand",
-    "title": "Sandro",
-    "logo": "/img/sandro2-520x313.jpg",
-    "products": [
-      {
-        "category": "On Sale",
-        "name": "LEATHER SANDALS WITH BOWS",
-        "photo": "/img/sandro_ch1625e-803_v_1.jpg",
-        "sold": 99,
-        "target": 50
-      }
-    ],
-    "preview": "",
-    "basename": "sandro"
   }
 }
