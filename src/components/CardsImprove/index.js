@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Flex, Box } from 'rebass'
 import Card from './Card'
 import Heading from '../Elements/Heading'
-import { get, has } from 'lodash'
+import { get, has, isEmpty } from 'lodash'
 
 const CardList = styled.div``
 
@@ -37,7 +37,13 @@ class CardsWithCamera extends React.Component {
                   key={index}
                   title={item.title}
                   id={item.id}
-                  imageSrc={get(item, 'imageUrl', item.image)}
+                  imageSrc={
+                    has(item, 'imageUrl')
+                      ? item.imageUrl.length > 0
+                        ? item.imageUrl
+                        : item.image
+                      : item.image
+                  }
                   badge={item.badge}
                   badgeTitle={item.badgeTitle}
                 />

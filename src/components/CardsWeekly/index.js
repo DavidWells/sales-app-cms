@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Flex, Box, Text } from 'rebass'
 import Card from './Card'
 import Heading from '../Elements/Heading'
-import { get } from 'lodash'
+import { get, has } from 'lodash'
 
 const CardList = styled.div``
 
@@ -35,7 +35,13 @@ class CardsWeekly extends React.Component {
                 title={item.title}
                 id={item.id}
                 units={parseInt(item.units)}
-                imageSrc={get(item, 'imageUrl', item.image)}
+                imageSrc={
+                  has(item, 'imageUrl')
+                    ? item.imageUrl.length > 0
+                      ? item.imageUrl
+                      : item.image
+                    : item.image
+                }
                 badge={item.badge}
                 badgeTitle={item.badgeTitle}
               />
