@@ -30,7 +30,7 @@ export const BrandTemplate = ({ title, logo, products, helmet }) => {
                 <div style={{ marginTop: `4rem` }}>
                   <h4>Products</h4>
                   <div className="productlist">
-                    {products.map(product => (
+                    {/* {products.map(product => (
                       <div data-category={product.category}>
                         <div>{product.name}</div>
                         <div>
@@ -44,7 +44,7 @@ export const BrandTemplate = ({ title, logo, products, helmet }) => {
                           <strong>Target:</strong> {product.target}
                         </div>
                       </div>
-                    ))}
+                    ))} */}
                   </div>
                 </div>
               ) : null}
@@ -91,13 +91,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         logo
-        products {
-          photo
-          name
-          category
-          sold
-          target
-        }
       }
     }
   }
