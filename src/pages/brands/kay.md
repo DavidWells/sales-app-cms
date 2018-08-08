@@ -157,8 +157,7 @@ tasks:
         badgeTitle: Earrings
         id: '393435300'
         image: /img/393435300_mv_zm.jpg
-        imageUrl: >-
-          https://www.kay.com/images/products/3934/393435300_MV_ZM.jpg?resize=500:500
+        imageUrl: ''
         title: Dangle Earrings 10K Yellow Gold
     taskName: Help your trending items
     title: Learn about your store’s highlight
