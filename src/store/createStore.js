@@ -9,7 +9,7 @@ import * as data from '../data/StoresData.json'
 import mystoreLogo from '../assets/logo-black.png'
 
 let initialState = {
-  logo: mystoreLogo,
+  logo: data['ralph-loren'].logo,
   auth: false,
   rtl: false,
   darkMode: false,
@@ -29,9 +29,9 @@ let initialState = {
   improvePageSelectedItems: 0,
   pairPageSelectedItems: 0,
   trendItemSelected: false,
-  data: data['kay'],
-  feedPageData: data['kay'].feedPage,
-  weeklyPageData: data['kay'].weeklyPage,
+  data: data['ralph-loren'],
+  feedPageData: data['ralph-loren'].feedPage,
+  weeklyPageData: data['ralph-loren'].weeklyPage,
   colors: {
     black: '#3c3b3b',
     grey: 'grey',
@@ -43,8 +43,8 @@ let initialState = {
     missing: 'gray',
   },
   items: dataItems,
-  itemCategories: data['kay'].categories,
-  tasks: data['kay'].tasks,
+  itemCategories: data['ralph-loren'].categories,
+  tasks: data['ralph-loren'].tasks,
   tasksStatus: {
     help_your_trending_items: false,
     new_instagram_post: false,
