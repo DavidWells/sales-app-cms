@@ -157,6 +157,7 @@ tasks:
         badgeTitle: Earrings
         id: '393435300'
         image: /img/393435300_mv_zm.jpg
+        imageUrl: ''
         title: Dangle Earrings 10K Yellow Gold
     taskName: Help your trending items
     title: Learn about your store’s highlight
