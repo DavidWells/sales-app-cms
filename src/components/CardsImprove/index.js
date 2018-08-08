@@ -36,7 +36,7 @@ class CardsWithCamera extends React.Component {
                   key={index}
                   title={item.title}
                   id={item.id}
-                  imageSrc={item.image}
+                  imageSrc={item.imageUrl}
                   badge={item.badge}
                   badgeTitle={item.badgeTitle}
                 />

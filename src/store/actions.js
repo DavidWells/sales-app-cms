@@ -66,13 +66,9 @@ const actions = store => ({
     showBoarding: false,
   }),
 
-  selectTasks: (state, obj, id) => {
-    let newObject = Object.entries(obj).map(
-      ([key, item], index) =>
-        item.id === id ? Object.assign({}, item, { done: true }) : item
-    )
-
-    return { tasks: [...newObject] }
+  selectTasks: ({ tasksStatus }, obj, key) => {
+    let updatedTasks = Object.assign(obj, { [key]: true })
+    return { tasksStatus: { ...updatedTasks } }
   },
 
   selectCurrentTaskView: (state, id) => ({

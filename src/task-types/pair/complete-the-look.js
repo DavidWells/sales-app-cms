@@ -15,8 +15,12 @@ class Pair extends Component {
     this.props.resetPairSelectedItems()
   }
 
+  componentDidMount() {
+    this.props.selectCurrentTaskView('complete_the_look')
+  }
+
   updateTaskAndRedirect = () => {
-    this.props.selectTasks(this.props.tasks, this.props.currentTaskView)
+    this.props.selectTasks(this.props.tasksStatus, this.props.currentTaskView)
     push('/notifications')
   }
   render() {
@@ -41,10 +45,12 @@ Pair.propTypes = {}
 const mapStateToProps = ({
   pairPageSelectedItems,
   tasks,
+  tasksStatus,
   currentTaskView,
 }) => ({
   pairPageSelectedItems,
   tasks,
+  tasksStatus,
   currentTaskView,
 })
 

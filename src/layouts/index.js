@@ -17,7 +17,12 @@ import Boarding from '../components/Boarding'
 injectGlobal`
   * { box-sizing: border-box; }
   body {color: #3c3b3b; background: #f0f6ff;}
-  .no-scroll {overflow: hidden; position: fixed;}
+  .no-scroll {overflow: hidden; 
+    @media screen and (max-width: 992px) {
+      position: fixed;
+  }
+
+  }
   .disable-clicks {pointer-events: none;}
 `
 

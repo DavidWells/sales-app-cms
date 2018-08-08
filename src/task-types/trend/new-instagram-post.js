@@ -14,9 +14,11 @@ class Trend extends Component {
   componentWillUnmount() {
     this.props.resetTrendItem()
   }
-
+  componentDidMount() {
+    this.props.selectCurrentTaskView('new_instagram_post')
+  }
   updateTaskAndRedirect = () => {
-    this.props.selectTasks(this.props.tasks, this.props.currentTaskView)
+    this.props.selectTasks(this.props.tasksStatus, this.props.currentTaskView)
     push('/notifications')
   }
 
@@ -29,7 +31,10 @@ class Trend extends Component {
             'title'
           )}`}
         />
-        <CardsTrend title="People might search for this look today!" />
+        <CardsTrend
+          product={this.props.tasks['new_instagram_post'].product}
+          title="People might search for this look today!"
+        />
         <BottomNavBar
           text="Done"
           buttonDisabled={this.props.trendItemSelected}
@@ -44,9 +49,15 @@ class Trend extends Component {
 
 Trend.propTypes = {}
 
-const mapStateToProps = ({ trendItemSelected, tasks, currentTaskView }) => ({
+const mapStateToProps = ({
   trendItemSelected,
   tasks,
+  tasksStatus,
+  currentTaskView,
+}) => ({
+  trendItemSelected,
+  tasks,
+  tasksStatus,
   currentTaskView,
 })
 

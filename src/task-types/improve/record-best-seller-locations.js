@@ -11,48 +11,17 @@ import PageTransition from 'gatsby-plugin-page-transitions'
 import { connect } from 'unistore/react'
 import actions from '../../store/actions'
 
-const data = [
-  {
-    title: 'Diamond Earrings 1/2 ct tw Round-cut 10K Yellow Gold',
-    id: '182199101',
-    image:
-      'https://www.kay.com/images/products/1821/182199101_MV_ZM.jpg?resize=500:500',
-    badge: 'new',
-    badgeTitle: 'Earrings',
-  },
-  {
-    title: 'Earring Climbers Natural Gemstones 10K White Gold',
-    id: '375401902',
-    image:
-      'https://www.kay.com/images/products/3754/375401902_MV_ZM.jpg?resize=500:500',
-    badge: 'new',
-    badgeTitle: 'Earrings',
-  },
-  {
-    title: 'Diamond Engagement Ring 1 ct tw Round-cut 14K Two-Tone Gold',
-    id: '992662902',
-    image:
-      'https://www.kay.com/images/products/9926/992662902_MV_ZM.jpg?resize=500:500',
-    badge: 'trending',
-    badgeTitle: 'Engagement Rings',
-  },
-  {
-    title: 'Diamond Engagement Ring 3/4 ct tw Princess/Round 14K White Gold',
-    id: '992437400',
-    image:
-      'https://www.kay.com/images/products/9924/992437400_MV_ZM.jpg?resize=500:500',
-    badge: 'trending',
-    badgeTitle: 'Engagement Rings',
-  },
-]
-
 class Improve extends Component {
   componentWillUnmount() {
     this.props.resetImproveSelectedItems()
   }
 
+  componentDidMount() {
+    this.props.selectCurrentTaskView('record_best_seller_locations')
+  }
+
   updateTaskAndRedirect = () => {
-    this.props.selectTasks(this.props.tasks, this.props.currentTaskView)
+    this.props.selectTasks(this.props.tasksStatus, this.props.currentTaskView)
     push('/notifications')
   }
   render() {
@@ -65,7 +34,7 @@ class Improve extends Component {
           )}`}
         />
         <CardsImprove
-          data={data}
+          data={this.props.tasks['record_best_seller_locations'].products}
           title="Take a photo of these items new location"
         />
         <BottomNavBar
@@ -85,11 +54,12 @@ Improve.propTypes = {}
 const mapStateToProps = ({
   improvePageSelectedItems,
   tasks,
+  tasksStatus,
   currentTaskView,
 }) => ({
   improvePageSelectedItems,
-
   tasks,
+  tasksStatus,
   currentTaskView,
 })
 export default connect(

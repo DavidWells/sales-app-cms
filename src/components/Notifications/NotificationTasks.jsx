@@ -36,6 +36,7 @@ class NotificationTasks extends React.Component {
     const recordBestSellerLocations = this.props.tasks[
       'record_best_seller_locations'
     ]
+
     return (
       <TaskList>
         {/* {Object.entries(this.props.tasks).map(([key, item], index) => (
@@ -55,7 +56,7 @@ class NotificationTasks extends React.Component {
         <TaskItem
           key={0}
           badge={helpYourTendingItems.badge}
-          done={false}
+          done={this.props.tasksStatus['help_your_trending_items']}
           taskName={helpYourTendingItems.taskName}
           index={0}
           id={helpYourTendingItems.id}
@@ -67,7 +68,7 @@ class NotificationTasks extends React.Component {
         <TaskItem
           key={1}
           badge={newInstagramPost.badge}
-          done={false}
+          done={this.props.tasksStatus['new_instagram_post']}
           taskName={newInstagramPost.taskName}
           index={1}
           id={newInstagramPost.id}
@@ -79,7 +80,7 @@ class NotificationTasks extends React.Component {
         <TaskItem
           key={2}
           badge={completeTheLook.badge}
-          done={false}
+          done={this.props.tasksStatus['complete_the_look']}
           taskName={completeTheLook.taskName}
           index={2}
           id={completeTheLook.id}
@@ -91,7 +92,7 @@ class NotificationTasks extends React.Component {
         <TaskItem
           key={3}
           badge={recordBestSellerLocations.badge}
-          done={false}
+          done={this.props.tasksStatus['record_best_seller_locations']}
           taskName={recordBestSellerLocations.taskName}
           index={3}
           id={recordBestSellerLocations.id}
@@ -112,7 +113,8 @@ NotificationTasks.propTypes = {
   items: PropTypes.array,
 }
 
-const mapStateToProps = ({ tasks }) => ({
+const mapStateToProps = ({ tasks, tasksStatus }) => ({
   tasks,
+  tasksStatus,
 })
 export default connect(mapStateToProps)(NotificationTasks)
