@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { Flex, Box } from 'rebass'
 import Card from './Card'
 import Heading from '../Elements/Heading'
+import { get } from 'lodash'
 
 const CardList = styled.div``
 
@@ -31,7 +32,11 @@ class CardsTrend extends React.Component {
               <Card
                 title={this.props.product.title}
                 id={this.props.product.id}
-                imageSrc={this.props.product.image}
+                imageSrc={get(
+                  this.props.product,
+                  'imageUrl',
+                  this.props.product.image
+                )}
               />
             </Box>
           )}

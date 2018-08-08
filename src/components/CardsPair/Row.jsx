@@ -16,6 +16,7 @@ import {
 import Card from './Card'
 import cameraIcon from '../../assets/camera.svg'
 import checkIcon from '../../assets/check.svg'
+import { get } from 'lodash'
 
 const CardWrapper = styled(CustomCard)`
   box-shadow: none;
@@ -141,7 +142,7 @@ class Row extends React.Component {
                   key={index}
                   title={item.title}
                   id={item.id}
-                  imageSrc={item.image}
+                  imageSrc={get(item, 'imageUrl', item.image)}
                   badge={item.badge}
                   badgeTitle={item.badgeTitle}
                 />

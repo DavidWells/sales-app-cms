@@ -3,65 +3,8 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Flex, Box, Text } from 'rebass'
 import Card from './Card'
-
 import Heading from '../Elements/Heading'
-
-const data = [
-  {
-    title: 'Diamond Engagement Ring 1 ct tw Round-cut 14K Two-Tone Gold',
-    id: '992662902',
-    image:
-      'https://www.kay.com/images/products/9926/992662902_MV_ZM.jpg?resize=500:500',
-    badge: 'trending',
-    badgeTitle: 'Engagement Rings',
-    units: -2,
-  },
-  {
-    title: 'Diamond Engagement Ring 3/4 ct tw Princess/Round 14K White Gold',
-    id: '992437400',
-    image:
-      'https://www.kay.com/images/products/9924/992437400_MV_ZM.jpg?resize=500:500',
-    badge: 'trending',
-    badgeTitle: 'Engagement Rings',
-    units: 3,
-  },
-  {
-    title: 'Diamond Earrings 1/2 ct tw Round-cut 10K Yellow Gold',
-    id: '182199101',
-    image:
-      'https://www.kay.com/images/products/1821/182199101_MV_ZM.jpg?resize=500:500',
-    badge: 'new',
-    badgeTitle: 'Earrings',
-    units: -1,
-  },
-  {
-    title: 'Earring Climbers Natural Gemstones 10K White Gold',
-    id: '375401902',
-    image:
-      'https://www.kay.com/images/products/3754/375401902_MV_ZM.jpg?resize=500:500',
-    badge: 'new',
-    badgeTitle: 'Earrings',
-    units: 6,
-  },
-  {
-    title: 'Diamond Earrings 1/2 ct tw Round-cut 10K Yellow Gold',
-    id: '182199101',
-    image:
-      'https://www.kay.com/images/products/1821/182199101_MV_ZM.jpg?resize=500:500',
-    badge: 'new',
-    badgeTitle: 'Earrings',
-    units: -1,
-  },
-  {
-    title: 'Earring Climbers Natural Gemstones 10K White Gold',
-    id: '375401902',
-    image:
-      'https://www.kay.com/images/products/3754/375401902_MV_ZM.jpg?resize=500:500',
-    badge: 'new',
-    badgeTitle: 'Earrings',
-    units: 6,
-  },
-]
+import { get } from 'lodash'
 
 const CardList = styled.div``
 
@@ -92,7 +35,7 @@ class CardsWeekly extends React.Component {
                 title={item.title}
                 id={item.id}
                 units={parseInt(item.units)}
-                imageSrc={item.image}
+                imageSrc={get(item, 'imageUrl', item.image)}
                 badge={item.badge}
                 badgeTitle={item.badgeTitle}
               />
