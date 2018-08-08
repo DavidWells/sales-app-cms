@@ -199,4 +199,3 @@ tasks:
     title: Take a photo of these items new location
     type: improve
 ---
-
