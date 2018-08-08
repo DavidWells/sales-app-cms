@@ -18,6 +18,7 @@ class CardsTrend extends React.Component {
   }
 
   render() {
+    console.log(this.props.product)
     return (
       <CardList className="card-list">
         <Flex mx={-2} flexWrap="wrap">
@@ -25,24 +26,29 @@ class CardsTrend extends React.Component {
             <Heading>{this.props.title}</Heading>
           </Box>
 
-          <Box width={[1 / 1, 1 / 1, 1 / 1]} px={2}>
-            <Card
-              title={this.props.product.title}
-              id={this.props.product.id}
-              imageSrc={this.props.product.image}
-            />
-          </Box>
+          {this.props.product !== null && (
+            <Box width={[1 / 1, 1 / 1, 1 / 1]} px={2}>
+              <Card
+                title={this.props.product.title}
+                id={this.props.product.id}
+                imageSrc={this.props.product.image}
+              />
+            </Box>
+          )}
         </Flex>
       </CardList>
     )
   }
 }
 
-CardsTrend.defaultProps = {}
+CardsTrend.defaultProps = {
+  product: null,
+}
 CardsTrend.propTypes = {
   src: PropTypes.string,
-  title: PropTypes.string,
+  title: PropTypes.any,
   product: PropTypes.any,
+  id: PropTypes.any,
 }
 
 export default CardsTrend
