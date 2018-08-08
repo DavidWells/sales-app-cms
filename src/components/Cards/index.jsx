@@ -63,6 +63,7 @@ class Cards extends React.Component {
                 key={index}
                 title={item.title}
                 id={item.id}
+                rank={item.rank}
                 imageSrc={
                   has(item, 'imageUrl')
                     ? item.imageUrl.length > 0

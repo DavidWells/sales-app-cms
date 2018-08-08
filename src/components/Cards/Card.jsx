@@ -96,11 +96,16 @@ const Title = styled(Subhead)`
   min-height: 38px;
 `
 
+const percentageOf = (max, num) => {
+  return Math.floor((num / max) * 100)
+}
+
 class Card extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       modalOpen: false,
+      maxRank: 32,
     }
   }
 
@@ -204,9 +209,18 @@ class Card extends React.Component {
         </Subhead> */}
           <CustomBorderLine mx={2} borderColor="lightGrey" borderBottom={1} />
           <Flex mx={2} pb={3} alignItems="center">
-            <Text children="34%" fontSize={0} pr={1} />
-            <Progress value={0.5} color="#3190f0" bg={'red'} />
-            <Text children="12" fontSize={0} pl={1} />
+            <Text fontSize={0} pr={1}>
+              {percentageOf(this.state.maxRank, this.props.rank)}%
+            </Text>
+            <Progress
+              value={this.props.rank}
+              max={this.state.maxRank}
+              color="#3190f0"
+              bg={'red'}
+            />
+            <Text fontSize={0} pl={1}>
+              {this.props.rank}
+            </Text>
           </Flex>
           <CardModal show={this.state.modalOpen} onClick={this.closeModal}>
             <CardModalInner show={this.state.modalOpen}>
