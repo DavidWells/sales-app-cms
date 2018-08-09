@@ -17,6 +17,7 @@ if (typeof window !== `undefined`) {
 
 const getStoreName = has(data, storeParam) ? storeParam : 'kay'
 
+console.log(data[getStoreName].logo)
 let initialState = {
   logo: data[getStoreName].logo,
   auth: false,
