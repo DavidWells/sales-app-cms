@@ -9,10 +9,13 @@ import * as data from '../data/StoresData.json'
 import mystoreLogo from '../assets/logo-black.png'
 import { get, has } from 'lodash'
 
-const urlParams = new URLSearchParams(window.location.search)
-const storeParam = urlParams.get('store')
+let storeParam = null
+if (typeof window !== `undefined`) {
+  const urlParams = new URLSearchParams(window.location.search)
+  storeParam = urlParams.get('store')
+}
+
 const getStoreName = has(data, storeParam) ? storeParam : 'kay'
-console.log(getStoreName) // "edit"
 
 let initialState = {
   logo: data[getStoreName].logo,
