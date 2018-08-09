@@ -12,9 +12,7 @@ const StyledLogo = styled.img`
 
 const Logo = props => {
   console.log(props.logoImage)
-  return (
-    <StyledLogo className="logo" src={'/img/emblem-ralph-lauren.png'} alt="" />
-  )
+  return <StyledLogo className="logo" src={props.logoImage} alt="" />
 }
 
 Logo.propTypes = {
