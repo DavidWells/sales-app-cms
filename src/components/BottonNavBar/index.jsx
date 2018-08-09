@@ -44,7 +44,7 @@ class BottomNavBar extends React.Component {
 
   componentDidMount() {
     if (this.props.showBoarding === true) {
-      console.log('showing boarding')
+      // console.log('showing boarding')
 
       window.addEventListener(
         'click',

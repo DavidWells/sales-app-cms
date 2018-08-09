@@ -3,8 +3,9 @@ import Link, { push } from 'gatsby-link'
 import { connect } from 'unistore/react'
 import { Toolbar, NavLink } from 'rebass'
 import styled from 'styled-components'
+import Img from 'react-image'
 
-import Logo from '../Elements/Logo'
+// import Logo from '../Elements/Logo'
 import ProfileButton from '../Elements/ProfileButton'
 
 const CustomLink = styled(Link)`
@@ -23,15 +24,31 @@ const Header = styled(Toolbar)`
   border-bottom: 1px solid whitesmoke;
 `
 
+const Logo = styled(Img)`
+  max-width: 130px;
+  max-height: 37px;
+`
+
 class SiteNavi extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      logo: this.props.logo,
+    }
+  }
   render() {
     const { location, title } = this.props
-    console.log(this.props.data)
+    console.log(this.state.logo)
     return (
       <Header>
         <NavLink is="div">
           <CustomLink to={'/'} color={'white'}>
-            <Logo logoImage={this.props.data.logo} />
+            <Logo
+              key={this.state.logo}
+              className="logo"
+              src={this.state.logo}
+              alt="logo"
+            />
           </CustomLink>
         </NavLink>
         {/* <NavLink ml="auto" is="div">
