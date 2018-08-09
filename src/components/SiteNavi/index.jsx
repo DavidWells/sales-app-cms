@@ -1,5 +1,6 @@
 import React from 'react'
 import Link, { push } from 'gatsby-link'
+import { connect } from 'unistore/react'
 import { Toolbar, NavLink } from 'rebass'
 import styled from 'styled-components'
 
@@ -30,7 +31,7 @@ class SiteNavi extends React.Component {
       <Header>
         <NavLink is="div">
           <CustomLink to={'/'} color={'white'}>
-            <Logo />
+            <Logo logoImage={this.props.logo} />
           </CustomLink>
         </NavLink>
         {/* <NavLink ml="auto" is="div">
@@ -46,4 +47,7 @@ class SiteNavi extends React.Component {
   }
 }
 
-export default SiteNavi
+const mapStateToProps = ({ logo }) => ({
+  logo,
+})
+export default connect(mapStateToProps)(SiteNavi)

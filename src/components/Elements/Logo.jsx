@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 // import defaultLogo from '../../assets/kay-logo.png'
 import styled from 'styled-components'
 
-import { connect } from 'unistore/react'
+// import { connect } from 'unistore/react'
 
 const StyledLogo = styled.img`
   max-width: 130px;
@@ -11,19 +11,12 @@ const StyledLogo = styled.img`
 `
 
 const Logo = props => {
-  return <StyledLogo className="logo" src={props.logo} alt="" />
+  console.log(props.logoImage)
+  return <StyledLogo className="logo" src={props.logoImage} alt="" />
 }
 
-// Logo.defaultProps = {
-//   src: defaultLogo,
-//   logo: defaultLogo,
-// }
 Logo.propTypes = {
-  // src: PropTypes.string,
-  logo: PropTypes.any,
+  logoImage: PropTypes.any,
 }
 
-const mapStateToProps = ({ logo }) => ({
-  logo,
-})
-export default connect(mapStateToProps)(Logo)
+export default Logo
