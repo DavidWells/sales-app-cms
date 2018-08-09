@@ -59,4 +59,3 @@ tasks:
     title: People might search for this look today!
     type: trend
 ---
-

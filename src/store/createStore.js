@@ -8,13 +8,18 @@ import { dataItems } from '../data/fakeData'
 import * as data from '../data/StoresData.json'
 import mystoreLogo from '../assets/logo-black.png'
 
+const urlParams = new URLSearchParams(window.location.search)
+const getStoreName = urlParams.get('store')
+console.log(getStoreName) // "edit"
+
 let initialState = {
-  logo: data['ralph-loren'].logo,
+  logo: data[getStoreName].logo,
   auth: false,
   rtl: false,
   darkMode: false,
   userAgent: userAgent(),
   os: osType(),
+  store: null,
   firstStart: true,
   showBoarding: true,
   count: 0,
@@ -29,9 +34,9 @@ let initialState = {
   improvePageSelectedItems: 0,
   pairPageSelectedItems: 0,
   trendItemSelected: false,
-  data: data['ralph-loren'],
-  feedPageData: data['ralph-loren'].feedPage,
-  weeklyPageData: data['ralph-loren'].weeklyPage,
+  data: data[getStoreName],
+  feedPageData: data[getStoreName].feedPage,
+  weeklyPageData: data[getStoreName].weeklyPage,
   colors: {
     black: '#3c3b3b',
     grey: 'grey',
@@ -43,8 +48,8 @@ let initialState = {
     missing: 'gray',
   },
   items: dataItems,
-  itemCategories: data['ralph-loren'].categories,
-  tasks: data['ralph-loren'].tasks,
+  itemCategories: data[getStoreName].categories,
+  tasks: data[getStoreName].tasks,
   tasksStatus: {
     help_your_trending_items: false,
     new_instagram_post: false,
