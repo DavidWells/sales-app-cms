@@ -7,9 +7,11 @@ import { userAgent, osType } from '../utils'
 import { dataItems } from '../data/fakeData'
 import * as data from '../data/StoresData.json'
 import mystoreLogo from '../assets/logo-black.png'
+import { get, has } from 'lodash'
 
 const urlParams = new URLSearchParams(window.location.search)
-const getStoreName = urlParams.get('store')
+const storeParam = urlParams.get('store')
+const getStoreName = has(data, storeParam) ? storeParam : 'kay'
 console.log(getStoreName) // "edit"
 
 let initialState = {
