@@ -26,12 +26,12 @@ const Header = styled(Toolbar)`
 class SiteNavi extends React.Component {
   render() {
     const { location, title } = this.props
-
+    console.log(this.props.data)
     return (
       <Header>
         <NavLink is="div">
           <CustomLink to={'/'} color={'white'}>
-            <Logo logoImage={this.props.logo} />
+            <Logo logoImage={this.props.data.logo} />
           </CustomLink>
         </NavLink>
         {/* <NavLink ml="auto" is="div">
@@ -47,7 +47,9 @@ class SiteNavi extends React.Component {
   }
 }
 
-const mapStateToProps = ({ logo }) => ({
+const mapStateToProps = ({ data, store, logo }) => ({
+  data,
+  store,
   logo,
 })
 export default connect(mapStateToProps)(SiteNavi)

@@ -25,7 +25,7 @@ let initialState = {
   darkMode: false,
   userAgent: userAgent(),
   os: osType(),
-  store: null,
+  store: getStoreName,
   firstStart: true,
   showBoarding: true,
   count: 0,
