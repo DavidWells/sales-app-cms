@@ -1,7 +1,7 @@
 ---
 templateKey: brand
-title: Kay
-logo: /img/kay-logo.png
+title: Fox
+logo: /img/fox-logo.png
 feedPage:
   products:
     - badge: trending
