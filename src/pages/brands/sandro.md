@@ -25,6 +25,11 @@ weeklyPage:
   title: Your last week results
   toDate: 15th Aug 18
 categories:
-  - name: Best Seller
+  - id: bestSeller
+    name: Best Seller
+    position: 1
+  - id: trending
+    name: Trending
+    position: 2
 ---
 
