@@ -24,5 +24,7 @@ weeklyPage:
       units: '4'
   title: Your last week results
   toDate: 15th Aug 18
+categories:
+  - name: Best Seller
 ---
 
