@@ -31,5 +31,8 @@ categories:
   - id: trending
     name: Trending
     position: 2
+  - id: new
+    name: New
+    position: 4
 ---
 
