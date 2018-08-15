@@ -18,6 +18,7 @@ collections:
       - name: feedPage
         label: Feed Page
         widget: object
+        required: false
         fields: 
           - name: products
             label: Products 
@@ -33,6 +34,7 @@ collections:
       - name: weeklyPage
         label: Weekly Page
         widget: object
+        required: false
         fields:
           - {label: Title, name: title, widget: string } 
           - {label: From Date, name: fromDate, widget: date, format: "Do MMM YY" }
@@ -52,6 +54,7 @@ collections:
       - name: "categories"
         label: "Categories"
         widget: "list"
+        required: false
         fields: 
           - {label: "Name", name: "name", widget: "string"}
           - {label: "ID", name: "id", widget: "select", options: ["trending", "new", "missing", "bestSeller", "onSale"]}
@@ -59,6 +62,7 @@ collections:
       - name: tasks
         label: Tasks
         widget: object
+        required: false
         fields: 
           - name: help_your_trending_items
             label: Help your trending items 
