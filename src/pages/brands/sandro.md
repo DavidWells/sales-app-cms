@@ -34,5 +34,8 @@ categories:
   - id: new
     name: New
     position: 4
+  - id: onSale
+    name: On Sale
+    position: 3
 ---
 
