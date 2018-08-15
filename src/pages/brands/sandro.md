@@ -37,5 +37,13 @@ categories:
   - id: onSale
     name: On Sale
     position: 3
+tasks:
+  help_your_trending_items:
+    badge: bestSeller
+    id: '545'
+    path: help-your-trending-items
+    taskName: Help your trending items
+    title: Learn about your store’s highlight
+    type: improve
 ---
 
