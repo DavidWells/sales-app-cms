@@ -45,5 +45,12 @@ tasks:
     taskName: Help your trending items
     title: Learn about your store’s highlight
     type: improve
+  new_instagram_post:
+    badge: instagram
+    id: '33'
+    path: new-instagram-post
+    taskName: New instagram post
+    title: People might search for this look today!
+    type: trend
 ---
 
