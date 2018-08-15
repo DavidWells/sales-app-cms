@@ -38,6 +38,12 @@ categories:
     name: On Sale
     position: 3
 tasks:
+  complete_the_look:
+    badge: pair
+    id: '20'
+    path: complete-the-look
+    taskName: Complete the look
+    type: pair
   help_your_trending_items:
     badge: bestSeller
     id: '545'
