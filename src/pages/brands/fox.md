@@ -29,11 +29,11 @@ feedPage:
       rank: '10'
       title: Diamond Engagement Ring 3/4 ct tw Princess/Round 14K White Gold
     - badge: bestSeller
-      badgeTitle: Earrings
+      badgeTitle: Best Seller
       id: '182199101'
-      image: /img/182199101_mv_zm.jpg
-      rank: '13'
-      title: Diamond Earrings 1/2 ct tw Round-cut 10K Yellow Gold
+      image: https://www.fox.co.il/filestock/img/preview_3b450e1.jpg
+      rank: '31'
+      title: שמלת מקסי
     - badge: new
       badgeTitle: Earrings
       id: '375401902'
@@ -50,8 +50,7 @@ feedPage:
       badgeTitle: Earrings
       id: '790149809'
       image: /img/790149809_mv_zm.jpg
-      imageUrl: >-
-        https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
+      imageUrl: https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
       rank: '23'
       title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
 weeklyPage:
@@ -91,8 +90,7 @@ weeklyPage:
       badgeTitle: Earrings
       id: '790149809'
       image: /img/790149809_mv_zm.jpg
-      imageUrl: >-
-        https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
+      imageUrl: https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
       title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
       units: '4'
   title: Your last week results
@@ -121,32 +119,28 @@ tasks:
     products:
       - firstProduct:
           badge: new
-          badgeTitle: Earrings
-          id: '375401902'
-          imageUrl: >-
-            https://www.kay.com/images/products/3754/375401902_MV_ZM.jpg?resize=500:500
-          title: Earring Climbers Natural Gemstones 10K White Gold
+          badgeTitle: New Arrivals
+          id: '34117'
+          imageUrl: https://www.fox.co.il/filestock/img/preview_7810446.jpg
+          title: שמלת אריג
         secondProduct:
           badge: new
-          badgeTitle: Earrings
-          id: '393435300'
-          imageUrl: >-
-            https://www.kay.com/images/products/3934/393435300_MV_ZM.jpg?resize=500:500
-          title: Dangle Earrings 10K Yellow Gold
+          badgeTitle: New Arrivals
+          id: '34118'
+          imageUrl: https://www.fox.co.il/filestock/img/preview_171d92e.jpg
+          title: טייץ ספורט
       - firstProduct:
           badge: trending
-          badgeTitle: On Sale
-          id: '505495301'
-          imageUrl: >-
-            https://www.kay.com/images/products/5054/505495301_MV_ZM.jpg?resize=500:500
-          title: Cat Charm Black Crystals & Enamel Sterling Silver
+          badgeTitle: Trending
+          id: '34127'
+          imageUrl: https://www.fox.co.il/filestock/img/preview_93a61c6.jpg
+          title: שמלה
         secondProduct:
           badge: trending
-          badgeTitle: On Sale
-          id: '23557109'
-          imageUrl: >-
-            https://www.kay.com/images/products/0235/023557109_MV_ZM.jpg?resize=500:500
-          title: Blue & White Diamonds 1/10 ct tw 10K Rose Gold Crown Ring
+          badgeTitle: Trending
+          id: '34128'
+          imageUrl: https://www.fox.co.il/filestock/img/preview_a0186bc.jpg
+          title: ג'ינס MOM
     taskName: Complete the look!
     title: People attend to buy both of those items together
     type: pair
@@ -159,8 +153,7 @@ tasks:
         badgeTitle: Earrings
         id: '790149809'
         image: ''
-        imageUrl: >-
-          https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
+        imageUrl: https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
         title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
       - badge: new
         badgeTitle: Earrings
@@ -192,8 +185,7 @@ tasks:
       - badge: new
         badgeTitle: Earrings
         id: '790149809'
-        imageUrl: >-
-          https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
+        imageUrl: https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
         title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
     taskName: Record best seller locations
     title: Take a photo of these items new location
