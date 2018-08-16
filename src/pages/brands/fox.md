@@ -10,42 +10,49 @@ feedPage:
       image: /img/992653600_mv_zm.jpg
       rank: '12'
       title: Diamond Engagement Ring 1-3/4 Carats tw 14K White Gold
+
     - badge: trending
       badgeTitle: Engagement Rings
       id: '940375619'
       image: /img/940375619_mv_zm.jpg
       rank: '30'
       title: Neil Lane Aquamarine Engagement Ring 1 ct tw Diamonds 14K Gold
+
     - badge: trending
       badgeTitle: Engagement Rings
       id: '992662902'
       image: /img/992662902_mv_zm.jpg
       rank: '15'
       title: Diamond Engagement Ring 1 ct tw Round-cut 14K Two-Tone Gold
+
     - badge: trending
       badgeTitle: Engagement Rings
       id: '992437400'
       image: /img/992437400_mv_zm.jpg
       rank: '10'
       title: Diamond Engagement Ring 3/4 ct tw Princess/Round 14K White Gold
+
     - badge: bestSeller
       badgeTitle: Best Seller
       id: '182199101'
       image: https://www.fox.co.il/filestock/img/preview_3b450e1.jpg
       rank: '31'
       title: שמלת מקסי
+
     - badge: new
       badgeTitle: Earrings
       id: '375401902'
       image: /img/375401902_mv_zm.jpg
       rank: '7'
       title: Earring Climbers Natural Gemstones 10K White Gold
+
     - badge: new
       badgeTitle: Earrings
       id: '393435300'
       image: /img/393435300_mv_zm.jpg
       rank: '31'
       title: Dangle Earrings 10K Yellow Gold
+
     - badge: new
       badgeTitle: Earrings
       id: '790149809'
@@ -53,6 +60,7 @@ feedPage:
       imageUrl: https://www.kay.com/images/products/7901/790149809_MV_ZM.jpg?resize=500:500
       rank: '23'
       title: Le Vian Grape Amethyst Hoop Earrings 14K Strawberry Gold
+      
 weeklyPage:
   fromDate: 7th Aug 18
   products:
