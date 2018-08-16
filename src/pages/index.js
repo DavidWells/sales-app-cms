@@ -22,7 +22,7 @@ class FeedPage extends React.Component {
     return (
       <PageTransition transitionTime={300} className="dsadsadas">
         <TopNavBar />
-        <Cards products={this.props.data.feedPage.products} />
+        <Cards products={this.props.feedPageData.products} />
         {this.props.showBoarding ? (
           <BottomNavBar
             text="Let's go"
@@ -42,10 +42,10 @@ class FeedPage extends React.Component {
   }
 }
 
-const mapStateToProps = ({ buttonFeed, showBoarding, data }) => ({
+const mapStateToProps = ({ buttonFeed, showBoarding, feedPageData }) => ({
   buttonFeed,
   showBoarding,
-  data,
+  feedPageData,
 })
 export default connect(
   mapStateToProps,

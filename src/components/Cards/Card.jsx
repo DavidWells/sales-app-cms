@@ -8,7 +8,7 @@ import LineChart from '../Chart/LineChart'
 import {
   Card as CustomCard,
   Subhead,
-  BackgroundImage,
+  //BackgroundImage,
   Divider as BorderLine,
   Progress,
   Box,
@@ -17,6 +17,9 @@ import {
   Close,
   Badge,
 } from 'rebass'
+
+import BackgroundImage from 'react-background-image-loader'
+import ImagePlaceholder from '../../assets/placeholder.png'
 
 const CardWrapper = styled(CustomCard)`
   box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
@@ -94,6 +97,14 @@ const Title = styled(Subhead)`
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   min-height: 38px;
+`
+
+const Image = styled(BackgroundImage)`
+  width: 100%;
+  height: 0px;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center center;
 `
 
 const percentageOf = (max, num) => {
@@ -185,9 +196,14 @@ class Card extends React.Component {
     return (
       <div>
         <CardWrapper mb={3} p={0}>
-          <BackgroundImage
+          {/* <BackgroundImage
             ratio={1}
             src={this.props.imageSrc}
+            onClick={this.openModal}
+          /> */}
+          <Image
+            src={this.props.imageSrc}
+            placeholder={ImagePlaceholder}
             onClick={this.openModal}
           />
 
@@ -229,7 +245,7 @@ class Card extends React.Component {
                 {this.props.badgeTitle}
               </ItemBadge>
 
-              <BackgroundImage ratio={1} src={this.props.imageSrc} />
+              <Image src={this.props.imageSrc} placeholder={ImagePlaceholder} />
               {/* <Subhead p={2} fontSize={1} fontWeight={400}>
               {this.props.title}
             </Subhead> */}

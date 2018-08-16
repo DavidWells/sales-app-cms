@@ -37,8 +37,6 @@ class SiteNavi extends React.Component {
     }
   }
   render() {
-    const { location, title } = this.props
-    console.log(this.state.logo)
     return (
       <Header>
         <NavLink is="div">

@@ -8,6 +8,10 @@ import Card from './Card'
 import Heading from '../Elements/Heading'
 import { connect } from 'unistore/react'
 import actions from '../../store/actions'
+// import Img from 'react-image'
+import BackgroundImage from 'react-background-image-loader'
+
+import ImagePlaceholder from '../../assets/placeholder.png'
 
 const CardList = styled.div`
   padding-top: 45px;
@@ -15,6 +19,14 @@ const CardList = styled.div`
 
 const HeadText = styled(Text)`
   font-family: 'Montserrat', 'Source Sans Pro', sans-serif;
+`
+
+const Image = styled(BackgroundImage)`
+  width: 100%;
+  height: 0px;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center center;
 `
 
 class Cards extends React.Component {
@@ -45,9 +57,6 @@ class Cards extends React.Component {
   render() {
     return (
       <CardList className="card-list">
-        {/* <Heading px={2} pt={1} pb={3}>
-          Learn about your stores highlight!
-        </Heading> */}
         <Flex mx={-2} flexWrap="wrap">
           {this.props.products.map((item, index) => (
             <Box
@@ -82,17 +91,14 @@ class Cards extends React.Component {
   }
 }
 
-Cards.defaultProps = {}
 Cards.propTypes = {
   src: PropTypes.string,
   products: PropTypes.array.isRequired,
 }
 
-const mapStateToProps = ({ modalOpen, items, buttonFeed, itemCategories }) => ({
+const mapStateToProps = ({ modalOpen, buttonFeed }) => ({
   modalOpen,
-  items,
   buttonFeed,
-  itemCategories,
 })
 export default connect(
   mapStateToProps,

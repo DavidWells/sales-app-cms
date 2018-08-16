@@ -116,10 +116,10 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-react-next',
     'gatsby-plugin-sass',
-    'gatsby-plugin-sharp',
+    // 'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-page-transitions',
-    'gatsby-transformer-sharp',
+    // 'gatsby-transformer-sharp',
     'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-plugin-page-creator`,
