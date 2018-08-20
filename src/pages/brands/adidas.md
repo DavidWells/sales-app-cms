@@ -61,28 +61,28 @@ feedPage:
       rank: '12'
       title: SHARKS HOME AUTHENTIC PRO JERSEY
     - badge: new
-      badgeTitle: new
+      badgeTitle: New
       id: DS8865
       imageUrl: >-
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/6e76544d2cd148a38f36a8940106df5a_9366/Real_Madrid_adidas_Z_N_E__Hoodie_Red_DS8857_21_model.jpg
       rank: '11'
       title: REAL MADRID ADIDAS Z.N.E. HOODIE
     - badge: new
-      badgeTitle: new
+      badgeTitle: New
       id: DS8866
       imageUrl: >-
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/1fc8f787ccac4ff5bcd5a8d6010af2cf_9366/LEOFLAGE_Crop_Hoodie_Pink_DX4301_21_model.jpg
       rank: '29'
       title: LEOFLAGE CROP HOODIE
     - badge: new
-      badgeTitle: new
+      badgeTitle: New
       id: DS8867
       imageUrl: >-
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/ac98ab357ff646869db3a87f014aab59_9366/Tango_Sweat_Pants_Grey_CZ4005_21_model.jpg
       rank: '21'
       title: TANGO SWEAT PANTS
     - badge: new
-      badgeTitle: new
+      badgeTitle: New
       id: DS8868
       imageUrl: >-
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/a8604a87fe69472591baa76d000bf483_9366/M10_Icon_Shorts_Red_CF1288_21_model.jpg
