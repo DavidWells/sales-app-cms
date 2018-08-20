@@ -139,7 +139,14 @@ weeklyPage:
       rank: '8'
       title: ALPHABOUNCE INSTINCT SHOES
       units: '4'
-    - {}
+    - badge: trending
+      badgeTitle: Trending
+      id: DS8863
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/e0961b9a670e40778121a8be00e1665a_9366/Tights_Multicolor_DH3056_21_model.jpg
+      rank: '27'
+      title: TIGHTS
+      units: '15'
     - {}
     - {}
     - {}
