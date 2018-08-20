@@ -40,7 +40,7 @@ let initialState = {
   pairPageSelectedItems: 0,
   trendItemSelected: false,
   data: data[getStoreName],
-  feedPageData: data[getStoreName].feedPage,
+  feedPageData: null,
   weeklyPageData: data[getStoreName].weeklyPage,
   colors: {
     black: '#3c3b3b',
@@ -61,6 +61,7 @@ let initialState = {
     complete_the_look: false,
     record_best_seller_locations: false,
   },
+  testing: [],
   currentTaskView: null,
   pagesButton: { feed: false, improve: false, trend: false, pair: false },
 }

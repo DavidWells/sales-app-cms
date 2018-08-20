@@ -1,11 +1,25 @@
 import { dataItems } from '../data/fakeData'
+import { get, has } from 'lodash'
+import * as data from '../data/StoresData.json'
 
-// let data = JSON.stringify(dataItems)
-// console.log(data)
+let storeParam = null
+if (typeof window !== `undefined`) {
+  const urlParams = new URLSearchParams(window.location.search)
+  storeParam = urlParams.get('store')
+}
+
+const getStoreName = has(data, storeParam) ? storeParam : 'kay'
 
 const actions = store => ({
   // Async actions can be pure async/promise functions:
-
+  setStoreName: state => ({
+    store: getStoreName,
+  }),
+  setFeedPageData: state => {
+    store.setState({
+      feedPageData: data[getStoreName].feedPage,
+    })
+  },
   toggleModal: state => ({
     modalOpen: !state.modalOpen,
   }),

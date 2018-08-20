@@ -9,6 +9,8 @@ import get from 'lodash/get'
 
 class FeedPage extends React.Component {
   componentDidMount() {
+    this.props.setStoreName()
+    this.props.setFeedPageData()
     window.onscroll = ev => {
       if (
         window.innerHeight + window.scrollY >= document.body.offsetHeight &&
@@ -22,7 +24,9 @@ class FeedPage extends React.Component {
     return (
       <PageTransition transitionTime={300} className="dsadsadas">
         <TopNavBar />
-        <Cards products={this.props.feedPageData.products} />
+        {this.props.feedPageData !== null ? (
+          <Cards products={this.props.feedPageData.products} />
+        ) : null}
         {this.props.showBoarding ? (
           <BottomNavBar
             text="Let's go"
