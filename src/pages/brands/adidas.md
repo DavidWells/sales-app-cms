@@ -120,6 +120,20 @@ tasks:
           https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/634b1bedcd184a3d8db0a8ba00f050d5_9366/Superstar_Slip-on_Shoes_Black_B37193_02_hover_frv.jpg
         rank: '11'
         title: SUPERSTAR SLIP-ON SHOES
+      - badge: bestSeller
+        badgeTitle: best-seller
+        id: DS8859
+        imageUrl: >-
+          https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/c4fa12dc0a2743a0a842a80e00f2fd0d_9366/Ultraboost_Shoes_White_BB6168_02_hover_frv.jpg
+        rank: '32'
+        title: ULTRABOOST SHOES
+      - badge: bestSeller
+        badgeTitle: best-seller
+        id: DS8860
+        imageUrl: >-
+          https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/32dc5795a59043d1b51ca8c6012cc2d3_9366/SST_Track_Jacket_Multicolor_DH3071_21_model.jpg
+        rank: '16'
+        title: SST TRACK JACKET
     taskName: Help your trending items
     title: Learn about your store’s highlight
     type: improve
