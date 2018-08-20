@@ -32,6 +32,13 @@ feedPage:
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/32dc5795a59043d1b51ca8c6012cc2d3_9366/SST_Track_Jacket_Multicolor_DH3071_21_model.jpg
       rank: '14'
       title: SST TRACK JACKET
+    - badge: bestSeller
+      badgeTitle: Best-Seller
+      id: DS8861
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/51c092f2533d495c9a06a8e300ecdd3e_9366/Adizero_Ubersonic_3_0_Shoes_Pink_AH2136_02_hover_frv.jpg
+      rank: '21'
+      title: ADIZERO UBERSONIC 3.0 SHOES
 weeklyPage:
   fromDate: 20th Aug 18
   toDate: 20th Aug 18
