@@ -74,7 +74,13 @@ feedPage:
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/1fc8f787ccac4ff5bcd5a8d6010af2cf_9366/LEOFLAGE_Crop_Hoodie_Pink_DX4301_21_model.jpg
       rank: '29'
       title: LEOFLAGE CROP HOODIE
-    - {}
+    - badge: new
+      badgeTitle: new
+      id: DS8867
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/ac98ab357ff646869db3a87f014aab59_9366/Tango_Sweat_Pants_Grey_CZ4005_21_model.jpg
+      rank: '21'
+      title: TANGO SWEAT PANTS
     - {}
     - {}
     - {}
