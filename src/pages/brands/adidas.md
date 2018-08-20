@@ -115,5 +115,12 @@ tasks:
     taskName: New instagram post
     title: People might search for this look today!
     type: trend
+  record_best_seller_locations:
+    badge: trending
+    id: '28'
+    path: record-best-seller-locations
+    taskName: record best seller locations
+    title: Take a photo of these items new location
+    type: improve
 ---
 
