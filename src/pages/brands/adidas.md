@@ -81,7 +81,13 @@ feedPage:
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/ac98ab357ff646869db3a87f014aab59_9366/Tango_Sweat_Pants_Grey_CZ4005_21_model.jpg
       rank: '21'
       title: TANGO SWEAT PANTS
-    - {}
+    - badge: new
+      badgeTitle: new
+      id: DS8868
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/a8604a87fe69472591baa76d000bf483_9366/M10_Icon_Shorts_Red_CF1288_21_model.jpg
+      rank: '22'
+      title: M10 ICON SHORTS
     - {}
     - {}
     - {}
