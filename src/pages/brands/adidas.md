@@ -196,7 +196,9 @@ categories:
   - id: trending
     name: Trending
     position: 2
-  - {}
+  - id: new
+    name: New
+    position: 3
 tasks:
   complete_the_look:
     badge: pair
