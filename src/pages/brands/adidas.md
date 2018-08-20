@@ -171,7 +171,14 @@ weeklyPage:
       rank: '22'
       title: LEOFLAGE CROP HOODIE
       units: '5'
-    - {}
+    - badge: new
+      badgeTitle: New
+      id: DS8867
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/ac98ab357ff646869db3a87f014aab59_9366/Tango_Sweat_Pants_Grey_CZ4005_21_model.jpg
+      rank: '17'
+      title: TANGO SWEAT PANTS
+      units: '12'
     - {}
   title: Your last week results
   toDate: 18th Aug 18
