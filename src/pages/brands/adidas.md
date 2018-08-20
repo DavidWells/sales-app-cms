@@ -179,7 +179,14 @@ weeklyPage:
       rank: '17'
       title: TANGO SWEAT PANTS
       units: '12'
-    - {}
+    - badge: new
+      badgeTitle: New
+      id: DS8868
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/a8604a87fe69472591baa76d000bf483_9366/M10_Icon_Shorts_Red_CF1288_21_model.jpg
+      rank: '11'
+      title: M10 ICON SHORTS
+      units: '1'
   title: Your last week results
   toDate: 18th Aug 18
 categories:
