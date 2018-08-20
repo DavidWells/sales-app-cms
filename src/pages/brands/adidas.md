@@ -107,7 +107,14 @@ weeklyPage:
       rank: '9'
       title: SUPERSTAR SLIP-ON SHOES
       units: '-1'
-    - {}
+    - badge: bestSeller
+      badgeTitle: Best Seller
+      id: DS8859
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/c4fa12dc0a2743a0a842a80e00f2fd0d_9366/Ultraboost_Shoes_White_BB6168_02_hover_frv.jpg
+      rank: '32'
+      title: ULTRABOOST SHOES
+      units: '5'
     - {}
     - {}
     - {}
