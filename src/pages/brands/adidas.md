@@ -123,7 +123,14 @@ weeklyPage:
       rank: '22'
       title: SST TRACK JACKET
       units: '1'
-    - {}
+    - badge: trending
+      badgeTitle: Trending
+      id: DS8861
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/51c092f2533d495c9a06a8e300ecdd3e_9366/Adizero_Ubersonic_3_0_Shoes_Pink_AH2136_02_hover_frv.jpg
+      rank: '15'
+      title: ADIZERO UBERSONIC 3.0 SHOES
+      units: '10'
     - {}
     - {}
     - {}
