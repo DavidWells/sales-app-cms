@@ -155,7 +155,14 @@ weeklyPage:
       rank: '31'
       title: SHARKS HOME AUTHENTIC PRO JERSEY
       units: '6'
-    - {}
+    - badge: new
+      badgeTitle: New
+      id: DS8865
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/6e76544d2cd148a38f36a8940106df5a_9366/Real_Madrid_adidas_Z_N_E__Hoodie_Red_DS8857_21_model.jpg
+      rank: '16'
+      title: REAL MADRID ADIDAS Z.N.E. HOODIE
+      units: '8'
     - {}
     - {}
     - {}
