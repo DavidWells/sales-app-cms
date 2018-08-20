@@ -39,6 +39,23 @@ feedPage:
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/51c092f2533d495c9a06a8e300ecdd3e_9366/Adizero_Ubersonic_3_0_Shoes_Pink_AH2136_02_hover_frv.jpg
       rank: '21'
       title: ADIZERO UBERSONIC 3.0 SHOES
+    - badge: trending
+      badgeTitle: trending
+      id: DS8862
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/2606a0e918b24d6d8891a9000185c6dc_9366/Alphabounce_Instinct_Shoes_Orange_BB7507_02_hover_frv.jpg
+      rank: '32'
+      title: ALPHABOUNCE INSTINCT SHOES
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
 weeklyPage:
   fromDate: 20th Aug 18
   toDate: 20th Aug 18
