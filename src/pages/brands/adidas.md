@@ -88,10 +88,6 @@ feedPage:
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/a8604a87fe69472591baa76d000bf483_9366/M10_Icon_Shorts_Red_CF1288_21_model.jpg
       rank: '22'
       title: M10 ICON SHORTS
-    - {}
-    - {}
-    - {}
-    - {}
 weeklyPage:
   fromDate: 20th Aug 18
   toDate: 20th Aug 18
