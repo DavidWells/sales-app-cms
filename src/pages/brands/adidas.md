@@ -94,6 +94,13 @@ weeklyPage:
 categories:
   - {}
 tasks:
+  complete_the_look:
+    badge: pair
+    id: '25'
+    path: complete-the-look
+    taskName: Complete the look
+    title: People attend to buy both of those items together
+    type: pair
   help_your_trending_items:
     badge: bestSeller
     id: '12'
