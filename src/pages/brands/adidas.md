@@ -115,7 +115,14 @@ weeklyPage:
       rank: '32'
       title: ULTRABOOST SHOES
       units: '5'
-    - {}
+    - badge: bestSeller
+      badgeTitle: Best Seller
+      id: DS8860
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/32dc5795a59043d1b51ca8c6012cc2d3_9366/SST_Track_Jacket_Multicolor_DH3071_21_model.jpg
+      rank: '22'
+      title: SST TRACK JACKET
+      units: '1'
     - {}
     - {}
     - {}
