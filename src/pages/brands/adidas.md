@@ -53,8 +53,20 @@ feedPage:
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/e0961b9a670e40778121a8be00e1665a_9366/Tights_Multicolor_DH3056_21_model.jpg
       rank: '19'
       title: TIGHTS
-    - {}
-    - {}
+    - badge: trending
+      badgeTitle: trending
+      id: DS8864
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/fd2b671828744a47b0d8a80400f3127a_9366/Sharks_Home_Authentic_Pro_Jersey_White_CA7016_21_model.jpg
+      rank: '12'
+      title: SHARKS HOME AUTHENTIC PRO JERSEY
+    - badge: new
+      badgeTitle: new
+      id: DS8865
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/6e76544d2cd148a38f36a8940106df5a_9366/Real_Madrid_adidas_Z_N_E__Hoodie_Red_DS8857_21_model.jpg
+      rank: '11'
+      title: REAL MADRID ADIDAS Z.N.E. HOODIE
     - {}
     - {}
     - {}
