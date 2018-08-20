@@ -190,7 +190,13 @@ weeklyPage:
   title: Your last week results
   toDate: 18th Aug 18
 categories:
-  - position: 1
+  - id: bestSeller
+    name: Best Seller
+    position: 1
+  - id: trending
+    name: Trending
+    position: 2
+  - {}
 tasks:
   complete_the_look:
     badge: pair
