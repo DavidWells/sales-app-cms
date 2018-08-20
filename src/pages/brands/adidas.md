@@ -33,28 +33,28 @@ feedPage:
       rank: '14'
       title: SST TRACK JACKET
     - badge: trending
-      badgeTitle: trending
+      badgeTitle: Trending
       id: DS8861
       imageUrl: >-
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/51c092f2533d495c9a06a8e300ecdd3e_9366/Adizero_Ubersonic_3_0_Shoes_Pink_AH2136_02_hover_frv.jpg
       rank: '21'
       title: ADIZERO UBERSONIC 3.0 SHOES
     - badge: trending
-      badgeTitle: trending
+      badgeTitle: Trending
       id: DS8862
       imageUrl: >-
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/2606a0e918b24d6d8891a9000185c6dc_9366/Alphabounce_Instinct_Shoes_Orange_BB7507_02_hover_frv.jpg
       rank: '32'
       title: ALPHABOUNCE INSTINCT SHOES
     - badge: trending
-      badgeTitle: trending
+      badgeTitle: Trending
       id: DS8863
       imageUrl: >-
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/e0961b9a670e40778121a8be00e1665a_9366/Tights_Multicolor_DH3056_21_model.jpg
       rank: '19'
       title: TIGHTS
     - badge: trending
-      badgeTitle: trending
+      badgeTitle: Trending
       id: DS8864
       imageUrl: >-
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/fd2b671828744a47b0d8a80400f3127a_9366/Sharks_Home_Authentic_Pro_Jersey_White_CA7016_21_model.jpg
