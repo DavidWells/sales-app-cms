@@ -147,7 +147,14 @@ weeklyPage:
       rank: '27'
       title: TIGHTS
       units: '15'
-    - {}
+    - badge: trending
+      badgeTitle: Trending
+      id: DS8864
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/fd2b671828744a47b0d8a80400f3127a_9366/Sharks_Home_Authentic_Pro_Jersey_White_CA7016_21_model.jpg
+      rank: '31'
+      title: SHARKS HOME AUTHENTIC PRO JERSEY
+      units: '6'
     - {}
     - {}
     - {}
