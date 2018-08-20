@@ -25,6 +25,13 @@ feedPage:
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/c4fa12dc0a2743a0a842a80e00f2fd0d_9366/Ultraboost_Shoes_White_BB6168_02_hover_frv.jpg
       rank: '32'
       title: ULTRABOOST SHOES
+    - badge: bestSeller
+      badgeTitle: Best-Seller
+      id: DS8860
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/32dc5795a59043d1b51ca8c6012cc2d3_9366/SST_Track_Jacket_Multicolor_DH3071_21_model.jpg
+      rank: '14'
+      title: SST TRACK JACKET
 weeklyPage:
   fromDate: 20th Aug 18
   toDate: 20th Aug 18
