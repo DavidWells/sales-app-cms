@@ -91,5 +91,15 @@ feedPage:
 weeklyPage:
   fromDate: 20th Aug 18
   toDate: 20th Aug 18
+categories:
+  - {}
+tasks:
+  help_your_trending_items:
+    badge: bestSeller
+    id: '12'
+    path: help-your-trending-items
+    taskName: Help your trending items
+    title: Learn about your store’s highlight
+    type: improve
 ---
 
