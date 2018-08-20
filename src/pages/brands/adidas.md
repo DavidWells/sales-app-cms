@@ -46,7 +46,13 @@ feedPage:
         https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/2606a0e918b24d6d8891a9000185c6dc_9366/Alphabounce_Instinct_Shoes_Orange_BB7507_02_hover_frv.jpg
       rank: '32'
       title: ALPHABOUNCE INSTINCT SHOES
-    - {}
+    - badge: trending
+      badgeTitle: trending
+      id: DS8863
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/e0961b9a670e40778121a8be00e1665a_9366/Tights_Multicolor_DH3056_21_model.jpg
+      rank: '19'
+      title: TIGHTS
     - {}
     - {}
     - {}
