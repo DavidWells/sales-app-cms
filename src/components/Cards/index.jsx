@@ -51,7 +51,7 @@ class Cards extends React.Component {
     //     console.log(id)
     //   }
     // }
-    console.log(visible)
+    // console.log(visible)
   }
 
   render() {
