@@ -113,6 +113,13 @@ tasks:
           https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/57995102067e498099e7a79201012389_9366/Tiro_17_Training_Pants_Red_CF3608_21_model.jpg
         rank: '21'
         title: TIRO 17 TRAINING PANTS
+      - badge: bestSeller
+        badgeTitle: best-seller
+        id: DS8858
+        imageUrl: >-
+          https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/634b1bedcd184a3d8db0a8ba00f050d5_9366/Superstar_Slip-on_Shoes_Black_B37193_02_hover_frv.jpg
+        rank: '11'
+        title: SUPERSTAR SLIP-ON SHOES
     taskName: Help your trending items
     title: Learn about your store’s highlight
     type: improve
