@@ -131,7 +131,14 @@ weeklyPage:
       rank: '15'
       title: ADIZERO UBERSONIC 3.0 SHOES
       units: '10'
-    - {}
+    - badge: trending
+      badgeTitle: Trending
+      id: DS8862
+      imageUrl: >-
+        https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto,fl_lossy/2606a0e918b24d6d8891a9000185c6dc_9366/Alphabounce_Instinct_Shoes_Orange_BB7507_02_hover_frv.jpg
+      rank: '8'
+      title: ALPHABOUNCE INSTINCT SHOES
+      units: '4'
     - {}
     - {}
     - {}
