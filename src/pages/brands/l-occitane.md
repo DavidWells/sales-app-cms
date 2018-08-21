@@ -1,6 +1,6 @@
 ---
 templateKey: brand
-title: LOCCITANE
+title: loccitane
 logo: /img/logo-loccitane.png
 feedPage:
   products:
