@@ -88,72 +88,84 @@ weeklyPage:
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%A7%D7%A8%D7%9D-%D7%A4%D7%A0%D7%99%D7%9D-%D7%97%D7%9E%D7%90%D7%AA-%D7%A9%D7%99%D7%90%D7%94-%D7%9C%D7%99%D7%99%D7%98&id=01CL050K15_2&v=2&nodef=true
       rank: '11'
       title: קרם פנים חמאת שיאה לייט
+      units: '0'
     - badge: bestSeller
       badgeTitle: Best Seller
       imageUrl: >-
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%A9%D7%A7%D7%93-%D7%97%D7%9C%D7%91-%D7%92%D7%95%D7%A3-%D7%9E%D7%A8%D7%95%D7%9B%D7%96&id=29LC200A14&v=2
       rank: '24'
       title: שקד חלב גוף מרוכז
+      units: '-5'
     - badge: bestSeller
       badgeTitle: Best Seller
       imageUrl: >-
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%97%D7%9C%D7%91-%D7%92%D7%95%D7%A3-%D7%95%D7%95%D7%A8%D7%91%D7%A0%D7%94&id=15LC250VB3&v=2
       rank: '9'
       title: חלב גוף וורבנה
+      units: '11'
     - badge: bestSeller
       badgeTitle: Best Seller
       imageUrl: >-
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%97%D7%9E%D7%90%D7%AA-%D7%A9%D7%99%D7%90%D7%94-%D7%9C%27%D7%90%D7%95%D7%A7%D7%A1%D7%99%D7%98%D7%9F-l%27occitane-%D7%A7%D7%A8%D7%9D-%D7%92%D7%95%D7%A3-%D7%A2%D7%A9%D7%99%D7%A8-%D7%91%D7%9E%D7%99%D7%95%D7%97%D7%93-&id=01BF070KJ18&v=2
       rank: '2'
       title: קרם גוף חמאת שיאה יסמין עשיר במיוחד
+      units: '2'
     - badge: trending
       badgeTitle: Trending
       imageUrl: >-
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%9C%27%D7%90%D7%95%D7%A7%D7%A1%D7%99%D7%98%D7%9F-l%27occitane-%D7%90%D7%95-%D7%93%D7%94-%D7%98%D7%95%D7%90%D7%9C%D7%98-terre-de-lumiere-l%27eau&id=18ET090TL17&v=2
       rank: '17'
       title: TERRE DE LUMIERE L'EAU או דה טואלט
+      units: '3'
     - badge: trending
       badgeTitle: Trending
       imageUrl: >-
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%A9%D7%9E%D7%A4%D7%95-%D7%96%D7%99%D7%AA-%D7%9E%D7%96%D7%99%D7%9F-%D7%9C%D7%A9%D7%99%D7%A2%D7%A8-l%27occitane&id=17SH300N18&v=2
       rank: '31'
       title: שמפו שמן זית מזין
+      units: '-2'
     - badge: trending
       badgeTitle: Trending
       imageUrl: >-
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%A9%D7%9E%D7%9F-%D7%A8%D7%97%D7%A6%D7%94-%D7%A9%D7%A7%D7%93&id=29HD250A15&v=2
       rank: '22'
       title: שמן רחצה שקד
+      units: '7'
     - badge: trending
       badgeTitle: Trending
       imageUrl: >-
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%9E%D7%A1%D7%9B%D7%94-%D7%95%D7%9E%D7%A8%D7%9B%D7%9A-%D7%9C%D7%97%D7%99%D7%96%D7%95%D7%A7-%D7%94%D7%A9%D7%99%D7%A2%D7%A8-%D7%98%D7%99%D7%A4%D7%95%D7%9C-%D7%90%D7%99%D7%A0%D7%98%D7%A0%D7%A1%D7%99%D7%91%D7%99-%D7%91-1-%D7%93%D7%A7%D7%94&id=17IC200D15&v=2
       rank: '9'
       title: מסכה ומרכך לחיזוק השיער- טיפול אינטנסיבי ב-1 דקה
+      units: '6'
     - badge: new
       badgeTitle: New
       imageUrl: >-
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=l%27occitan-%D7%92%27%D7%9C-%D7%A8%D7%97%D7%A6%D7%94-%D7%9C%D7%92%D7%95%D7%A3-%D7%95%D7%9C%D7%A9%D7%99%D7%A2%D7%A8&id=20GD250OC&v=2
       rank: '11'
       title: L'OCCITAN ג'ל רחצה לגוף ולשיער
+      units: '33'
     - badge: new
       badgeTitle: New
       imageUrl: >-
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%91%D7%95%D7%A9%D7%9D-%D7%9C%D7%91%D7%99%D7%AA-%D7%91%D7%A0%D7%99%D7%97%D7%95%D7%97-%D7%95%D7%95%D7%A8%D7%91%D7%A0%D7%94-%D7%9E%D7%A8%D7%A2%D7%A0%D7%9F&id=26PM100VB15&v=2
       rank: '16'
       title: בושם לבית בניחוח וורבנה מרענן
+      units: '12'
     - badge: new
       badgeTitle: New
       imageUrl: >-
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%9C%27%D7%90%D7%95%D7%A7%D7%A1%D7%99%D7%98%D7%9F-terre-de-lumiere-intense-%D7%A7%D7%A8%D7%9D-%D7%92%D7%95%D7%A3&id=18BL250TL17I&v=2
       rank: '29'
       title: TERRE DE LUMIÈRE INTENSE קרם גוף
+      units: '1'
     - badge: new
       badgeTitle: New
       imageUrl: >-
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=l%27occitane-%D7%A1%D7%A8%D7%95%D7%9D-%D7%9C%D7%A4%D7%A0%D7%99%D7%9D-reine-blanche&id=38WS030A18&v=2
       rank: '33'
       title: סרום לפנים REINE BLANCHE
+      units: '3'
   title: Your last week results
   toDate: 25th Aug 18
 categories:
