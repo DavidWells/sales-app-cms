@@ -156,5 +156,15 @@ weeklyPage:
       title: סרום לפנים REINE BLANCHE
   title: Your last week results
   toDate: 25th Aug 18
+categories:
+  - id: bestSeller
+    name: Best Seller
+    position: 1
+  - id: trending
+    name: Trending
+    position: 2
+  - id: new
+    name: New
+    position: 3
 ---
 
