@@ -185,13 +185,6 @@ tasks:
     path: complete-the-look
     products:
       - firstProduct:
-          badge: new
-          badgeTitle: New
-          imageUrl: >-
-            https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=l%27occitane-%D7%A1%D7%A8%D7%95%D7%9D-%D7%9C%D7%A4%D7%A0%D7%99%D7%9D-reine-blanche&id=38WS030A18&v=2
-          rank: '33'
-          title: סרום לפנים REINE BLANCHE
-        secondProduct:
           badge: bestSeller
           badgeTitle: Best Seller
           imageUrl: >-
