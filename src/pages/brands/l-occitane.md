@@ -55,10 +55,30 @@ feedPage:
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%9E%D7%A1%D7%9B%D7%94-%D7%95%D7%9E%D7%A8%D7%9B%D7%9A-%D7%9C%D7%97%D7%99%D7%96%D7%95%D7%A7-%D7%94%D7%A9%D7%99%D7%A2%D7%A8-%D7%98%D7%99%D7%A4%D7%95%D7%9C-%D7%90%D7%99%D7%A0%D7%98%D7%A0%D7%A1%D7%99%D7%91%D7%99-%D7%91-1-%D7%93%D7%A7%D7%94&id=17IC200D15&v=2
       rank: '9'
       title: מסכה ומרכך לחיזוק השיער- טיפול אינטנסיבי ב-1 דקה
-    - {}
-    - {}
-    - {}
-    - {}
+    - badge: new
+      badgeTitle: New
+      imageUrl: >-
+        https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=l%27occitan-%D7%92%27%D7%9C-%D7%A8%D7%97%D7%A6%D7%94-%D7%9C%D7%92%D7%95%D7%A3-%D7%95%D7%9C%D7%A9%D7%99%D7%A2%D7%A8&id=20GD250OC&v=2
+      rank: '11'
+      title: L'OCCITAN ג'ל רחצה לגוף ולשיער
+    - badge: new
+      badgeTitle: New
+      imageUrl: >-
+        https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%91%D7%95%D7%A9%D7%9D-%D7%9C%D7%91%D7%99%D7%AA-%D7%91%D7%A0%D7%99%D7%97%D7%95%D7%97-%D7%95%D7%95%D7%A8%D7%91%D7%A0%D7%94-%D7%9E%D7%A8%D7%A2%D7%A0%D7%9F&id=26PM100VB15&v=2
+      rank: '16'
+      title: בושם לבית בניחוח וורבנה מרענן
+    - badge: new
+      badgeTitle: New
+      imageUrl: >-
+        https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%9C%27%D7%90%D7%95%D7%A7%D7%A1%D7%99%D7%98%D7%9F-terre-de-lumiere-intense-%D7%A7%D7%A8%D7%9D-%D7%92%D7%95%D7%A3&id=18BL250TL17I&v=2
+      rank: '29'
+      title: TERRE DE LUMIÈRE INTENSE קרם גוף
+    - badge: new
+      badgeTitle: New
+      imageUrl: >-
+        https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=l%27occitane-%D7%A1%D7%A8%D7%95%D7%9D-%D7%9C%D7%A4%D7%A0%D7%99%D7%9D-reine-blanche&id=38WS030A18&v=2
+      rank: '33'
+      title: סרום לפנים REINE BLANCHE
 weeklyPage:
   fromDate: 21st Aug 18
   toDate: 21st Aug 18
