@@ -31,10 +31,30 @@ feedPage:
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%97%D7%9E%D7%90%D7%AA-%D7%A9%D7%99%D7%90%D7%94-%D7%9C%27%D7%90%D7%95%D7%A7%D7%A1%D7%99%D7%98%D7%9F-l%27occitane-%D7%A7%D7%A8%D7%9D-%D7%92%D7%95%D7%A3-%D7%A2%D7%A9%D7%99%D7%A8-%D7%91%D7%9E%D7%99%D7%95%D7%97%D7%93-&id=01BF070KJ18&v=2
       rank: '2'
       title: קרם גוף חמאת שיאה יסמין עשיר במיוחד
-    - {}
-    - {}
-    - {}
-    - {}
+    - badge: trending
+      badgeTitle: Trending
+      imageUrl: >-
+        https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%9C%27%D7%90%D7%95%D7%A7%D7%A1%D7%99%D7%98%D7%9F-l%27occitane-%D7%90%D7%95-%D7%93%D7%94-%D7%98%D7%95%D7%90%D7%9C%D7%98-terre-de-lumiere-l%27eau&id=18ET090TL17&v=2
+      rank: '17'
+      title: TERRE DE LUMIERE L'EAU או דה טואלט
+    - badge: trending
+      badgeTitle: Trending
+      imageUrl: >-
+        https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%A9%D7%9E%D7%A4%D7%95-%D7%96%D7%99%D7%AA-%D7%9E%D7%96%D7%99%D7%9F-%D7%9C%D7%A9%D7%99%D7%A2%D7%A8-l%27occitane&id=17SH300N18&v=2
+      rank: '31'
+      title: שמפו שמן זית מזין
+    - badge: trending
+      badgeTitle: Trending
+      imageUrl: >-
+        https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%A9%D7%9E%D7%9F-%D7%A8%D7%97%D7%A6%D7%94-%D7%A9%D7%A7%D7%93&id=29HD250A15&v=2
+      rank: '22'
+      title: שמן רחצה שקד
+    - badge: trending
+      badgeTitle: Trending
+      imageUrl: >-
+        https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%9E%D7%A1%D7%9B%D7%94-%D7%95%D7%9E%D7%A8%D7%9B%D7%9A-%D7%9C%D7%97%D7%99%D7%96%D7%95%D7%A7-%D7%94%D7%A9%D7%99%D7%A2%D7%A8-%D7%98%D7%99%D7%A4%D7%95%D7%9C-%D7%90%D7%99%D7%A0%D7%98%D7%A0%D7%A1%D7%99%D7%91%D7%99-%D7%91-1-%D7%93%D7%A7%D7%94&id=17IC200D15&v=2
+      rank: '9'
+      title: מסכה ומרכך לחיזוק השיער- טיפול אינטנסיבי ב-1 דקה
     - {}
     - {}
     - {}
