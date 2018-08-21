@@ -191,6 +191,13 @@ tasks:
             https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%A7%D7%A8%D7%9D-%D7%A4%D7%A0%D7%99%D7%9D-%D7%97%D7%9E%D7%90%D7%AA-%D7%A9%D7%99%D7%90%D7%94-%D7%9C%D7%99%D7%99%D7%98&id=01CL050K15_2&v=2&nodef=true
           rank: '11'
           title: קרם פנים חמאת שיאה לייט
+        secondProduct:
+          badge: new
+          badgeTitle: New
+          imageUrl: >-
+            https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=l%27occitane-%D7%A1%D7%A8%D7%95%D7%9D-%D7%9C%D7%A4%D7%A0%D7%99%D7%9D-reine-blanche&id=38WS030A18&v=2
+          rank: '33'
+          title: סרום לפנים REINE BLANCHE
     taskName: Complete the look
     title: People attend to buy both of those items together
     type: pair
