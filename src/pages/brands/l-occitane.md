@@ -95,7 +95,7 @@ weeklyPage:
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%A9%D7%A7%D7%93-%D7%97%D7%9C%D7%91-%D7%92%D7%95%D7%A3-%D7%9E%D7%A8%D7%95%D7%9B%D7%96&id=29LC200A14&v=2
       rank: '24'
       title: שקד חלב גוף מרוכז
-      units: '-5'
+      units: '5'
     - badge: bestSeller
       badgeTitle: Best Seller
       imageUrl: >-
