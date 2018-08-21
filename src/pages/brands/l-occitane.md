@@ -196,8 +196,22 @@ tasks:
           https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%97%D7%9E%D7%90%D7%AA-%D7%A9%D7%99%D7%90%D7%94-%D7%9C%27%D7%90%D7%95%D7%A7%D7%A1%D7%99%D7%98%D7%9F-l%27occitane-%D7%A7%D7%A8%D7%9D-%D7%92%D7%95%D7%A3-%D7%A2%D7%A9%D7%99%D7%A8-%D7%91%D7%9E%D7%99%D7%95%D7%97%D7%93-&id=01BF070KJ18&v=2
         rank: '2'
         title: קרם גוף חמאת שיאה יסמין עשיר במיוחד
-    taskName: HELP YOUR TRENDING ITEMS
+    taskName: Help your trending items
     title: Learn about your store’s highlight
     type: improve
+  new_instagram_post:
+    badge: trending
+    id: '3'
+    path: new-instagram-post
+    product:
+      badge: instagram
+      badgeTitle: Trending
+      imageUrl: >-
+        https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%91%D7%95%D7%A9%D7%9D-%D7%9C%D7%91%D7%99%D7%AA-%D7%91%D7%A0%D7%99%D7%97%D7%95%D7%97-%D7%95%D7%95%D7%A8%D7%91%D7%A0%D7%94-%D7%9E%D7%A8%D7%A2%D7%A0%D7%9F&id=26PM100VB15&v=2
+      rank: '16'
+      title: בושם לבית בניחוח וורבנה מרענן
+    taskName: New Instagram Post
+    title: People might search for this look today!
+    type: trend
 ---
 
