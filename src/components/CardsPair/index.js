@@ -19,39 +19,20 @@ import checkIcon from '../../assets/check.svg'
 const data = [
   [
     {
-      title: 'Earring Climbers Natural Gemstones 10K White Gold',
-      id: '375401902',
+      title: 'קרם פנים חמאת שיאה לייט',
+      id: '121',
       image:
-        'https://www.kay.com/images/products/3754/375401902_MV_ZM.jpg?resize=500:500',
-      badge: 'new',
-      badgeTitle: 'Earrings',
+        'https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%A7%D7%A8%D7%9D-%D7%A4%D7%A0%D7%99%D7%9D-%D7%97%D7%9E%D7%90%D7%AA-%D7%A9%D7%99%D7%90%D7%94-%D7%9C%D7%99%D7%99%D7%98&id=01CL050K15_2&v=2&nodef=true',
+      badge: 'bestSeller',
+      badgeTitle: 'Best Seller',
     },
     {
-      title: 'Dangle Earrings 10K Yellow Gold',
+      title: 'סרום לפנים REINE BLANCHE',
       id: '393435300',
       image:
-        'https://www.kay.com/images/products/3934/393435300_MV_ZM.jpg?resize=500:500',
+        'https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=l%27occitane-%D7%A1%D7%A8%D7%95%D7%9D-%D7%9C%D7%A4%D7%A0%D7%99%D7%9D-reine-blanche&id=38WS030A18&v=2',
       badge: 'new',
-      badgeTitle: 'Earrings',
-    },
-  ],
-  [
-    {
-      title: 'Cat Charm Black Crystals & Enamel Sterling Silver',
-      id: '505495301',
-      image:
-        'https://www.kay.com/images/products/5054/505495301_MV_ZM.jpg?resize=500:500',
-      badge: 'missing',
-      badgeTitle: 'On Sale',
-    },
-
-    {
-      title: 'Blue & White Diamonds 1/10 ct tw 10K Rose Gold Crown Ring',
-      id: '23557109',
-      image:
-        'https://www.kay.com/images/products/0235/023557109_MV_ZM.jpg?resize=500:500',
-      badge: 'missing',
-      badgeTitle: 'On Sale',
+      badgeTitle: 'New',
     },
   ],
 ]
