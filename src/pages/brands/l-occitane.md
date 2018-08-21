@@ -235,5 +235,18 @@ tasks:
     taskName: New Instagram Post
     title: People might search for this look today!
     type: trend
+  record_best_seller_locations:
+    badge: bestSeller
+    path: record-best-seller-locations
+    products:
+      - badge: bestSeller
+        badgeTitle: Best Seller
+        imageUrl: >-
+          https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%97%D7%9C%D7%91-%D7%92%D7%95%D7%A3-%D7%95%D7%95%D7%A8%D7%91%D7%A0%D7%94&id=15LC250VB3&v=2
+        rank: '9'
+        title: חלב גוף וורבנה
+    taskName: Record best seller locations
+    title: Take a photo of these items new location
+    type: improve
 ---
 
