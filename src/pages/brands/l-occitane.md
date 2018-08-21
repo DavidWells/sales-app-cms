@@ -123,7 +123,7 @@ weeklyPage:
         https://img.loccitane.com/P.aspx?l=he-IL&s=500&e=png&name=%D7%A9%D7%9E%D7%A4%D7%95-%D7%96%D7%99%D7%AA-%D7%9E%D7%96%D7%99%D7%9F-%D7%9C%D7%A9%D7%99%D7%A2%D7%A8-l%27occitane&id=17SH300N18&v=2
       rank: '31'
       title: שמפו שמן זית מזין
-      units: '-2'
+      units: '2'
     - badge: trending
       badgeTitle: Trending
       imageUrl: >-
