@@ -169,5 +169,15 @@ weeklyPage:
       units: '6'
   title: Your last week results
   toDate: 18th Aug 18
+categories:
+  - id: bestSeller
+    name: Best Seller
+    position: 1
+  - id: trending
+    name: Trending
+    position: 2
+  - id: new
+    name: New
+    position: 3
 ---
 
