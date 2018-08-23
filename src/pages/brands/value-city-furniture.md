@@ -109,10 +109,34 @@ weeklyPage:
       rank: '22'
       title: Bodhi Sideboard - Rustic Pine
       units: '11'
-    - {}
-    - {}
-    - {}
-    - {}
+    - badge: trending
+      badgeTitle: Trending
+      imageUrl: >-
+        https://content.valuecityfurniture.com/ProductImages/0/275304.jpg?impolicy=product-65x65
+      rank: '15'
+      title: Tampa Futon Sofa Bed - Beige
+      units: '3'
+    - badge: trending
+      badgeTitle: Trending
+      imageUrl: >-
+        https://content.valuecityfurniture.com/ProductImages/0/484454.jpg?impolicy=product-65x65
+      rank: '15'
+      title: Mckenna Accent Ottoman
+      units: '8'
+    - badge: trending
+      badgeTitle: Trending
+      imageUrl: >-
+        https://content.valuecityfurniture.com/ProductImages/0/652944.jpg?impolicy=product-65x65
+      rank: '27'
+      title: Lavo 4-Piece Sectional with 2 Rectangular Ottomans - Ink
+      units: '2'
+    - badge: trending
+      badgeTitle: Trending
+      imageUrl: >-
+        https://content.valuecityfurniture.com/ProductImages/0/289360.jpg?impolicy=product-65x65
+      rank: '31'
+      title: Corsica Power Recliner - Taupe
+      units: '10'
     - {}
     - {}
     - {}
