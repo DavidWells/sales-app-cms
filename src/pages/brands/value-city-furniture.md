@@ -212,5 +212,19 @@ tasks:
     taskName: Help your trending items
     title: Learn about your store’s highlight
     type: improve
+  new_instagram_post:
+    badge: instagram
+    id: '3'
+    path: new-instagram-post
+    product:
+      badge: instagram
+      badgeTitle: Instagram
+      imageUrl: >-
+        https://content.valuecityfurniture.com/ProductImages/0/275304.jpg?impolicy=product-65x65
+      rank: '15'
+      title: Tampa Futon Sofa Bed - Beige
+    taskName: New instagram post
+    title: People might search for this look today!
+    type: trend
 ---
 
