@@ -199,6 +199,20 @@ tasks:
             https://content.valuecityfurniture.com/ProductImages/0/666529.jpg?impolicy=product-65x65
           rank: '7'
           title: Charthouse End Table - Charcoal
+      - firstProduct:
+          badge: pair
+          badgeTitle: Pair
+          imageUrl: >-
+            https://content.valuecityfurniture.com/ProductImages/0/484454.jpg?impolicy=product-65x65
+          rank: '8'
+          title: Mckenna Accent Ottoman
+        secondProduct:
+          badge: pair
+          badgeTitle: Pair
+          imageUrl: >-
+            https://content.valuecityfurniture.com/ProductImages/0/541407.jpg?impolicy=product-65x65
+          rank: '6'
+          title: Curved Bronze Table Lamp
     taskName: Complete the look
     title: People attend to buy both of those items together
     type: pair
