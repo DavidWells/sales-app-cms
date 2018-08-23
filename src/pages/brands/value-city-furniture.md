@@ -262,5 +262,20 @@ tasks:
     taskName: New instagram post
     title: People might search for this look today!
     type: trend
+  record_best_seller_locations:
+    badge: bestSeller
+    path: record-best-seller-locations
+    products:
+      - badge: new
+        badgeTitle: New
+        imageUrl: >-
+          https://content.valuecityfurniture.com/ProductImages/0/674128.jpg?impolicy=product-65x65
+        rank: '28'
+        title: >-
+          Avanti 6-Piece Triple Power Reclining Sectional with 3 Reclining Seats
+          - Brown
+    taskName: Record best seller locations
+    title: Take a photo of these items new location
+    type: improve
 ---
 
