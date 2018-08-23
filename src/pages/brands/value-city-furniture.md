@@ -19,16 +19,6 @@ feedPage:
       imageUrl: 'https://content.valuecityfurniture.com/ProductImages/0/484705.jpg'
       rank: '32'
       title: Serena Twin Storage Bed - Platinum
-    - badge: bestSeller
-      badgeTitle: Best Seller
-      imageUrl: 'https://content.valuecityfurniture.com/ProductImages/0/696419.jpg'
-      rank: '22'
-      title: Bodhi Sideboard - Rustic Pine
-    - badge: trending
-      badgeTitle: Trending
-      imageUrl: 'https://content.valuecityfurniture.com/ProductImages/0/275304.jpg'
-      rank: '15'
-      title: Tampa Futon Sofa Bed - Beige
     - badge: trending
       badgeTitle: Trending
       imageUrl: 'https://content.valuecityfurniture.com/ProductImages/0/484454.jpg'
@@ -87,18 +77,6 @@ weeklyPage:
       rank: '32'
       title: Serena Twin Storage Bed - Platinum
       units: '7'
-    - badge: bestSeller
-      badgeTitle: Best Seller
-      imageUrl: 'https://content.valuecityfurniture.com/ProductImages/0/696419.jpg'
-      rank: '22'
-      title: Bodhi Sideboard - Rustic Pine
-      units: '11'
-    - badge: trending
-      badgeTitle: Trending
-      imageUrl: 'https://content.valuecityfurniture.com/ProductImages/0/275304.jpg'
-      rank: '15'
-      title: Tampa Futon Sofa Bed - Beige
-      units: '3'
     - badge: trending
       badgeTitle: Trending
       imageUrl: 'https://content.valuecityfurniture.com/ProductImages/0/484454.jpg'
@@ -208,11 +186,6 @@ tasks:
         imageUrl: 'https://content.valuecityfurniture.com/ProductImages/0/484705.jpg'
         rank: '9'
         title: Serena Twin Storage Bed - Platinum
-      - badge: bestSeller
-        badgeTitle: Best Seller
-        imageUrl: 'https://content.valuecityfurniture.com/ProductImages/0/696419.jpg'
-        rank: '22'
-        title: Bodhi Sideboard - Rustic Pine
     taskName: Help your trending items
     title: Learn about your store’s highlight
     type: improve
@@ -223,9 +196,9 @@ tasks:
     product:
       badge: instagram
       badgeTitle: Instagram
-      imageUrl: 'https://content.valuecityfurniture.com/ProductImages/0/275304.jpg'
+      imageUrl: ''
       rank: '15'
-      title: Tampa Futon Sofa Bed - Beige
+      title: ''
     taskName: New instagram post
     title: People might search for this look today!
     type: trend
