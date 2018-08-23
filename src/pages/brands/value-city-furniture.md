@@ -6,26 +6,22 @@ feedPage:
   products:
     - badge: bestSeller
       badgeTitle: Best Seller
-      imageUrl: >-
-        https://content.valuecityfurniture.com/ProductImages/0/456434.jpg?impolicy=product-576x576
+      imageUrl: 'https://content.valuecityfurniture.com/ProductImages/0/456434.jpg'
       rank: '31'
       title: Marisol Sofa - Beige
     - badge: bestSeller
       badgeTitle: Best Seller
-      imageUrl: >-
-        https://content.valuecityfurniture.com/ProductImages/0/507875.jpg?impolicy=product-65x65
+      imageUrl: 'https://content.valuecityfurniture.com/ProductImages/0/507875.jpg'
       rank: '9'
       title: Brando Swivel Chair - Smoke
     - badge: bestSeller
       badgeTitle: Best Seller
-      imageUrl: >-
-        https://content.valuecityfurniture.com/ProductImages/0/484705.jpg?impolicy=product-65x65
+      imageUrl: 'https://content.valuecityfurniture.com/ProductImages/0/484705.jpg'
       rank: '32'
       title: Serena Twin Storage Bed - Platinum
     - badge: bestSeller
       badgeTitle: Best Seller
-      imageUrl: >-
-        https://content.valuecityfurniture.com/ProductImages/0/696419.jpg?impolicy=product-65x65
+      imageUrl: 'https://content.valuecityfurniture.com/ProductImages/0/696419.jpg'
       rank: '22'
       title: Bodhi Sideboard - Rustic Pine
     - badge: trending
