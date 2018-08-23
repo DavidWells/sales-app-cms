@@ -79,7 +79,45 @@ feedPage:
       rank: '21'
       title: Catalina 2-Piece Power Reclining Sofa - Black
 weeklyPage:
-  fromDate: 23rd Aug 18
-  toDate: 23rd Aug 18
+  fromDate: 12th Aug 18
+  products:
+    - badge: bestSeller
+      badgeTitle: Best Seller
+      imageUrl: >-
+        https://content.valuecityfurniture.com/ProductImages/0/456434.jpg?impolicy=product-576x576
+      rank: '31'
+      title: Marisol Sofa - Beige
+      units: '3'
+    - badge: bestSeller
+      badgeTitle: Best Seller
+      imageUrl: >-
+        https://content.valuecityfurniture.com/ProductImages/0/507875.jpg?impolicy=product-65x65
+      rank: '9'
+      title: Brando Swivel Chair - Smoke
+      units: '1'
+    - badge: bestSeller
+      badgeTitle: Best Seller
+      imageUrl: >-
+        https://content.valuecityfurniture.com/ProductImages/0/484705.jpg?impolicy=product-65x65
+      rank: '32'
+      title: Serena Twin Storage Bed - Platinum
+      units: '7'
+    - badge: bestSeller
+      badgeTitle: Best Seller
+      imageUrl: >-
+        https://content.valuecityfurniture.com/ProductImages/0/696419.jpg?impolicy=product-65x65
+      rank: '22'
+      title: Bodhi Sideboard - Rustic Pine
+      units: '11'
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+  title: Your last week results
+  toDate: 18th Aug 18
 ---
 
