@@ -180,6 +180,28 @@ categories:
     name: New
     position: 3
 tasks:
+  complete_the_look:
+    badge: pair
+    id: '4'
+    path: complete-the-look
+    products:
+      - firstProduct:
+          badge: pair
+          badgeTitle: Pair
+          imageUrl: >-
+            https://content.valuecityfurniture.com/ProductImages/0/456434.jpg?impolicy=product-576x576
+          rank: '31'
+          title: Marisol Sofa - Beige
+        secondProduct:
+          badge: pair
+          badgeTitle: Pair
+          imageUrl: >-
+            https://content.valuecityfurniture.com/ProductImages/0/666529.jpg?impolicy=product-65x65
+          rank: '7'
+          title: Charthouse End Table - Charcoal
+    taskName: Complete the look
+    title: People attend to buy both of those items together
+    type: pair
   help_your_trending_items:
     badge: bestSeller
     id: '1'
