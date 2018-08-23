@@ -137,10 +137,36 @@ weeklyPage:
       rank: '31'
       title: Corsica Power Recliner - Taupe
       units: '10'
-    - {}
-    - {}
-    - {}
-    - {}
+    - badge: new
+      badgeTitle: New
+      imageUrl: >-
+        https://content.valuecityfurniture.com/ProductImages/0/674128.jpg?impolicy=product-65x65
+      rank: '28'
+      title: >-
+        Avanti 6-Piece Triple Power Reclining Sectional with 3 Reclining Seats -
+        Brown
+      units: '2'
+    - badge: new
+      badgeTitle: New
+      imageUrl: >-
+        https://content.valuecityfurniture.com/ProductImages/0/540928.jpg?impolicy=product-65x65
+      rank: '14'
+      title: Natura Cocktail Table - Gold
+      units: '12'
+    - badge: new
+      badgeTitle: New
+      imageUrl: >-
+        https://content.valuecityfurniture.com/ProductImages/0/392816.jpg?impolicy=product-65x65
+      rank: '12'
+      title: 'Farrell Bar Cart - Brown '
+      units: '11'
+    - badge: new
+      badgeTitle: New
+      imageUrl: >-
+        https://content.valuecityfurniture.com/ProductImages/0/496333.jpg?impolicy=product-65x65
+      rank: '21'
+      title: Catalina 2-Piece Power Reclining Sofa - Black
+      units: '6'
   title: Your last week results
   toDate: 18th Aug 18
 ---
